@@ -1,5 +1,9 @@
 # YierPet 一二桌宠
 
+> **Windows 移植版**：请参见 [windows/README.md](windows/README.md)。可在 Windows 10/11 上构建并运行；原有 Swift/AppKit 实现仍仅面向 macOS。
+
+- 启动 Windows 版：`.\windows\build-windows.ps1 -Run`
+
 一只住在你 macOS 桌面上的「一二」宝。它会散步、跳跃、挥手，会提醒你喝水和起身活动，深夜会催你睡觉，你摸鱼它会盯着你，CPU 飙高它会整只烧红，把它甩出去还会气鼓鼓地抗议。
 
 纯 Swift + AppKit 原生实现，**零依赖、零权限、一条命令构建**。
