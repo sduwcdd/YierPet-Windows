@@ -6,6 +6,11 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $project = Join-Path $PSScriptRoot 'YierPet.Windows\YierPet.Windows.csproj'
+$releaseExecutable = Join-Path $PSScriptRoot 'YierPet.Windows\bin\Release\net8.0-windows\YierPet.Windows.exe'
+
+if ($Run) {
+    Get-Process -Name 'YierPet.Windows' -ErrorAction SilentlyContinue | Stop-Process -Force
+}
 
 dotnet build $project -c Release
 
@@ -23,5 +28,6 @@ if ($Publish) {
 }
 
 if ($Run) {
-    dotnet run --project $project
+    Start-Process -FilePath $releaseExecutable
+    Write-Host "已启动：$releaseExecutable"
 }
