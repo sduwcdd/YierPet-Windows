@@ -12,11 +12,11 @@
         Topmost="True"
         Loaded="Window_Loaded"
         Closed="Window_Closed"
-        MouseLeftButtonDown="Window_MouseLeftButtonDown"
-        MouseMove="Window_MouseMove"
-        MouseLeftButtonUp="Window_MouseLeftButtonUp"
-        MouseRightButtonUp="Window_MouseRightButtonUp">
-    <Grid Background="Transparent">
+        PreviewMouseLeftButtonDown="Window_MouseLeftButtonDown"
+        PreviewMouseMove="Window_MouseMove"
+        PreviewMouseLeftButtonUp="Window_MouseLeftButtonUp"
+        PreviewMouseRightButtonUp="Window_MouseRightButtonUp">
+    <Grid Background="#01000000">
         <Image x:Name="PetImage"
                Width="154"
                Height="166"
