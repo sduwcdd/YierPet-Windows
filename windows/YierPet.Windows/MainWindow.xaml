@@ -2,8 +2,8 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="YierPet"
-        Width="154"
-        Height="166"
+        Width="210"
+        Height="214"
         WindowStyle="None"
         ResizeMode="NoResize"
         ShowInTaskbar="False"
@@ -16,9 +16,22 @@
         MouseMove="Window_MouseMove"
         MouseLeftButtonUp="Window_MouseLeftButtonUp"
         MouseRightButtonUp="Window_MouseRightButtonUp">
-    <Grid>
-        <Image x:Name="PetImage" Stretch="Fill" SnapsToDevicePixels="True" />
-        <Border x:Name="HeatOverlay" Background="#E6FF3B30" Opacity="0" IsHitTestVisible="False" />
+    <Grid Background="Transparent">
+        <Image x:Name="PetImage"
+               Width="154"
+               Height="166"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Bottom"
+               Stretch="Fill"
+               SnapsToDevicePixels="True" />
+        <Border x:Name="HeatOverlay"
+                Width="154"
+                Height="166"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom"
+                Background="#E6FF3B30"
+                Opacity="0"
+                IsHitTestVisible="False" />
         <Popup x:Name="SpeechPopup"
                PlacementTarget="{Binding ElementName=PetImage}"
                Placement="Top"
