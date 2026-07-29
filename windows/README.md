@@ -10,7 +10,15 @@
 
 ## 构建与运行
 
-在仓库根目录运行：
+推荐先在仓库根目录执行安装脚本：
+
+~~~powershell
+.\windows\install-windows.ps1
+~~~
+
+它会安装到 `%LOCALAPPDATA%\Programs\YierPet-Windows`，同时创建桌面快捷方式和开机启动快捷方式，并启动最新版本。
+
+仅从源码构建并运行时，在仓库根目录执行：
 
 ~~~powershell
 .\windows\build-windows.ps1 -Run

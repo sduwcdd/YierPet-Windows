@@ -22,6 +22,22 @@
 - Windows 10 或 Windows 11（x64）
 - .NET 8 SDK（从源码构建时需要）
 
+### 推荐安装
+
+首次安装时在仓库根目录执行：
+
+~~~powershell
+.\windows\install-windows.ps1
+~~~
+
+安装脚本会把程序发布到 `%LOCALAPPDATA%\Programs\YierPet-Windows`，并自动完成：
+
+- 在桌面创建“一二桌宠”快捷方式，之后可直接双击启动。
+- 在 Windows“启动”文件夹创建快捷方式，实现登录后自动启动。
+- 关闭已有的 Windows 独立桌宠实例并启动刚安装的最新版本。
+
+程序使用框架依赖发布方式，因此目标电脑需要安装 .NET 8 Desktop Runtime；从源码执行安装脚本时，.NET 8 SDK 已包含所需运行环境。
+
 ### 正确启动
 
 克隆本仓库后，在仓库根目录执行：
@@ -38,6 +54,8 @@ cd YierPet-Windows
 ~~~powershell
 .\windows\build-windows.ps1 -Run
 ~~~
+
+`-Run` 会先关闭已有的 Windows 独立桌宠实例，再构建并启动最新的 Release 版本，避免旧 Debug 版本继续显示。它不会关闭 Codex 自身显示的原生宠物。
 
 程序默认出现在主屏幕工作区的右下角附近。它没有任务栏图标；请对桌宠右键并选择“退出”来关闭。
 
