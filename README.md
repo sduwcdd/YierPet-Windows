@@ -1,145 +1,158 @@
-# YierPet 一二桌宠
+# YierPet 一二桌宠（Windows + Codex）
 
-> **Windows 移植版**：请参见 [windows/README.md](windows/README.md)。可在 Windows 10/11 上构建并运行；原有 Swift/AppKit 实现仍仅面向 macOS。
+这是「一二」桌宠的 Windows 移植版，也提供可由 **Codex Desktop** 直接加载的原生自定义宠物包。
 
-- 启动 Windows 版：`.\windows\build-windows.ps1 -Run`
-
-一只住在你 macOS 桌面上的「一二」宝。它会散步、跳跃、挥手，会提醒你喝水和起身活动，深夜会催你睡觉，你摸鱼它会盯着你，CPU 飙高它会整只烧红，把它甩出去还会气鼓鼓地抗议。
-
-纯 Swift + AppKit 原生实现，**零依赖、零权限、一条命令构建**。
+> 本 README 面向 Windows 用户。仓库保留的 Swift/AppKit 文件是上游 macOS 实现的历史来源，仅供参考；在 Windows 上请不要运行 `build.sh`，而应使用 `windows\build-windows.ps1`。
 
 ![动作总览](docs/contact-sheet.png)
 
-## 功能特性
+## 选择使用方式
 
-| 能力 | 说明 |
-| --- | --- |
-| 桌面悬浮 | 无边框透明窗口，置顶悬浮，无 Dock 图标，不打扰工作 |
-| 9 种动画 | 待机 / 左右跑 / 挥手 / 跳跃 / 沮丧 / 等待 / 工作中 / 审阅，逐帧图集驱动 |
-| 自主行为 | 每 7~15 秒随机散步、跳跃、挥手，碰到屏幕边缘自动掉头 |
-| 气泡说话 | 头顶弹出圆角气泡，文案从语料池随机抽取，淡入淡出 |
-| 健康提醒 | 久坐 / 喝水 / 深夜关怀 / 摸鱼检测，四项独立开关（见下表） |
-| 系统哨兵 | CPU 红温 / 内存压力 / 电量 / 磁盘空间，异常时才冒气泡，五项独立开关（见下表） |
-| 抛掷物理 | 拖住快速甩出，抛物线飞行、撞墙落地反弹；摔狠了会喊「请轻拿轻放一二大王！」 |
-| 零权限 | 不申请辅助功能、不申请屏幕录制，全部使用公开系统 API |
+| 方式 | 适合场景 | 启动/安装 | 主要功能 |
+| --- | --- | --- | --- |
+| **Windows 独立桌宠** | 想要可拖拽、可抛掷、会弹出提醒的桌面小组件 | 构建并运行 `YierPet.Windows.exe` | 交互、随机活动、健康提醒、系统状态提醒 |
+| **Codex 原生宠物** | 希望一二出现在 Codex 的“宠物”设置中 | 复制宠物包到 Codex 目录并选择 | Codex 控制的标准动画状态与朝向显示 |
 
-## 动作图鉴
+两者不是同一个程序：**Windows 独立桌宠不会自动与 Codex 联动**。要在 Codex 中使用一二，请按“在 Codex 中使用一二”的步骤安装原生宠物包。
 
-| | | |
-| :---: | :---: | :---: |
-| ![idle](docs/previews/idle.gif) | ![running-right](docs/previews/running-right.gif) | ![running-left](docs/previews/running-left.gif) |
-| 待机 | 向右跑 | 向左跑 |
-| ![waving](docs/previews/waving.gif) | ![jumping](docs/previews/jumping.gif) | ![failed](docs/previews/failed.gif) |
-| 挥手 | 跳跃 | 沮丧 |
-| ![waiting](docs/previews/waiting.gif) | ![running](docs/previews/running.gif) | ![review](docs/previews/review.gif) |
-| 等待 | 工作中 | 审阅 |
+## Windows 独立桌宠
 
-## 健康提醒
+### 环境要求
 
-| 提醒 | 触发条件 | 一二的反应 |
-| --- | --- | --- |
-| 久坐提醒 | 连续活跃满 1 小时（离开电脑 5 分钟自动清零） | 走到屏幕底部中央蹦跶拦你 +「坐了一个小时啦，起来动动嘛！」 |
-| 喝水提醒 | 每 30 分钟（人不在时不计时） | 举手示意 +「咕噜咕噜～该喝水啦！」 |
-| 深夜关怀 | 23 点后进入睡意模式（待机动画变慢像打瞌睡），你还在干活则每 30 分钟关怀一次 | 担心地看你 +「熬夜会秃的！明天再做也来得及～」 |
-| 摸鱼检测 | 视频类 App（B站 / 腾讯视频 / 爱奇艺 / IINA / VLC 等）连续前台 30 分钟 | 盯着你 +「都摸鱼半小时了哦……我可什么都没看见」 |
+- Windows 10 或 Windows 11（x64）
+- .NET 8 SDK（从源码构建时需要）
 
-- 判断「你是否在电脑前」使用系统输入空闲时间（`CGEventSource`），前台 App 检测使用 `NSWorkspace`，**均无需任何权限**
-- 提醒有优先级和 90 秒全局间隔，不会连环轰炸
-- 每项提醒可在右键菜单独立开关，设置自动保存
+### 正确启动
 
-## 系统哨兵
+克隆本仓库后，在仓库根目录执行：
 
-平时安静不打扰，只在指标异常时才提醒，全部使用原生系统 API（mach / IOKit / FileManager），不起子进程、不要权限：
+~~~powershell
+git clone https://github.com/sduwcdd/YierPet-Windows.git
+cd YierPet-Windows
+.\windows\build-windows.ps1
+& .\windows\YierPet.Windows\bin\Release\net8.0-windows\YierPet.Windows.exe
+~~~
 
-| 哨兵 | 触发条件 | 一二的反应 |
-| --- | --- | --- |
-| CPU 红温 | 占用持续 90 秒 ≥ 85%（每 10 分钟最多提醒一次） | **整只渐渐烧红** + 惊慌乱跑 +「好烫好烫！CPU 都 97% 了，是谁在偷偷挖矿！」，降下来后自动退烧 |
-| 内存压力 | 系统内存压力达到 critical（事件驱动，非轮询） | 等待动作 +「内存要被挤爆啦，关几个 App 让我喘口气～」 |
-| 电量提醒 | 电量 ≤ 20% 且未插电（降到 10% 再催一次）；台式机无电池自动跳过 | 沮丧趴下 +「肚子饿了……电池只有 18% 了，插电插电！」 |
-| 充满提醒 | 插电且电量 ≥ 98%（每次插电只提醒一次） | 开心挥手 +「吃饱啦～电池充满了，可以拔线啦！」 |
-| 磁盘空间 | 根分区剩余 < 10%（每 6 小时最多提醒一次） | 审阅动作 +「磁盘只剩 9GB 空位啦，该大扫除了！」 |
+也可以一条命令构建并运行：
 
-红温效果说明：CPU 超过 60% 开始渐渐发红，越高越红（红色叠加层按精灵透明通道蒙版，只染身体不染背景），降回 60% 以下自动恢复。
+~~~powershell
+.\windows\build-windows.ps1 -Run
+~~~
 
-## 安装运行
+程序默认出现在主屏幕工作区的右下角附近。它没有任务栏图标；请对桌宠右键并选择“退出”来关闭。
 
-**环境要求**：macOS 13+，安装过 Xcode Command Line Tools（没有的话终端执行 `xcode-select --install`，几分钟装完）。
+若构建提示 `YierPet.Windows.exe` 正被占用，说明此前启动的桌宠尚未退出。请先右键现有桌宠并选择“退出”，再重新构建。若桌宠不可见但确认仍在运行，可在 PowerShell 中仅结束该进程后重试：
 
-```bash
-git clone https://github.com/xiaojieshi-bot/YierPet.git
-cd YierPet
-./build.sh
-open build/YierPet.app
-```
+~~~powershell
+Get-Process YierPet.Windows -ErrorAction SilentlyContinue | Stop-Process
+~~~
 
-不需要完整 Xcode，不需要任何第三方依赖。
+### 生成可分发版本
 
-> 开机自启：把 `build/YierPet.app` 添加到 系统设置 → 通用 → 登录项。
+下面的命令生成面向 `win-x64` 的单文件自包含版本，结果位于 `windows\artifacts\win-x64\YierPet.Windows.exe`：
 
-## 使用说明
+~~~powershell
+.\windows\build-windows.ps1 -Publish
+~~~
+
+自包含发布在构建时需要下载 Windows 运行时组件；发布后的目标电脑无需安装 .NET。
+
+### 操作方式
 
 | 操作 | 效果 |
 | --- | --- |
-| 拖拽 | 抓着走，宠物朝拖动方向做跑步动画 |
-| 快速甩出 | 抛掷！重力 + 反弹的物理飞行，摔狠了会生气 |
-| 单击 | 挥手打招呼 |
-| 右键 | 菜单：切换 9 种动作 / 暂停随机行为 / 提醒设置 / 退出 |
-| 按住 Option + 右键 | 隐藏的「测试提醒」菜单，立即触发任意提醒看效果 |
+| 左键单击 | 挥手打招呼 |
+| 左键拖拽 | 移动桌宠，并按拖动方向播放奔跑动画 |
+| 快速甩出 | 触发重力、撞墙/落地反弹和受击反馈 |
+| 右键 | 打开菜单：切换动作、暂停随机行为、设置提醒、退出 |
+| Alt + 右键 | 在菜单中显示“测试提醒”，可立即预览每种提醒 |
 
-## 自定义
+### Windows 版功能
 
-**换台词**：所有气泡文案在 [`ReminderCenter.swift`](Sources/YierPet/ReminderCenter.swift) 的 `messages` 语料池中，每类提醒 4 条随机抽取，直接加减即可。
+| 类别 | 已实现功能 |
+| --- | --- |
+| 显示与动画 | 透明无边框、始终置顶、无任务栏图标；待机、左右跑、挥手、跳跃、沮丧、等待、工作中、审阅共 9 种动作 |
+| 自主行为 | 每 7–15 秒随机散步、跳跃、挥手、审阅或等待；走到屏幕边缘会折返 |
+| 交互 | 拖拽、抛掷物理、单击挥手、右键动作菜单 |
+| 健康提醒 | 久坐、喝水、深夜关怀，以及已知视频播放器持续前台时的“摸鱼检测” |
+| 系统提醒 | CPU 高占用、内存使用率过高、电量低/充满、系统盘空间不足 |
+| 设置保存 | 随机行为和各类提醒开关保存在 `%APPDATA%\YierPet-Windows\settings.json` |
 
-**调手感**：常用参数都在 [`PetController.swift`](Sources/YierPet/PetController.swift) 顶部：
+独立版只使用本机输入空闲时长、前台进程名和系统状态；不会录屏，也不会读取浏览器页面内容。因此“摸鱼检测”只识别已知的视频播放器进程（如 VLC、PotPlayer、腾讯视频、爱奇艺、哔哩哔哩），不会判断浏览器中的具体网站。
 
-| 参数 | 默认值 | 含义 |
-| --- | --- | --- |
-| `petSize` | 154 x 166 | 宠物尺寸 |
-| `throwSpeedThreshold` | 550 pt/s | 甩多快算「抛掷」 |
-| `gravity` | -3000 pt/s² | 重力 |
-| `floorBounce` / `wallBounce` | 0.45 / 0.6 | 落地 / 撞墙反弹系数 |
+## 在 Codex 中使用一二
 
-**换形象**：替换 `Sources/YierPet/Resources/spritesheet.webp`。图集契约为 8 列 x 9 行（每格 192 x 208，总图 1536 x 1872），行序：idle、running-right、running-left、waving、jumping、failed、waiting、running、review，未使用格保持透明。各状态帧数与帧时长定义在 [`SpriteSheet.swift`](Sources/YierPet/SpriteSheet.swift)。
+### 1. 安装宠物包
 
-**改提醒节奏**：阈值都在 [`ReminderCenter.swift`](Sources/YierPet/ReminderCenter.swift) 顶部（久坐 1h、喝水 30min、摸鱼 30min、CPU 85%、磁盘 10% 等）。
+将仓库中的整个 [`codex-pet/yier`](codex-pet/yier) 文件夹复制到 Codex 的自定义宠物目录，最终目录必须同时包含以下文件：
+
+~~~text
+C:\Users\<你的 Windows 用户名>\.codex\pets\yier\
+├── pet.json
+└── spritesheet.png
+~~~
+
+本机当前应使用的实际路径是：
+
+~~~text
+C:\Users\86195\.codex\pets\yier\
+~~~
+
+PowerShell 示例：
+
+~~~powershell
+# 示例：当前机器的实际目标目录
+$destination = 'C:\Users\86195\.codex\pets\yier'
+New-Item -ItemType Directory -Force $destination | Out-Null
+Copy-Item .\codex-pet\yier\pet.json, .\codex-pet\yier\spritesheet.png -Destination $destination -Force
+~~~
+
+### 2. 在设置中选择
+
+1. 打开 Codex Desktop 的“设置 → 宠物”。
+2. 滚动到“自定义宠物”区域。
+3. 找到“一二”，点击“选择”。
+4. 若刚复制后未出现，先切换到其他设置页再返回；仍未出现时，完全退出并重新打开 Codex。
+
+### Codex 中的功能边界
+
+Codex 包是符合 v2 规格的原生宠物资源：图集为透明 `1536 × 2288` 像素、8 列 × 11 行，且含 Codex 所需的清单文件。选择后，**Codex 负责**调用标准动作与朝向行为，一二无需另行运行 `.exe`。
+
+| 在 Codex 中可用 | 不属于 Codex 宠物包的功能 |
+| --- | --- |
+| Codex 的宠物选择、显示、标准动画状态和看向不同方向的行为 | 鼠标拖拽、抛掷物理、右键菜单 |
+| 一二的待机、奔跑、挥手、跳跃、沮丧、等待、工作中、审阅等动作素材 | 久坐、喝水、深夜、视频播放器、CPU/内存/电量/磁盘提醒 |
+| 由 Codex 自身决定何时切换宠物状态 | Windows 独立版的本地设置文件与提醒开关 |
+
+当前包复用了原始九种动作来填充 v2 的 16 个方向帧，因此可以被 Codex 正确识别并随方向切换；但上下、斜向并非单独绘制的专用姿势，视觉变化会少于 Codex 内置宠物。Codex 对宠物状态的具体触发时机由应用本身控制，宠物包只提供图像和元数据。
 
 ## 项目结构
 
-```
+~~~text
 YierPet/
-├── Sources/YierPet/
-│   ├── main.swift            # 应用入口（accessory 模式，无 Dock 图标）
-│   ├── SpriteSheet.swift     # 图集切帧 + 9 状态帧时长定义
-│   ├── PetController.swift   # 动画状态机、拖拽、散步、抛掷物理、菜单
-│   ├── SpeechBubble.swift    # 头顶气泡（子窗口，自动跟随）
-│   ├── ActivityMonitor.swift # 输入空闲时间 + 前台 App 检测
-│   ├── SystemMonitor.swift   # CPU / 内存压力 / 电池 / 磁盘采集（纯原生 API）
-│   ├── ReminderCenter.swift  # 健康提醒 + 系统哨兵调度 + 文案语料池
-│   └── Resources/spritesheet.webp
-├── docs/                     # README 素材（动图预览、总览图）
-├── Info.plist                # App 元数据模板
-├── build.sh                  # 一键构建脚本
-└── Package.swift             # SwiftPM 描述（可选，build.sh 不依赖它）
-```
+├── windows/
+│   ├── build-windows.ps1             # Windows 构建、运行与发布脚本
+│   └── YierPet.Windows/              # .NET 8 WPF 独立桌宠
+├── codex-pet/
+│   └── yier/                         # Codex v2 原生宠物包
+│       ├── pet.json
+│       └── spritesheet.png
+├── docs/                             # 动作预览素材
+└── Sources/                          # 上游 macOS Swift 实现（历史参考）
+~~~
 
 ## 常见问题
 
-**Q: 为什么 Dock 和程序坞里看不到它？**
-设计如此（`LSUIElement`），桌宠不该占一个 Dock 位。退出请右键宠物 → 退出。
+**Q：Windows 桌宠和 Codex 会自动联动吗？**`n`n不会。Windows 桌宠是独立的 WPF 程序；Codex 联动使用 `codex-pet/yier` 中的原生宠物包。
 
-**Q: 需要给什么系统权限吗？**
-不需要。久坐/摸鱼检测用的都是公开 API，不申请辅助功能、屏幕录制等任何权限。
+**Q：为什么 Windows 桌宠启动后任务栏里没有图标？**`n`n这是设计行为。它以桌宠形式浮在屏幕上，请在桌宠上右键选择“退出”。
 
-**Q: 双击 app 提示"无法打开"？**
-如果你是直接下载别人构建好的 `.app`（而非本地 `./build.sh` 构建），macOS Gatekeeper 会拦截未签名应用：右键 app → 打开 → 再点打开即可。本地构建的没有这个问题。
+**Q：Codex 设置里看不到“一二”？**`n`n检查目录是否精确为 `.codex\pets\yier`，且其中同时存在 `pet.json` 和 `spritesheet.png`；然后返回设置页刷新，必要时重启 Codex。
 
-**Q: 摸鱼名单里没有我用的 App？**
-在 [`ActivityMonitor.swift`](Sources/YierPet/ActivityMonitor.swift) 的 `slackBundleIDs` 里加上它的 bundle id（终端 `osascript -e 'id of app "App名字"'` 可查询）。
+**Q：需要授予录屏或辅助功能权限吗？**`n`n不需要。Windows 独立版使用公开 Windows API 获取输入空闲时间、前台进程名与系统状态；Codex 包本身只是本地图片和清单文件。
 
-## 形象来源
+## 形象来源与许可
 
-宠物形象由黄小B创作，取一张静态图经 ChatGPT 生成 9 行动画帧总表，再用本仓库配套流水线切分、镜像、校验、合成为精灵图集（基于 [openai/skills](https://github.com/openai/skills) 的 hatch-pet 图集契约）。
-
-## 许可证
+宠物形象由黄小B创作。Windows 实现和 Codex v2 宠物包基于上游 [xiaojieshi-bot/YierPet](https://github.com/xiaojieshi-bot/YierPet) 的素材与动作设计进行移植和适配。
 
 [MIT](LICENSE)
