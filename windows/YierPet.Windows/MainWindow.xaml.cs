@@ -32,7 +32,7 @@ public partial class MainWindow : Window
     private int _remainingLoops = -1;
     private bool _dragging;
     private bool _moved;
-    private Point _dragStartScreen;
+    private Point _dragStartScreenPixels;
     private Point _dragStartWindow;
     private double _walkDirection = 1;
     private Vector _throwVelocity;
@@ -170,10 +170,10 @@ public partial class MainWindow : Window
         StopWalking();
         _dragging = true;
         _moved = false;
-        _dragStartScreen = PointToScreen(e.GetPosition(this));
+        _dragStartScreenPixels = PointToScreen(e.GetPosition(this));
         _dragStartWindow = new Point(Left, Top);
         _samples.Clear();
-        RecordSample(_dragStartScreen);
+        RecordSample(_dragStartScreenPixels);
         Mouse.Capture(this);
         e.Handled = true;
     }
@@ -181,12 +181,12 @@ public partial class MainWindow : Window
     private void Window_MouseMove(object sender, MouseEventArgs e)
     {
         if (!_dragging || e.LeftButton != MouseButtonState.Pressed) return;
-        var screen = PointToScreen(e.GetPosition(this));
-        var delta = screen - _dragStartScreen;
+        var screenPixels = PointToScreen(e.GetPosition(this));
+        var delta = DeviceVectorToDips(screenPixels - _dragStartScreenPixels);
         _moved |= delta.Length > 3;
         Left = _dragStartWindow.X + delta.X;
         Top = _dragStartWindow.Y + delta.Y;
-        RecordSample(screen);
+        RecordSample(screenPixels);
         SetState(delta.X >= 0 ? PetState.RunningRight : PetState.RunningLeft);
     }
 
@@ -216,7 +216,15 @@ public partial class MainWindow : Window
         var first = _samples[0];
         var last = _samples[^1];
         var seconds = (last.At - first.At).TotalSeconds;
-        return seconds <= 0 ? new Vector() : (last.Point - first.Point) / seconds;
+        return seconds <= 0 ? new Vector() : DeviceVectorToDips(last.Point - first.Point) / seconds;
+    }
+
+    private Vector DeviceVectorToDips(Vector deviceVector)
+    {
+        var source = PresentationSource.FromVisual(this);
+        return source?.CompositionTarget is { } target
+            ? target.TransformFromDevice.Transform(deviceVector)
+            : deviceVector;
     }
 
     private void StartThrow(Vector velocity)
