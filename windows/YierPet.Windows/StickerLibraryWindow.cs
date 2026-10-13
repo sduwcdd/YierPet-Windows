@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using Microsoft.Win32;
 using System.Windows;
 using System.Windows.Automation;
 using System.Windows.Controls;
@@ -21,6 +22,7 @@ public sealed partial class StickerLibraryWindow : Window
     private StickerAsset? _selected;
     private int _page, _filterIndex, _lastFrame = -1;
     private bool _ready, _syncingFilter, _paused;
+    private bool _exporting;
     private record FilterChoice(string Title, int Count);
     private record LinkChoice(StickerInteraction Rule, string Label);
     private static readonly string[] FilterTitles = ["全部表情", "一二", "布布", "双人同框", "场景与手势", "已停用", "精选原图", "原图走路", "单人联动", "我的上传"];
@@ -84,6 +86,7 @@ public sealed partial class StickerLibraryWindow : Window
         PageText.Text = $"{_page + 1} / {pages}";
         PreviousButton.IsEnabled = _page > 0; NextButton.IsEnabled = _page + 1 < pages;
         EmptyState.Visibility = matches.Length == 0 ? Visibility.Visible : Visibility.Collapsed;
+        ExportArchiveButton.IsEnabled = matches.Length > 0 && !_exporting;
         TileScroll.Visibility = matches.Length == 0 ? Visibility.Collapsed : Visibility.Visible;
         TileScroll.ScrollToTop(); UpdateSelection(); ResizeCards();
     }
@@ -245,6 +248,41 @@ public sealed partial class StickerLibraryWindow : Window
         if (_ready) { RefreshFilters(); Refresh(); }
     }
     private void UploadClick(object sender, RoutedEventArgs e) => OpenEditor(null);
+    private async void DownloadClick(object sender, RoutedEventArgs e)
+    {
+        if (_selected is null || _exporting) return;
+        var asset = _selected;
+        try
+        {
+            string name = _library.ExportFileName(asset), extension = System.IO.Path.GetExtension(name);
+            var picker = new SaveFileDialog { Title = "下载原表情", FileName = name, DefaultExt = extension,
+                Filter = $"原表情 (*{extension})|*{extension}", AddExtension = true, OverwritePrompt = true };
+            if (picker.ShowDialog(this) != true) return;
+            await ExportAsync(() => { _library.ExportOriginal(asset, picker.FileName); return 1; });
+        }
+        catch (Exception ex) { FeedbackText.Text = "下载失败：" + ex.Message; }
+    }
+    private async void ExportArchiveClick(object sender, RoutedEventArgs e)
+    {
+        if (_exporting) return;
+        var assets = _library.Assets.Where(a => Matches(a, SearchBox.Text.Trim())).ToArray();
+        if (assets.Length == 0) return;
+        var picker = new SaveFileDialog { Title = $"导出当前筛选的 {assets.Length} 张表情", FileName = "一二布布表情合集.zip",
+            DefaultExt = ".zip", Filter = "表情合集 (*.zip)|*.zip", AddExtension = true, OverwritePrompt = true };
+        if (picker.ShowDialog(this) != true) return;
+        await ExportAsync(() => _library.ExportArchive(assets, picker.FileName));
+    }
+    private async Task ExportAsync(Func<int> export)
+    {
+        _exporting = true; IsEnabled = false; FeedbackText.Text = "正在保存原文件，请稍候…";
+        try
+        {
+            int count = await Task.Run(export);
+            FeedbackText.Text = $"已导出 {count} 张原表情，完整动画和原始格式已保留。";
+        }
+        catch (Exception ex) { FeedbackText.Text = "导出失败：" + ex.Message; }
+        finally { _exporting = false; IsEnabled = true; }
+    }
     private void EditClick(object sender, RoutedEventArgs e) { if (_selected is not null) OpenEditor(_selected); }
     private void OpenEditor(StickerAsset? asset)
     {

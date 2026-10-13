@@ -122,9 +122,10 @@
                             </Grid>
                         </Border>
                     </Grid>
-                    <Grid Grid.Row="1" Margin="1,14,0,12"><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
-                        <TextBlock x:Name="ResultsTitle" FontSize="17" FontWeight="SemiBold"/>
+                    <Grid Grid.Row="1" Margin="1,14,0,12"><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+                        <TextBlock x:Name="ResultsTitle" FontSize="17" FontWeight="SemiBold" TextTrimming="CharacterEllipsis" VerticalAlignment="Center"/>
                         <TextBlock x:Name="ResultCount" Grid.Column="1" Foreground="{StaticResource Muted}" VerticalAlignment="Center"/>
+                        <Button x:Name="ExportArchiveButton" Grid.Column="2" Content="导出筛选" Click="ExportArchiveClick" Padding="9,5" Margin="8,0,0,0" FontSize="11" ToolTip="将当前分类与搜索的全部结果导出成 ZIP，包含所有页的原文件与说明"/>
                     </Grid>
                     <Grid Grid.Row="2">
                         <ScrollViewer x:Name="TileScroll" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Padding="0,0,5,0"><WrapPanel x:Name="Tiles"/></ScrollViewer>
@@ -159,6 +160,7 @@
                         <TextBlock x:Name="SelectionMeta" Foreground="{StaticResource Muted}" FontSize="11" Margin="0,5,0,10" TextWrapping="Wrap"/>
                         <Button x:Name="PlayButton" Style="{StaticResource PrimaryButton}" Content="在桌面播放" Click="PlayClick"/>
                         <Button Content="编辑资料 / 关联关系" Click="EditClick" Margin="0,8,0,0"/>
+                        <Button x:Name="DownloadButton" Content="↓ 下载原文件" Click="DownloadClick" Margin="0,8,0,0" ToolTip="保存原始 GIF / PNG / JPG；保留完整动画，不是预览缩略图"/>
                         <TextBlock Text="左右位置 / 入场要求" Style="{StaticResource SectionLabel}"/>
                         <TextBlock x:Name="PositionText" Style="{StaticResource BodyText}" Foreground="#80563F"/>
                         <TextBlock Text="TA 在做什么" Style="{StaticResource SectionLabel}"/>

@@ -1,4 +1,5 @@
 using System.IO;
+using System.Security.Cryptography;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
@@ -85,6 +86,9 @@ public static class StickerImporter
             }
             asset.Pages = pages.ToArray();
             File.Copy(file, Path.Combine(directory, gif ? "original.gif" : "original.png"));
+            asset.Original = $"user/{id}/original.{(gif ? "gif" : "png")}";
+            using var original = File.OpenRead(Path.Combine(directory, gif ? "original.gif" : "original.png"));
+            asset.OriginalSha256 = Convert.ToHexString(SHA256.HashData(original)).ToLowerInvariant();
             return asset;
         }
         catch { Directory.Delete(directory, true); throw; }

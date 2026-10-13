@@ -1,5 +1,5 @@
 ﻿[CmdletBinding()]
-param([string]$Version = '0.0.1')
+param([string]$Version = '0.0.2')
 
 $ErrorActionPreference = 'Stop'
 if ($Version -notmatch '^\d+\.\d+\.\d+$') { throw 'Version must use major.minor.patch.' }
@@ -29,7 +29,8 @@ try {
         $process.WaitForExit()
         throw 'Release verification timed out.'
     }
-    if ($process.ExitCode -ne 0 -or -not (Test-Path -LiteralPath $testReport)) { throw 'Release executable failed verification.' }
+    if (Test-Path -LiteralPath $testReport) { Copy-Item -LiteralPath $testReport -Destination (Join-Path $output 'verification.json') -Force }
+    if ($process.ExitCode -ne 0 -or -not (Test-Path -LiteralPath $testReport)) { throw 'Release executable failed verification; see verification.json in the output folder.' }
     $result = Get-Content -LiteralPath $testReport -Raw | ConvertFrom-Json
     if (-not $result.success -or -not $result.bundledFilesExtracted) { throw 'Bundled content did not pass verification.' }
     Copy-Item -LiteralPath $testReport -Destination (Join-Path $output 'verification.json') -Force

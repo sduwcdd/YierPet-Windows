@@ -8,9 +8,9 @@
 
 ## 下载并开始使用
 
-**[下载 v0.0.1 完整 EXE（Windows x64）](https://github.com/sduwcdd/YierPet-Windows/releases/download/v0.0.1/YierPet-Windows-v0.0.1-win-x64.exe)** · [Release 页面](https://github.com/sduwcdd/YierPet-Windows/releases/tag/v0.0.1)
+**[下载 v0.0.2 完整 EXE（Windows x64）](https://github.com/sduwcdd/YierPet-Windows/releases/download/v0.0.2/YierPet-Windows-v0.0.2-win-x64.exe)** · [Release 页面](https://github.com/sduwcdd/YierPet-Windows/releases/tag/v0.0.2)
 
-1. 下载 `YierPet-Windows-v0.0.1-win-x64.exe`，放到准备长期保存的位置。
+1. 下载 `YierPet-Windows-v0.0.2-win-x64.exe`，放到准备长期保存的位置。
 2. 双击运行。一二和布布会出现在主屏幕右下角附近。
 3. **在角色身上右键**，打开“表情与互动 · 上传 / 编辑”，即可搜索、预览、播放或上传表情。
 4. 结束使用时，在角色身上右键 → **退出**。
@@ -25,6 +25,7 @@
 - **522 张内置原表情**：微信合集 492 项、GetStickerPack 30 项；包含 GIF 和静态原图，支持按编号、动作及回应说明搜索。
 - **原图走路**：一二使用 `wx-0150`，布布使用 `wx-0183`；处理 GIF 循环造成的横向回跳，右行时镜像。
 - **225 条互动规则**：其中 114 组由两个单人表情搭配。固定左右的组合先走到指定位置；无左右要求的组合保持原顺序；追逐时布布在前。
+- **下载原表情**：单张保存 GIF / PNG / JPG，或把当前筛选的所有表情导出为 ZIP，附动作说明、来源和关联配置。
 - **自定义表情与互动**：上传 GIF / PNG、填写说明、设置多个联动候选、触发方、时长、左右关系和菜单入口。
 - **鼠标交互**：拖拽、抛掷、单击招呼；可开启布布跟随一二。
 - **健康提醒**：久坐、喝水、深夜和已知视频播放器前台停留提醒，可分别关闭。没有 CPU、内存、电量、磁盘监测功能。
@@ -53,6 +54,10 @@
 | 和对方互动 | 6 组精选互动 | 在关联页逐条选择菜单入口 |
 
 双人同框或场景表情可在资料页直接设置三个栏目。**菜单入口和自动触发是不同设置**：取消菜单入口不会停用关联；停用关联才会阻止触发。
+
+### 下载原表情
+
+选择表情 → **↓ 下载原文件**。需要多张时，先分类或搜索，再点击 **导出筛选**；导出范围包含所有页的匹配项。GIF 保留完整动画，自己上传的表情也能下载。ZIP 可解压保存，当前不支持一键导回整包配置。
 
 ### 上传和搭配自己的表情
 
@@ -94,8 +99,8 @@
 **想直接打开表情库？** 给 EXE 添加 `--library` 启动参数即可；请先退出已有实例。
 
 ```powershell
-& .\YierPet-Windows-v0.0.1-win-x64.exe --library
-Get-FileHash .\YierPet-Windows-v0.0.1-win-x64.exe -Algorithm SHA256
+& .\YierPet-Windows-v0.0.2-win-x64.exe --library
+Get-FileHash .\YierPet-Windows-v0.0.2-win-x64.exe -Algorithm SHA256
 ```
 
 ## 从源码构建
@@ -108,13 +113,13 @@ cd YierPet-Windows
 .\windows\build-windows.ps1 -Run
 ```
 
-构建 `v0.0.1` 完整单文件 EXE（自动验证包含的素材）：
+构建 `v0.0.2` 完整单文件 EXE（自动验证包含的素材）：
 
 ```powershell
-.\windows\publish-release.ps1 -Version 0.0.1
+.\windows\publish-release.ps1 -Version 0.0.2
 ```
 
-输出在 `windows/artifacts/release-0.0.1/`。若要从源码安装到当前用户目录并创建桌面、开机启动快捷方式，可运行 `windows/install-windows.ps1`；普通用户直接使用 Release EXE 即可。
+输出在 `windows/artifacts/release-0.0.2/`。若要从源码安装到当前用户目录并创建桌面、开机启动快捷方式，可运行 `windows/install-windows.ps1`；普通用户直接使用 Release EXE 即可。
 
 ```text
 windows/YierPet.Windows/   WPF 应用、行为协调、表情库和编辑器

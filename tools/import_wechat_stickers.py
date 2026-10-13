@@ -66,6 +66,7 @@ def import_one(spec):
 
 
 def contact_sheets(assets):
+    prefix = assets[0]['id'].split('-')[0] if assets else 'wx'
     for offset in range(0, len(assets), 60):
         group = assets[offset:offset + 60]
         canvas = Image.new('RGB', (1200, math.ceil(len(group) / 10) * 145), '#e5e9ed')
@@ -76,14 +77,26 @@ def contact_sheets(assets):
                 im.thumbnail((116, 118))
                 canvas.paste(im, (x + (120-im.width)//2, y), im)
             draw.text((x+8,y+120), asset['id'], fill='#000000')
-        canvas.save(OUT / 'review' / f'contact-{offset//60+1:02}.jpg', quality=92)
+        canvas.save(OUT / 'review' / f'{prefix}-contact-{offset//60+1:02}.jpg', quality=92)
 
 
 def main():
+    global URL
     parser = argparse.ArgumentParser()
     parser.add_argument('--html', type=Path)
     parser.add_argument('--workers', type=int, default=6)
+    parser.add_argument('--url', default=URL)
+    parser.add_argument('--prefix', default='wx')
+    parser.add_argument('--catalog', default='catalog.json')
+    parser.add_argument('--source-label', default='微信合集')
     args = parser.parse_args()
+    if not re.fullmatch(r'[a-z][a-z0-9]{1,12}', args.prefix):
+        parser.error('Prefix must contain 2-13 lowercase letters/digits.')
+    if not re.fullmatch(r'catalog(?:\.[a-z0-9-]+)?\.json', args.catalog):
+        parser.error('Catalog must use catalog.json or catalog.<pack>.json.')
+    if not re.fullmatch(r'https://mp\.weixin\.qq\.com/s/[A-Za-z0-9_-]+', args.url):
+        parser.error('Expected a public mp.weixin.qq.com article URL.')
+    URL = args.url
     for directory in ('originals','compiled','posters','review'):
         (OUT / directory).mkdir(parents=True, exist_ok=True)
     html = args.html.read_text(encoding='utf-8-sig') if args.html else fetch(URL).decode('utf-8')
@@ -97,7 +110,15 @@ def main():
         url = urldefrag(image.get('data-src') or image.get('src') or '')[0]
         if not re.match(r'https://mmbiz\.qpic\.cn/', url):
             raise RuntimeError(f'Unexpected image host at {n}: {url[:100]}')
-        specs.append((f'wx-{n:04}', url, image.get('data-type')))
+        specs.append((f'{args.prefix}-{n:04}', url, image.get('data-type')))
+    if not specs:
+        raise RuntimeError('Article body has no images; refusing an empty import')
+    requested_ids = {item[0] for item in specs}
+    for path in OUT.glob('catalog*.json'):
+        if path.name != args.catalog:
+            existing = json.loads(path.read_text(encoding='utf-8'))['assets']
+            if requested_ids & {a['id'] for a in existing}:
+                raise RuntimeError('Prefix collides with an existing pack; choose another prefix')
     assets, errors = [], []
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         tasks = {pool.submit(import_one, s):s[0] for s in specs}
@@ -109,11 +130,16 @@ def main():
             if n % 40 == 0 or n == len(tasks):
                 print(f'{n}/{len(tasks)} completed; failures={len(errors)}', flush=True)
     assets.sort(key=lambda a:a['id'])
+    for asset in assets:
+        asset.update(sourceLabel=args.source_label, sourcePage=URL)
     title = soup.select_one('#activity-name')
     catalog = {'schemaVersion':1,'sourceArticle':URL,'articleTitle':title.get_text(strip=True) if title else '',
                'bodyImageCount':len(images),'assets':assets,'errors':errors,
                'processing':'Original bytes and coalesced RGBA pixels preserved; no AI redraw, no background removal.'}
-    (OUT / 'catalog.json').write_text(json.dumps(catalog,ensure_ascii=False,indent=2),encoding='utf-8')
+    if errors:
+        # Keep an already usable catalog intact if a refresh download is incomplete.
+        raise RuntimeError(f'{len(errors)} downloads failed; catalog not replaced: {errors[:3]}')
+    (OUT / args.catalog).write_text(json.dumps(catalog,ensure_ascii=False,indent=2),encoding='utf-8')
     contact_sheets(assets)
     print(json.dumps({'imported':len(assets),'failed':len(errors),'uniqueSha256':len({a['sha256'] for a in assets}),
                       'totalFrames':sum(a['frameCount'] for a in assets),'sourceBytes':sum(a['bytes'] for a in assets)}),flush=True)

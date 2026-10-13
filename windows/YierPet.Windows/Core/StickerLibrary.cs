@@ -1,5 +1,6 @@
 using System.IO;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Windows;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -22,6 +23,9 @@ public sealed class StickerAsset
     public bool Reviewed { get; set; }
     public bool Enabled { get; set; } = true;
     public string Poster { get; set; } = "";
+    public string Original { get; set; } = "";
+    [JsonPropertyName("sha256")]
+    public string OriginalSha256 { get; set; } = "";
     public string SourceUrl { get; set; } = "";
     public string SourceLabel { get; set; } = "微信合集";
     public bool IsLocomotion { get; set; }
@@ -144,6 +148,9 @@ public sealed partial class StickerLibrary
         _semantics = (File.Exists(semanticPath)
             ? JsonSerializer.Deserialize<SemanticCatalog>(File.ReadAllText(semanticPath), Json)?.Entries ?? []
             : []).ToDictionary(s => s.Id);
+        foreach (var file in Directory.GetFiles(_root, "semantics.*.json").OrderBy(p => p))
+            foreach (var entry in JsonSerializer.Deserialize<SemanticCatalog>(File.ReadAllText(file), Json)?.Entries ?? [])
+                _semantics.Add(entry.Id, entry);
         ApplyUserDescriptions();
         foreach (var a in Assets)
         {

@@ -1,4 +1,6 @@
 using System.IO;
+using System.IO.Compression;
+using System.Security.Cryptography;
 using System.Text.Json;
 
 namespace YierPet.Windows.Core;
@@ -15,8 +17,8 @@ internal static class ReleaseVerifier
             var settings = new AppSettings { RandomBehaviourEnabled = false, AutomaticInteractionsEnabled = false };
             var library = new StickerLibrary(settings, userRoot: temporary);
             void Check(bool condition, string message) { if (!condition) throw new InvalidDataException(message); }
-            Check(library.Assets.Count == 522, "Built-in asset count differs from v0.0.1.");
-            Check(library.Rules.Interactions.Count == 225, "Interaction count differs from v0.0.1.");
+            Check(library.Assets.Count >= 522, "Built-in base assets are missing.");
+            Check(library.Rules.Interactions.Count >= 225, "Built-in base interactions are missing.");
             foreach (var character in Enum.GetValues<PetCharacter>())
                 Check(library.Baseline(character).PixelWidth > 0, "Missing baseline.");
             foreach (var asset in library.Assets)
@@ -24,6 +26,10 @@ internal static class ReleaseVerifier
                 Check(library.Poster(asset).PixelWidth > 0, "Missing poster: " + asset.Id);
                 Check(library.Frame(asset, 0).PixelWidth == asset.Width, "Invalid first frame: " + asset.Id);
                 Check(library.Frame(asset, asset.FrameCount - 1).PixelHeight == asset.Height, "Invalid last frame: " + asset.Id);
+                string exported = Path.Combine(temporary, library.ExportFileName(asset));
+                library.ExportOriginal(asset, exported);
+                using var file = File.OpenRead(exported);
+                Check(Convert.ToHexString(SHA256.HashData(file)).Equals(asset.OriginalSha256, StringComparison.OrdinalIgnoreCase), "Export hash mismatch: " + asset.Id);
             }
             Check(library.MenuActions(PetCharacter.Yier).Count() == 5 && library.MenuActions(PetCharacter.Bubu).Count() == 5, "Invalid action menu.");
             Check(library.MenuInteractions(false).Count() == 6 && library.MenuInteractions(true).Count() == 6, "Invalid interaction menus.");
@@ -40,10 +46,45 @@ internal static class ReleaseVerifier
             Check(reloaded.Find(item.Id)!.Name == edit.Name, "User metadata did not persist.");
             var untouched = new StickerLibrary(settings, userRoot: Path.Combine(temporary, "untouched"));
             Check(untouched.Find(item.Id)!.Name != edit.Name, "Built-in content was modified.");
+            string archivePath = Path.Combine(temporary, "all-originals.zip");
+            Check(library.ExportArchive(library.Assets, archivePath) == library.Assets.Count, "Batch export count mismatch.");
+            using (var archive = ZipFile.OpenRead(archivePath))
+            {
+                Check(archive.Entries.Count == library.Assets.Count + 2, "Batch export entries mismatch.");
+                Check(archive.GetEntry("manifest.json") is not null, "Batch export description missing.");
+                foreach (var asset in library.Assets)
+                {
+                    var entry = archive.GetEntry("originals/" + library.ExportFileName(asset));
+                    Check(entry is not null, "Batch export file missing: " + asset.Id);
+                    using var stream = entry!.Open();
+                    Check(Convert.ToHexString(SHA256.HashData(stream)).Equals(asset.OriginalSha256, StringComparison.OrdinalIgnoreCase), "Batch export hash mismatch: " + asset.Id);
+                }
+            }
+            var bad = library.Find("wx-0001")!;
+            string expectedHash = bad.OriginalSha256, protectedFile = Path.Combine(temporary, "keep.gif");
+            File.WriteAllBytes(protectedFile, [1, 2, 3]);
+            try
+            {
+                bad.OriginalSha256 = new string('0', 64);
+                bool rejected = false;
+                try { library.ExportOriginal(bad, protectedFile); } catch (InvalidDataException) { rejected = true; }
+                Check(rejected && File.ReadAllBytes(protectedFile).SequenceEqual(new byte[] { 1, 2, 3 }), "Failed export overwrote an existing file.");
+            }
+            finally { bad.OriginalSha256 = expectedHash; }
+            // Imported and pre-export-version user data must also retain downloadable originals.
+            string png = Path.Combine(temporary, "input.png");
+            library.ExportOriginal(library.Find("gsp-0001")!, png);
+            var upload = StickerImporter.Import(png, temporary); upload.Role = "bubu";
+            library.SaveAsset(upload, new StickerEdit { Name = "Upload export check" }, isNew: true);
+            library.ExportOriginal(upload, Path.Combine(temporary, "new-upload.png"));
+            upload.Original = ""; upload.OriginalSha256 = "";
+            library.ExportOriginal(upload, Path.Combine(temporary, "legacy-upload.png"));
+            Check(File.ReadAllBytes(png).SequenceEqual(File.ReadAllBytes(Path.Combine(temporary, "legacy-upload.png"))), "Legacy upload export differs.");
             File.WriteAllText(reportPath, JsonSerializer.Serialize(new
             {
-                success = true, version = "0.0.1", assets = library.Assets.Count,
-                interactions = library.Rules.Interactions.Count, sampledFrames = library.Assets.Count * 2,
+                success = true, version = typeof(ReleaseVerifier).Assembly.GetName().Version?.ToString(3), assets = untouched.Assets.Count,
+                interactions = library.Rules.Interactions.Count, sampledFrames = untouched.Assets.Count * 2,
+                exportedOriginals = untouched.Assets.Count, batchExport = true, userUploadExport = true,
                 userDataIsolated = true,
                 bundledFilesExtracted = !string.Equals(Path.TrimEndingDirectorySeparator(AppContext.BaseDirectory),
                     Path.GetDirectoryName(Environment.ProcessPath), StringComparison.OrdinalIgnoreCase)

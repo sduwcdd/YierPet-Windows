@@ -74,7 +74,7 @@ def main():
                 require(set(rule.get(key, [])) <= set(ids), f"Invalid mirror: {ident}")
     for role, mapping in states.items():
         require(all(key in by_id and by_id[key]["role"] == role for key in mapping.values()), f"Invalid state mapping: {role}")
-    semantics = read(ROOT / "semantics.json")["entries"]
+    semantics = [item for path in sorted(ROOT.glob("semantics*.json")) for item in read(path)["entries"]]
     require(len(semantics) == len(by_id) and {item["id"] for item in semantics} == set(by_id), "Semantic coverage mismatch")
     for item in semantics:
         require(all(item.get(key, "").strip() for key in ("observedAction", "partnerPossibility", "positionNote")), f"Missing description: {item['id']}")
