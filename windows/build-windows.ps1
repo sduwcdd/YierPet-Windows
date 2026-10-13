@@ -16,17 +16,7 @@ dotnet build $project -c Release
 if ($LASTEXITCODE -ne 0) { throw "构建失败，dotnet 退出码：$LASTEXITCODE" }
 
 if ($Publish) {
-    $output = Join-Path $PSScriptRoot 'artifacts\win-x64'
-    $publishArgs = @(
-        'publish', $project, '-c', 'Release', '-r', 'win-x64',
-        '--self-contained', 'true',
-        '-p:PublishSingleFile=true',
-        '-p:IncludeNativeLibrariesForSelfExtract=true',
-        '-o', $output
-    )
-    & dotnet @publishArgs
-    if ($LASTEXITCODE -ne 0) { throw "发布失败，dotnet 退出码：$LASTEXITCODE" }
-    Write-Host "发布完成：$output"
+    & (Join-Path $PSScriptRoot 'publish-release.ps1') -Version '0.0.1'
 }
 
 if ($Run) {

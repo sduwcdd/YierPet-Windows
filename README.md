@@ -1,187 +1,133 @@
-# YierPet 一二桌宠（Windows + Codex）
+# 一二和布布 · Windows 桌宠
 
-这是「一二」桌宠的 Windows 移植版，也提供可由 **Codex Desktop** 直接加载的原生自定义宠物包。
+<img src="windows/YierPet.Windows/Assets/app-icon.png" alt="一二和布布" width="180">
 
-Windows 版现已加入布布：两只独立活动，支持跟随、招呼、专用抱抱/依偎动画。使用方法见 [Windows 双角色说明](windows/README.md#双角色互动)。本次变化不涉及 Codex 原生宠物包。
+让一二和布布在桌面上独立活动、走路、播放表情，也能按关联规则靠近、交换站位、一起互动。你可以上传自己的 GIF / PNG，填写动作说明，自由配置搭配和右键菜单。
 
-支持上传 GIF / PNG、编辑动作说明、配置多个联动候选与左右站位，并选择右键菜单入口。见 [表情编辑使用说明](docs/user-sticker-library.md) 和 [开发与目录说明](docs/development.md)。
+本仓库专注于 **Windows 桌面应用**，使用 .NET 8 / WPF 开发。
 
-已加入用户指定公众号文章的 492 项原表情素材库，支持完整动画预览、双人关联、按编号停用与恢复；使用入口和验证记录见 [原表情素材说明](content/wechat/README.md)。
+## 下载并开始使用
 
-另已补入 GetStickerPack 的 30 张原图。移动改用用户指定的 wx-0150（一二）、wx-0183（布布），生成跑步已退出使用。522 张原表情均有[逐项动作与回应说明](docs/art-direction/sticker-semantics.md)，114 组已接入独立窗口同步互动。两只仍可独立播放，闲置行为间隔约 4–8 秒。
+**[下载 v0.0.1 完整 EXE（Windows x64）](https://github.com/sduwcdd/YierPet-Windows/releases/download/v0.0.1/YierPet-Windows-v0.0.1-win-x64.exe)** · [Release 页面](https://github.com/sduwcdd/YierPet-Windows/releases/tag/v0.0.1)
 
-> 本 README 面向 Windows 用户。仓库保留的 Swift/AppKit 文件是上游 macOS 实现的历史来源，仅供参考；在 Windows 上请不要运行 `build.sh`，而应使用 `windows\build-windows.ps1`。
+1. 下载 `YierPet-Windows-v0.0.1-win-x64.exe`，放到准备长期保存的位置。
+2. 双击运行。一二和布布会出现在主屏幕右下角附近。
+3. **在角色身上右键**，打开“表情与互动 · 上传 / 编辑”，即可搜索、预览、播放或上传表情。
+4. 结束使用时，在角色身上右键 → **退出**。
 
-![动作总览](docs/contact-sheet.png)
+**不需要安装 .NET、Python 或另外下载素材。** EXE 已包含运行时、应用及全部内置素材，首次启动会先解包，可能比之后启动稍慢。应用本身不显示任务栏按钮，同一时间只运行一个实例。
 
-## 选择使用方式
+适用系统：Windows 10 / 11，64 位 Intel / AMD 电脑。此版本不提供 ARM64 原生构建。请下载 Release 的 EXE；页面中的 `Source code` 压缩包是开发源码。
 
-| 方式 | 适合场景 | 启动/安装 | 主要功能 |
-| --- | --- | --- | --- |
-| **Windows 独立桌宠** | 想要可拖拽、可抛掷、会弹出提醒的桌面小组件 | 构建并运行 `YierPet.Windows.exe` | 双角色交互、原表情库、自定义表情与健康提醒 |
-| **Codex 原生宠物** | 希望一二出现在 Codex 的“宠物”设置中 | 复制宠物包到 Codex 目录并选择 | Codex 控制的标准动画状态与朝向显示 |
+## 可以做什么
 
-两者不是同一个程序：**Windows 独立桌宠不会自动与 Codex 联动**。要在 Codex 中使用一二，请按“在 Codex 中使用一二”的步骤安装原生宠物包。
+- **双角色独立活动**：一位正在播放表情时，另一位仍可独立活动；可单独隐藏角色，至少保留一位。
+- **522 张内置原表情**：微信合集 492 项、GetStickerPack 30 项；包含 GIF 和静态原图，支持按编号、动作及回应说明搜索。
+- **原图走路**：一二使用 `wx-0150`，布布使用 `wx-0183`；处理 GIF 循环造成的横向回跳，右行时镜像。
+- **225 条互动规则**：其中 114 组由两个单人表情搭配。固定左右的组合先走到指定位置；无左右要求的组合保持原顺序；追逐时布布在前。
+- **自定义表情与互动**：上传 GIF / PNG、填写说明、设置多个联动候选、触发方、时长、左右关系和菜单入口。
+- **鼠标交互**：拖拽、抛掷、单击招呼；可开启布布跟随一二。
+- **健康提醒**：久坐、喝水、深夜和已知视频播放器前台停留提醒，可分别关闭。没有 CPU、内存、电量、磁盘监测功能。
 
-## Windows 独立桌宠
-
-### 环境要求
-
-- Windows 10 或 Windows 11（x64）
-- .NET 8 SDK（从源码构建时需要）
-
-### 推荐安装
-
-首次安装时在仓库根目录执行：
-
-~~~powershell
-.\windows\install-windows.ps1
-~~~
-
-安装脚本会把程序发布到 `%LOCALAPPDATA%\Programs\YierPet-Windows`，并自动完成：
-
-- 在桌面创建“一二桌宠”快捷方式，之后可直接双击启动。
-- 在 Windows“启动”文件夹创建快捷方式，实现登录后自动启动。
-- 关闭已有的 Windows 独立桌宠实例并启动刚安装的最新版本。
-
-程序使用框架依赖发布方式，因此目标电脑需要安装 .NET 8 Desktop Runtime；从源码执行安装脚本时，.NET 8 SDK 已包含所需运行环境。
-
-### 正确启动
-
-克隆本仓库后，在仓库根目录执行：
-
-~~~powershell
-git clone https://github.com/sduwcdd/YierPet-Windows.git
-cd YierPet-Windows
-.\windows\build-windows.ps1
-& .\windows\YierPet.Windows\bin\Release\net8.0-windows\YierPet.Windows.exe
-~~~
-
-也可以一条命令构建并运行：
-
-~~~powershell
-.\windows\build-windows.ps1 -Run
-~~~
-
-`-Run` 会先关闭已有的 Windows 独立桌宠实例，再构建并启动最新的 Release 版本，避免旧 Debug 版本继续显示。它不会关闭 Codex 自身显示的原生宠物。
-
-程序默认出现在主屏幕工作区的右下角附近。它没有任务栏图标；请对桌宠右键并选择“退出”来关闭。
-
-若构建提示 `YierPet.Windows.exe` 正被占用，说明此前启动的桌宠尚未退出。请先右键现有桌宠并选择“退出”，再重新构建。若桌宠不可见但确认仍在运行，可在 PowerShell 中仅结束该进程后重试：
-
-~~~powershell
-Get-Process YierPet.Windows -ErrorAction SilentlyContinue | Stop-Process
-~~~
-
-### 生成可分发版本
-
-下面的命令生成面向 `win-x64` 的自包含发布目录，入口为 `windows\artifacts\win-x64\YierPet.Windows.exe`：
-
-~~~powershell
-.\windows\build-windows.ps1 -Publish
-~~~
-
-自包含发布在构建时需要下载 Windows 运行时组件；发布后的目标电脑无需安装 .NET。请分发整个 `win-x64` 文件夹，包括 `Content` 和 `Assets`，不能只复制 EXE。
-
-### 操作方式
+## 日常操作
 
 | 操作 | 效果 |
 | --- | --- |
-| 左键单击 | 挥手打招呼 |
-| 左键拖拽 | 移动桌宠，并按拖动方向播放奔跑动画 |
-| 快速甩出 | 触发重力、撞墙/落地反弹和受击反馈 |
-| 右键 | 打开菜单：切换动作、暂停随机行为、设置提醒、退出 |
-| Alt + 右键 | 在菜单中显示“测试提醒”，可立即预览每种提醒 |
+| 左键单击角色 | 挥手招呼 |
+| 按住左键拖动 | 移动角色 |
+| 快速拖动后松开 | 抛掷、落地及边缘反弹 |
+| 右键角色 | 打开控制菜单 |
+| 右键 → 表情与互动 · 上传 / 编辑 | 打开表情库和编辑器 |
+| 右键 → 回到屏幕右下角 | 召回两位角色 |
+| 右键 → 显示一二 / 显示布布 | 显示或隐藏对应角色 |
+| 右键 → 暂停随机行为 | 暂停或恢复自然活动 |
+| 右键 → 健康提醒 | 分别设置各类提醒 |
+| 右键 → 退出 | 关闭整个应用 |
 
-### Windows 版功能
+### 三个动作栏目
 
-| 类别 | 已实现功能 |
+| 栏目 | 默认内容 | 如何修改 |
+| --- | --- | --- |
+| 切换动作 | 每位 8 项：休息、左右走路、5 个常用表情 | 编辑表情资料，勾选或取消“加入切换动作” |
+| 原表情关联互动 | 6 组精选组合 | 在关联页逐条选择菜单入口 |
+| 和对方互动 | 6 组精选互动 | 在关联页逐条选择菜单入口 |
+
+双人同框或场景表情可在资料页直接设置三个栏目。**菜单入口和自动触发是不同设置**：取消菜单入口不会停用关联；停用关联才会阻止触发。
+
+### 上传和搭配自己的表情
+
+1. 打开表情库，点击 **＋ 上传表情**，选择 GIF 或 PNG。
+2. 选择一二、布布、双人同框或场景，填写名称、动作说明及另一位可能做什么。
+3. 点击 **保存资料**。单人表情保存后可切换到 **关联关系**。
+4. 点击 **新增关联候选**，搜索并选择另一位的表情，填写互动名称、左右站位及共同播放秒数。
+5. 勾选触发方和菜单入口，点击底部 **保存这条关联**。
+6. 可重复新增多个候选；触发时从可用候选中选一组播放。
+
+格式上限：50 MB、2048×2048、500 帧，累计不超过 1.6 亿像素。上传不会自动抠图或重绘。**[完整表情与互动使用说明](docs/user-sticker-library.md)** 包含停用恢复、自动触发条件与追逐配置限制。
+
+## 保存、更新与开机启动
+
+用户数据保存在 `%APPDATA%\YierPet-Windows`，与 EXE 分开：
+
+| 文件 / 目录 | 内容 |
 | --- | --- |
-| 显示与动画 | 透明无边框、始终置顶、无任务栏图标；站立、原图左右走路及可配置的常用表情 |
-| 自主行为 | 两位各自每隔约 4–8 秒尝试随机动作；用户操作和双人互动优先，走到主屏幕边缘会折返 |
-| 交互 | 拖拽、抛掷物理、单击挥手、右键动作菜单 |
-| 健康提醒 | 久坐、喝水、深夜关怀，以及已知视频播放器持续前台时的“摸鱼检测” |
-| 表情编辑 | [上传 GIF / PNG、编辑关联与左右站位、自选右键菜单入口](docs/user-sticker-library.md) |
-| 设置保存 | 随机行为和各类提醒开关保存在 `%APPDATA%\YierPet-Windows\settings.json` |
+| `settings.json` | 显示、随机行为、提醒及停用清单 |
+| `UserLibrary/` | 上传原文件、图集、说明、关联与菜单配置 |
 
-独立版只使用本机输入空闲时长、前台进程名；不会录屏，也不会读取浏览器页面内容。因此“摸鱼检测”只识别已知的视频播放器进程（如 VLC、PotPlayer、腾讯视频、爱奇艺、哔哩哔哩），不会判断浏览器中的具体网站。
-
-## 在 Codex 中使用一二
-
-### 1. 安装宠物包
-
-将仓库中的整个 [`codex-pet/yier`](codex-pet/yier) 文件夹复制到 Codex 的自定义宠物目录，最终目录必须同时包含以下文件：
-
-~~~text
-C:\Users\<你的 Windows 用户名>\.codex\pets\yier\
-├── pet.json
-└── spritesheet.png
-~~~
-
-PowerShell 示例：
-
-~~~powershell
-$destination = Join-Path $env:USERPROFILE '.codex\pets\yier'
-New-Item -ItemType Directory -Force $destination | Out-Null
-Copy-Item .\codex-pet\yier\pet.json, .\codex-pet\yier\spritesheet.png -Destination $destination -Force
-~~~
-
-### 2. 在设置中选择
-
-1. 打开 Codex Desktop 的“设置 → 宠物”。
-2. 滚动到“自定义宠物”区域。
-3. 找到“一二”，点击“选择”。
-4. 若刚复制后未出现，先切换到其他设置页再返回；仍未出现时，完全退出并重新打开 Codex。
-
-### Codex 中的功能边界
-
-Codex 包是符合 v2 规格的原生宠物资源：图集为透明 `1536 × 2288` 像素、8 列 × 11 行，且含 Codex 所需的清单文件。选择后，**Codex 负责**调用标准动作与朝向行为，一二无需另行运行 `.exe`。
-
-| 在 Codex 中可用 | 不属于 Codex 宠物包的功能 |
-| --- | --- |
-| Codex 的宠物选择、显示、标准动画状态和看向不同方向的行为 | 鼠标拖拽、抛掷物理、右键菜单 |
-| 一二的待机、奔跑、挥手、跳跃、沮丧、等待、工作中、审阅等动作素材 | 久坐、喝水、深夜、视频播放器提醒 |
-| 由 Codex 自身决定何时切换宠物状态 | Windows 独立版的本地设置文件与提醒开关 |
-
-当前包复用了原始九种动作来填充 v2 的 16 个方向帧，因此可以被 Codex 正确识别并随方向切换；但上下、斜向并非单独绘制的专用姿势，视觉变化会少于 Codex 内置宠物。Codex 对宠物状态的具体触发时机由应用本身控制，宠物包只提供图像和元数据。
-
-## 项目结构
-
-~~~text
-YierPet/
-├── windows/
-│   ├── build-windows.ps1             # Windows 构建、运行与发布脚本
-│   └── YierPet.Windows/              # .NET 8 WPF 独立桌宠
-├── codex-pet/
-│   └── yier/                         # Codex v2 原生宠物包
-│       ├── pet.json
-│       └── spritesheet.png
-├── content/wechat/                   # 原文件、运行图集、语义和互动清单
-├── tools/                            # 素材导入、审阅、只读校验
-├── docs/                             # 使用说明、开发结构与设计记录
-└── Sources/                          # 上游 macOS Swift 实现（历史参考）
-~~~
+- **备份 / 换电脑**：退出应用后复制整个数据目录，在新电脑对应位置恢复。可按 `Win + R`，输入 `%APPDATA%\YierPet-Windows` 打开它。
+- **更新**：右键退出旧版，再替换或运行新版 EXE；保留数据目录即可保留自定义内容。
+- **开机启动**：先把 EXE 放在固定位置，为它创建快捷方式；按 `Win + R` 输入 `shell:startup`，把快捷方式放进去。删除此快捷方式即可取消开机启动。
+- **卸载**：退出后删除 EXE 和你创建的快捷方式。需要一并清除上传与设置时，再删除上述数据目录。
 
 ## 常见问题
 
-**Q：Windows 桌宠和 Codex 会自动联动吗？**
+**双击后没有新窗口？** 桌宠默认没有任务栏按钮，请看主屏幕右下角。已有实例时，再次双击不会创建第二组角色；在现有角色上右键操作。
 
-不会。Windows 桌宠是独立的 WPF 程序；Codex 联动使用 `codex-pet/yier` 中的原生宠物包。
+**找不到角色或被窗口挡住？** 在能找到的一位身上右键 → 回到屏幕右下角。若两位都找不到，可在任务管理器中结束 `YierPet.Windows` 或下载的 EXE 进程，再启动一次。
 
-**Q：为什么 Windows 桌宠启动后任务栏里没有图标？**
+**为什么两个表情没有自动联动？** 检查“自动互动”、双方可见状态、关系是否启用，以及双方素材是否停用。自动联动要等待双方空闲和冷却结束；拖动、抛掷、右键菜单或已有表情会暂时阻止触发。可在表情库手动点“播放这组联动”验证配置。
 
-这是设计行为。它以桌宠形式浮在屏幕上，请在桌宠上右键选择“退出”。
+**为什么有些表情不动或有底色？** 部分内置素材本身是静态 PNG；原图的文字、道具及底色会保留。上传器也不会自动去除背景。
 
-**Q：Codex 设置里看不到“一二”？**
+**Windows 提示未知发布者？** 当前发布包未做代码签名。请核对下载来源为本仓库 Release，并可使用该页的 `SHA256SUMS.txt` 校验文件；不要关闭系统防护。
 
-检查目录是否精确为 `.codex\pets\yier`，且其中同时存在 `pet.json` 和 `spritesheet.png`；然后返回设置页刷新，必要时重启 Codex。
+**想直接打开表情库？** 给 EXE 添加 `--library` 启动参数即可；请先退出已有实例。
 
-**Q：需要授予录屏或辅助功能权限吗？**
+```powershell
+& .\YierPet-Windows-v0.0.1-win-x64.exe --library
+Get-FileHash .\YierPet-Windows-v0.0.1-win-x64.exe -Algorithm SHA256
+```
 
-不需要。Windows 独立版使用公开 Windows API 获取输入空闲时间与前台进程名；Codex 包本身只是本地图片和清单文件。
+## 从源码构建
 
-## 形象来源与许可
+仅开发者需要安装 **.NET 8 SDK**。在 PowerShell 执行：
 
-宠物形象由黄小B创作。Windows 实现和 Codex v2 宠物包基于上游 [xiaojieshi-bot/YierPet](https://github.com/xiaojieshi-bot/YierPet) 的素材与动作设计进行移植和适配。
+```powershell
+git clone https://github.com/sduwcdd/YierPet-Windows.git
+cd YierPet-Windows
+.\windows\build-windows.ps1 -Run
+```
 
-代码使用 [MIT](LICENSE)；第三方形象及表情素材的权利属于相应权利人，不因代码开源而获得商用授权。素材来源与 SHA256 见各素材清单。
+构建 `v0.0.1` 完整单文件 EXE（自动验证包含的素材）：
+
+```powershell
+.\windows\publish-release.ps1 -Version 0.0.1
+```
+
+输出在 `windows/artifacts/release-0.0.1/`。若要从源码安装到当前用户目录并创建桌面、开机启动快捷方式，可运行 `windows/install-windows.ps1`；普通用户直接使用 Release EXE 即可。
+
+```text
+windows/YierPet.Windows/   WPF 应用、行为协调、表情库和编辑器
+content/wechat/            内置原文件、运行图集、角色与互动清单
+tools/                    素材导入、人工审阅辅助和只读校验
+docs/                     使用说明、开发说明、版本说明
+.github/workflows/        标签构建、完整 EXE 验证和 Release 发布
+```
+
+详见 **[开发说明](docs/development.md)**、[素材来源与结构](content/wechat/README.md) 和 [逐项动作说明](docs/art-direction/sticker-semantics.md)。
+
+## 来源与许可
+
+项目基于 [xiaojieshi-bot/YierPet](https://github.com/xiaojieshi-bot/YierPet) 的桌宠实现进行 Windows 适配和扩展；一二、布布形象创作者沿用素材来源标注致谢黄小B。来源文章、图片 URL 与 SHA256 保留在素材清单中。
+
+代码沿用 [MIT](LICENSE)。第三方形象和表情素材的权利归相应权利人，代码许可证不构成这些素材的商用授权。

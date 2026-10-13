@@ -11,6 +11,12 @@ public partial class App : Application
 
     protected override void OnStartup(StartupEventArgs e)
     {
+        if (e.Args.Length == 2 && e.Args[0] == "--verify-release")
+        {
+            base.OnStartup(e);
+            Shutdown(ReleaseVerifier.Run(e.Args[1]));
+            return;
+        }
         _instanceMutex = new Mutex(true, @"Local\YierPet.Windows", out _ownsInstanceMutex);
         if (!_ownsInstanceMutex)
         {

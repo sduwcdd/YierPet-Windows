@@ -25,8 +25,6 @@ public sealed class StickerAsset
     public string SourceUrl { get; set; } = "";
     public string SourceLabel { get; set; } = "微信合集";
     public bool IsLocomotion { get; set; }
-    public bool MirrorX { get; set; }
-    public int[][] FrameRects { get; set; } = [];
     public int Width { get; set; }
     public int Height { get; set; }
     public int FrameCount { get; set; }
@@ -109,7 +107,6 @@ public sealed partial class StickerLibrary
     private readonly Dictionary<string, BitmapImage> _pages = [];
     private readonly Queue<string> _recent = [];
     private long _cachedBytes;
-    private readonly Dictionary<(string, int), BitmapSource> _motionFrames = [];
     private readonly Dictionary<(string, int), BitmapSource> _stabilizedWalkFrames = [];
     private readonly Dictionary<string, StickerAsset> _byId;
     private readonly Dictionary<string, StickerSemantic> _semantics;
@@ -154,8 +151,7 @@ public sealed partial class StickerLibrary
                 || a.Width <= 0 || a.Height <= 0 || a.Pages.Sum(p => p.FrameCount) != a.FrameCount)
                 throw new InvalidDataException($"表情索引无效：{a.Id}");
             foreach (var p in a.Pages) Resolve(p.File);
-            if (a.FrameRects.Length > 0 && (a.FrameRects.Length != a.FrameCount || a.FrameRects.Any(r => r.Length != 4 || r[0] < 0 || r[1] < 0 || r[2] <= 0 || r[3] <= 0)))
-                throw new InvalidDataException($"跑步帧范围无效：{a.Id}");
+
         }
         foreach (var rule in Rules.Interactions)
         {
@@ -240,23 +236,6 @@ public sealed partial class StickerLibrary
     {
         index = ((index % asset.FrameCount) + asset.FrameCount) % asset.FrameCount;
         var page = asset.Pages.Single(p => index >= p.FirstFrame && index < p.FirstFrame + p.FrameCount);
-        if (asset.FrameRects.Length > 0)
-        {
-            if (_motionFrames.TryGetValue((asset.Id, index), out var cached)) return Mirror(cached, mirror);
-            var r = asset.FrameRects[index];
-            double scale = Math.Min((asset.Width - 24d) / asset.FrameRects.Max(b => b[2]), 176d / asset.FrameRects.Max(b => b[3]));
-            double width = r[2] * scale, height = r[3] * scale;
-            var visual = new DrawingVisual();
-            using (var dc = visual.RenderOpen())
-                dc.DrawImage(new CroppedBitmap(Read(page.File), new Int32Rect(r[0], r[1], r[2], r[3])),
-                    new Rect((asset.Width - width) / 2, asset.Height - 2 - height, width, height));
-            var rendered = new RenderTargetBitmap(asset.Width, asset.Height, 96, 96, PixelFormats.Pbgra32);
-            rendered.Render(visual); rendered.Freeze();
-            BitmapSource result = rendered;
-            if (asset.MirrorX) { result = new TransformedBitmap(rendered, new ScaleTransform(-1, 1)); result.Freeze(); }
-            _motionFrames[(asset.Id, index)] = result;
-            return Mirror(result, mirror);
-        }
         int local = index - page.FirstFrame;
         var frame = new CroppedBitmap(Read(page.File), new Int32Rect(local % page.Columns * asset.Width,
             local / page.Columns * asset.Height, asset.Width, asset.Height));

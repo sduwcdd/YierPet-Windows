@@ -1,0 +1,47 @@
+name: Build and publish Windows release
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: windows-2022
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-dotnet@v6.0.0
+        with:
+          dotnet-version: '8.0.x'
+      - name: Validate original assets and catalogs
+        shell: pwsh
+        run: |
+          python -m pip install Pillow
+          if ($LASTEXITCODE -ne 0) { throw 'Dependency installation failed' }
+          python tools/validate_content.py
+          if ($LASTEXITCODE -ne 0) { throw 'Content validation failed' }
+      - name: Build and verify standalone EXE
+        shell: pwsh
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: ./windows/publish-release.ps1 -Version ($env:RELEASE_TAG.Substring(1))
+      - name: Publish verified release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          $version = $env:RELEASE_TAG.Substring(1)
+          $folder = "windows/artifacts/release-$version"
+          gh release view $env:RELEASE_TAG --json tagName 2>$null
+          if ($LASTEXITCODE -eq 0) {
+            throw 'Release already exists. Existing published assets will not be overwritten.'
+          }
+          gh release create $env:RELEASE_TAG "$folder/YierPet-Windows-v$version-win-x64.exe" "$folder/SHA256SUMS.txt" "$folder/verification.json" --verify-tag --title "一二和布布 v$version" --notes-file "docs/releases/$version.md"
+          if ($LASTEXITCODE -ne 0) { throw 'GitHub Release upload failed' }

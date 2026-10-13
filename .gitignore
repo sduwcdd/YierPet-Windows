@@ -2,13 +2,6 @@
 build/
 .build/
 
-# macOS
-.DS_Store
-
-# SwiftPM
-Package.resolved
-.swiftpm/
-
 # Release 产物
 *.zip
 /windows/artifacts/
