@@ -1,0 +1,20 @@
+{
+  "articleImageCount": 492,
+  "imported": 492,
+  "failed": 0,
+  "uniqueSha256": 483,
+  "framesPixelVerified": 5887,
+  "originalHashesVerified": 492,
+  "durationFloorsApplied": 15,
+  "roles": {
+    "yier": 246,
+    "bubu": 153,
+    "pair": 86,
+    "scene": 7
+  },
+  "interactions": 96,
+  "automaticInteractions": 13,
+  "originalFramePixelsUnchanged": true,
+  "aiGeneratedActionFrames": 0,
+  "metadataReviewUpdated": true
+}

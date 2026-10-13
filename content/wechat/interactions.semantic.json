@@ -1,0 +1,2204 @@
+{
+  "schemaVersion": 1,
+  "interactions": [
+    {
+      "id": "sem-wx-0004-wx-0053",
+      "name": "一起晚安",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0004",
+        "wx-0053"
+      ],
+      "triggerIds": [
+        "wx-0004",
+        "wx-0053"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "双方各自在原图中休息：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0019-wx-0261",
+      "name": "一起晚安",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0019",
+        "wx-0261"
+      ],
+      "triggerIds": [
+        "wx-0019",
+        "wx-0261"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "双方各自在原图中休息：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0357-wx-0053",
+      "name": "一起晚安",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0357",
+        "wx-0053"
+      ],
+      "triggerIds": [
+        "wx-0357",
+        "wx-0053"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "双方各自在原图中休息：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0117-wx-0215",
+      "name": "一起晚安",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0117",
+        "wx-0215"
+      ],
+      "triggerIds": [
+        "wx-0117",
+        "wx-0215"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "双方各自在原图中休息：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0342-wx-0037",
+      "name": "一起晚安",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0342",
+        "wx-0037"
+      ],
+      "triggerIds": [
+        "wx-0342",
+        "wx-0037"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "双方各自在原图中休息：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0339-wx-0215",
+      "name": "一起晚安",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0339",
+        "wx-0215"
+      ],
+      "triggerIds": [
+        "wx-0339",
+        "wx-0215"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "双方各自在原图中休息：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0246-gsp-0014",
+      "name": "一起晚安",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0246",
+        "gsp-0014"
+      ],
+      "triggerIds": [
+        "wx-0246",
+        "gsp-0014"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "双方各自在原图中休息：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0083-wx-0250",
+      "name": "一起吃东西",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0083",
+        "wx-0250"
+      ],
+      "triggerIds": [
+        "wx-0083",
+        "wx-0250"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自吃自己的食物：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0120-wx-0033",
+      "name": "一起吃东西",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0120",
+        "wx-0033"
+      ],
+      "triggerIds": [
+        "wx-0120",
+        "wx-0033"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自吃自己的食物：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0018-wx-0066",
+      "name": "一起吃东西",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0018",
+        "wx-0066"
+      ],
+      "triggerIds": [
+        "wx-0018",
+        "wx-0066"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自吃自己的食物：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0091-wx-0197",
+      "name": "一起吃东西",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0091",
+        "wx-0197"
+      ],
+      "triggerIds": [
+        "wx-0091",
+        "wx-0197"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自吃自己的食物：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0159-wx-0011",
+      "name": "一起吃东西",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0159",
+        "wx-0011"
+      ],
+      "triggerIds": [
+        "wx-0159",
+        "wx-0011"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自吃自己的食物：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0473-wx-0489",
+      "name": "一起吃东西",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0473",
+        "wx-0489"
+      ],
+      "triggerIds": [
+        "wx-0473",
+        "wx-0489"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自吃自己的食物：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0490-wx-0288",
+      "name": "一起吃东西",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0490",
+        "wx-0288"
+      ],
+      "triggerIds": [
+        "wx-0490",
+        "wx-0288"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自吃自己的食物：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0149-wx-0400",
+      "name": "一起吃东西",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0149",
+        "wx-0400"
+      ],
+      "triggerIds": [
+        "wx-0149",
+        "wx-0400"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自吃自己的食物：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0477-wx-0033",
+      "name": "一起吃东西",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0477",
+        "wx-0033"
+      ],
+      "triggerIds": [
+        "wx-0477",
+        "wx-0033"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自吃自己的食物：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0038-wx-0039",
+      "name": "一起喝饮料",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0038",
+        "wx-0039"
+      ],
+      "triggerIds": [
+        "wx-0038",
+        "wx-0039"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自捧杯或饮料瓶同时喝：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0038-wx-0346",
+      "name": "一起喝饮料",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0038",
+        "wx-0346"
+      ],
+      "triggerIds": [
+        "wx-0038",
+        "wx-0346"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自捧杯或饮料瓶同时喝：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0050-wx-0151",
+      "name": "一起喝饮料",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0050",
+        "wx-0151"
+      ],
+      "triggerIds": [
+        "wx-0050",
+        "wx-0151"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自捧杯或饮料瓶同时喝：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0119-wx-0102",
+      "name": "一起喝饮料",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0119",
+        "wx-0102"
+      ],
+      "triggerIds": [
+        "wx-0119",
+        "wx-0102"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自捧杯或饮料瓶同时喝：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0485-wx-0102",
+      "name": "一起喝饮料",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0485",
+        "wx-0102"
+      ],
+      "triggerIds": [
+        "wx-0485",
+        "wx-0102"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自捧杯或饮料瓶同时喝：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0213-wx-0151",
+      "name": "一起喝饮料",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0213",
+        "wx-0151"
+      ],
+      "triggerIds": [
+        "wx-0213",
+        "wx-0151"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自捧杯或饮料瓶同时喝：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0096-wx-0252",
+      "name": "一起喝饮料",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0096",
+        "wx-0252"
+      ],
+      "triggerIds": [
+        "wx-0096",
+        "wx-0252"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自捧杯或饮料瓶同时喝：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0455-wx-0064",
+      "name": "一起喝饮料",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0455",
+        "wx-0064"
+      ],
+      "triggerIds": [
+        "wx-0455",
+        "wx-0064"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自捧杯或饮料瓶同时喝：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0297-wx-0102",
+      "name": "一起喝饮料",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0297",
+        "wx-0102"
+      ],
+      "triggerIds": [
+        "wx-0297",
+        "wx-0102"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自捧杯或饮料瓶同时喝：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0386-wx-0102",
+      "name": "一起喝饮料",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0386",
+        "wx-0102"
+      ],
+      "triggerIds": [
+        "wx-0386",
+        "wx-0102"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自捧杯或饮料瓶同时喝：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0361-wx-0257",
+      "name": "一起喝饮料",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0361",
+        "wx-0257"
+      ],
+      "triggerIds": [
+        "wx-0361",
+        "wx-0257"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自捧杯或饮料瓶同时喝：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0263-wx-0151",
+      "name": "一起喝饮料",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0263",
+        "wx-0151"
+      ],
+      "triggerIds": [
+        "wx-0263",
+        "wx-0151"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自捧杯或饮料瓶同时喝：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0482-wx-0467",
+      "name": "各自忙碌，互相陪伴",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0482",
+        "wx-0467"
+      ],
+      "triggerIds": [
+        "wx-0482",
+        "wx-0467"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "工作、写字或读书：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0362-wx-0290",
+      "name": "各自忙碌，互相陪伴",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0362",
+        "wx-0290"
+      ],
+      "triggerIds": [
+        "wx-0362",
+        "wx-0290"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "工作、写字或读书：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0482-gsp-0015",
+      "name": "各自忙碌，互相陪伴",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0482",
+        "gsp-0015"
+      ],
+      "triggerIds": [
+        "wx-0482",
+        "gsp-0015"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "工作、写字或读书：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0482-wx-0436",
+      "name": "各自忙碌，互相陪伴",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0482",
+        "wx-0436"
+      ],
+      "triggerIds": [
+        "wx-0482",
+        "wx-0436"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "工作、写字或读书：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0486-wx-0291",
+      "name": "各自忙碌，互相陪伴",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0486",
+        "wx-0291"
+      ],
+      "triggerIds": [
+        "wx-0486",
+        "wx-0291"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "工作、写字或读书：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0007-wx-0304",
+      "name": "互相送出心意",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0007",
+        "wx-0304"
+      ],
+      "triggerIds": [
+        "wx-0007",
+        "wx-0304"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "爱心、飞吻或送花相互回应：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0338-wx-0344",
+      "name": "互相送出心意",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0338",
+        "wx-0344"
+      ],
+      "triggerIds": [
+        "wx-0338",
+        "wx-0344"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "爱心、飞吻或送花相互回应：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0406-wx-0344",
+      "name": "互相送出心意",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0406",
+        "wx-0344"
+      ],
+      "triggerIds": [
+        "wx-0406",
+        "wx-0344"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "爱心、飞吻或送花相互回应：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0079-wx-0326",
+      "name": "互相送出心意",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0079",
+        "wx-0326"
+      ],
+      "triggerIds": [
+        "wx-0079",
+        "wx-0326"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "爱心、飞吻或送花相互回应：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "yier-left",
+      "positionNote": "互动前先走到一二在左、布布在右。 布布把玫瑰举在画面左侧，递给一二时一二在左、布布在右。"
+    },
+    {
+      "id": "sem-wx-0056-wx-0129",
+      "name": "互相送出心意",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0056",
+        "wx-0129"
+      ],
+      "triggerIds": [
+        "wx-0056",
+        "wx-0129"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "爱心、飞吻或送花相互回应：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0072-wx-0326",
+      "name": "互相送出心意",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0072",
+        "wx-0326"
+      ],
+      "triggerIds": [
+        "wx-0072",
+        "wx-0326"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "爱心、飞吻或送花相互回应：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "yier-left",
+      "positionNote": "互动前先走到一二在左、布布在右。 布布把玫瑰举在画面左侧，递给一二时一二在左、布布在右。"
+    },
+    {
+      "id": "sem-wx-0478-gsp-0024",
+      "name": "互相送出心意",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0478",
+        "gsp-0024"
+      ],
+      "triggerIds": [
+        "wx-0478",
+        "gsp-0024"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "爱心、飞吻或送花相互回应：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0068-wx-0326",
+      "name": "布布送花安慰一二",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0068",
+        "wx-0326"
+      ],
+      "triggerIds": [
+        "wx-0068"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "一二流泪或低落，布布举花：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "yier-left",
+      "positionNote": "互动前先走到一二在左、布布在右。 布布把玫瑰举在画面左侧，递给一二时一二在左、布布在右。"
+    },
+    {
+      "id": "sem-wx-0325-wx-0129",
+      "name": "布布送花安慰一二",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0325",
+        "wx-0129"
+      ],
+      "triggerIds": [
+        "wx-0325"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "一二流泪或低落，布布举花：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0211-wx-0326",
+      "name": "布布送花安慰一二",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0211",
+        "wx-0326"
+      ],
+      "triggerIds": [
+        "wx-0211"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "一二流泪或低落，布布举花：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "yier-left",
+      "positionNote": "互动前先走到一二在左、布布在右。 布布把玫瑰举在画面左侧，递给一二时一二在左、布布在右。"
+    },
+    {
+      "id": "sem-wx-0397-wx-0129",
+      "name": "布布送花安慰一二",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0397",
+        "wx-0129"
+      ],
+      "triggerIds": [
+        "wx-0397"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "一二流泪或低落，布布举花：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0202-wx-0326",
+      "name": "布布送花安慰一二",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0202",
+        "wx-0326"
+      ],
+      "triggerIds": [
+        "wx-0202"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "一二流泪或低落，布布举花：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "yier-left",
+      "positionNote": "互动前先走到一二在左、布布在右。 布布把玫瑰举在画面左侧，递给一二时一二在左、布布在右。"
+    },
+    {
+      "id": "sem-wx-0323-wx-0326",
+      "name": "布布送花安慰一二",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0323",
+        "wx-0326"
+      ],
+      "triggerIds": [
+        "wx-0323"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "一二流泪或低落，布布举花：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "yier-left",
+      "positionNote": "互动前先走到一二在左、布布在右。 布布把玫瑰举在画面左侧，递给一二时一二在左、布布在右。"
+    },
+    {
+      "id": "sem-wx-0072-wx-0234",
+      "name": "一二安慰布布",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0072",
+        "wx-0234"
+      ],
+      "triggerIds": [
+        "wx-0234"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "布布难过，一二捧花或比心：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0056-gsp-0019",
+      "name": "一二安慰布布",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0056",
+        "gsp-0019"
+      ],
+      "triggerIds": [
+        "gsp-0019"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "布布难过，一二捧花或比心：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0056-gsp-0018",
+      "name": "一二安慰布布",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0056",
+        "gsp-0018"
+      ],
+      "triggerIds": [
+        "gsp-0018"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "布布难过，一二捧花或比心：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0072-wx-0491",
+      "name": "一二安慰布布",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0072",
+        "wx-0491"
+      ],
+      "triggerIds": [
+        "wx-0491"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "布布难过，一二捧花或比心：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0079-wx-0015",
+      "name": "布布拍照，一二摆姿势",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0079",
+        "wx-0015"
+      ],
+      "triggerIds": [
+        "wx-0079",
+        "wx-0015"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "相机与造型分别来自两张原图：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "互动前先走到布布在左、一二在右。 布布举相机朝右拍照，拍一二时布布在左、一二在右。"
+    },
+    {
+      "id": "sem-wx-0085-wx-0015",
+      "name": "布布拍照，一二摆姿势",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0085",
+        "wx-0015"
+      ],
+      "triggerIds": [
+        "wx-0085",
+        "wx-0015"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "相机与造型分别来自两张原图：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "互动前先走到布布在左、一二在右。 布布举相机朝右拍照，拍一二时布布在左、一二在右。"
+    },
+    {
+      "id": "sem-wx-0235-wx-0015",
+      "name": "布布拍照，一二摆姿势",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0235",
+        "wx-0015"
+      ],
+      "triggerIds": [
+        "wx-0235",
+        "wx-0015"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "相机与造型分别来自两张原图：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "互动前先走到布布在左、一二在右。 布布举相机朝右拍照，拍一二时布布在左、一二在右。"
+    },
+    {
+      "id": "sem-wx-0205-wx-0015",
+      "name": "布布拍照，一二摆姿势",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0205",
+        "wx-0015"
+      ],
+      "triggerIds": [
+        "wx-0205",
+        "wx-0015"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "相机与造型分别来自两张原图：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "互动前先走到布布在左、一二在右。 布布举相机朝右拍照，拍一二时布布在左、一二在右。"
+    },
+    {
+      "id": "sem-wx-0350-wx-0015",
+      "name": "布布拍照，一二摆姿势",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0350",
+        "wx-0015"
+      ],
+      "triggerIds": [
+        "wx-0350",
+        "wx-0015"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "相机与造型分别来自两张原图：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "互动前先走到布布在左、一二在右。 布布举相机朝右拍照，拍一二时布布在左、一二在右。"
+    },
+    {
+      "id": "sem-wx-0157-wx-0055",
+      "name": "一二拍照，布布摆姿势",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0157",
+        "wx-0055"
+      ],
+      "triggerIds": [
+        "wx-0157",
+        "wx-0055"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "一二举相机，布布微笑或做表情：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "yier-left",
+      "positionNote": "互动前先走到一二在左、布布在右。 一二举相机朝右拍照，拍布布时一二在左、布布在右。"
+    },
+    {
+      "id": "sem-wx-0157-wx-0078",
+      "name": "一二拍照，布布摆姿势",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0157",
+        "wx-0078"
+      ],
+      "triggerIds": [
+        "wx-0157",
+        "wx-0078"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "一二举相机，布布微笑或做表情：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "yier-left",
+      "positionNote": "互动前先走到一二在左、布布在右。 一二举相机朝右拍照，拍布布时一二在左、布布在右。"
+    },
+    {
+      "id": "sem-wx-0027-wx-0060",
+      "name": "一个表达，一个点头",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0027",
+        "wx-0060"
+      ],
+      "triggerIds": [
+        "wx-0027",
+        "wx-0060"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "讲解或请求与点头、同意呼应：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "yier-left",
+      "positionNote": "互动前先走到一二在左、布布在右。 一二在黑板左侧向右讲解，回应者布布应在右：一二在左、布布在右。"
+    },
+    {
+      "id": "sem-wx-0176-wx-0239",
+      "name": "一个表达，一个点头",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0176",
+        "wx-0239"
+      ],
+      "triggerIds": [
+        "wx-0176",
+        "wx-0239"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "讲解或请求与点头、同意呼应：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "yier-left",
+      "positionNote": "互动前先走到一二在左、布布在右。 一二在黑板左侧向右讲解，布布应在右听讲：一二在左、布布在右。"
+    },
+    {
+      "id": "sem-wx-0097-wx-0021",
+      "name": "一个表达，一个点头",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0097",
+        "wx-0021"
+      ],
+      "triggerIds": [
+        "wx-0097",
+        "wx-0021"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "讲解或请求与点头、同意呼应：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0097-wx-0152",
+      "name": "一个表达，一个点头",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0097",
+        "wx-0152"
+      ],
+      "triggerIds": [
+        "wx-0097",
+        "wx-0152"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "讲解或请求与点头、同意呼应：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "互动前先走到布布在左、一二在右。 布布持教鞭朝右讲解，回应者一二应在右：布布在左、一二在右。"
+    },
+    {
+      "id": "sem-wx-0332-wx-0152",
+      "name": "一个表达，一个点头",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0332",
+        "wx-0152"
+      ],
+      "triggerIds": [
+        "wx-0332",
+        "wx-0152"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "讲解或请求与点头、同意呼应：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "互动前先走到布布在左、一二在右。 布布持教鞭朝右讲解，回应者一二应在右：布布在左、一二在右。"
+    },
+    {
+      "id": "sem-gsp-0028-gsp-0029",
+      "name": "一个表达，一个点头",
+      "mode": "simultaneous",
+      "assetIds": [
+        "gsp-0028",
+        "gsp-0029"
+      ],
+      "triggerIds": [
+        "gsp-0028",
+        "gsp-0029"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "讲解或请求与点头、同意呼应：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-gsp-0026-wx-0152",
+      "name": "布布讲解，一二提出不同意见",
+      "mode": "simultaneous",
+      "assetIds": [
+        "gsp-0026",
+        "wx-0152"
+      ],
+      "triggerIds": [
+        "gsp-0026",
+        "wx-0152"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "教鞭与“不对不对”形成意见回应：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "互动前先走到布布在左、一二在右。 布布持教鞭朝右讲解，回应者一二应在右：布布在左、一二在右。"
+    },
+    {
+      "id": "sem-wx-0163-wx-0456",
+      "name": "一二行礼，布布说免礼",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0163",
+        "wx-0456"
+      ],
+      "triggerIds": [
+        "wx-0163",
+        "wx-0456"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "两个文字表情构成招呼与回应：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0222-wx-0028",
+      "name": "各自看手机，隔空聊天",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0222",
+        "wx-0028"
+      ],
+      "triggerIds": [
+        "wx-0222",
+        "wx-0028"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "手机动作的聊天编排设想：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0474-wx-0405",
+      "name": "各自看手机，隔空聊天",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0474",
+        "wx-0405"
+      ],
+      "triggerIds": [
+        "wx-0474",
+        "wx-0405"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "手机动作的聊天编排设想：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0233-wx-0115",
+      "name": "各自看手机，隔空聊天",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0233",
+        "wx-0115"
+      ],
+      "triggerIds": [
+        "wx-0233",
+        "wx-0115"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "手机动作的聊天编排设想：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0069-wx-0178",
+      "name": "各自看手机，隔空聊天",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0069",
+        "wx-0178"
+      ],
+      "triggerIds": [
+        "wx-0069",
+        "wx-0178"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "手机动作的聊天编排设想：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0434-wx-0028",
+      "name": "各自看手机，隔空聊天",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0434",
+        "wx-0028"
+      ],
+      "triggerIds": [
+        "wx-0434",
+        "wx-0028"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "手机动作的聊天编排设想：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0420-wx-0028",
+      "name": "各自看手机，隔空聊天",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0420",
+        "wx-0028"
+      ],
+      "triggerIds": [
+        "wx-0420",
+        "wx-0028"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "手机动作的聊天编排设想：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0312-wx-0405",
+      "name": "各自看手机，隔空聊天",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0312",
+        "wx-0405"
+      ],
+      "triggerIds": [
+        "wx-0312",
+        "wx-0405"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "手机动作的聊天编排设想：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0409-wx-0221",
+      "name": "一起荡秋千",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0409",
+        "wx-0221"
+      ],
+      "triggerIds": [
+        "wx-0409",
+        "wx-0221"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "两份原图各自荡秋千：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0285-wx-0242",
+      "name": "一起洗衣物",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0285",
+        "wx-0242"
+      ],
+      "triggerIds": [
+        "wx-0285",
+        "wx-0242"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "红黄头巾，各自在泡沫盆前搓洗：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0484-wx-0307",
+      "name": "一起拖地",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0484",
+        "wx-0307"
+      ],
+      "triggerIds": [
+        "wx-0484",
+        "wx-0307"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "红黄头巾，各自用拖把擦地：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0193-wx-0286",
+      "name": "一起泡澡",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0193",
+        "wx-0286"
+      ],
+      "triggerIds": [
+        "wx-0193",
+        "wx-0286"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自泡在木桶里：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0316-wx-0286",
+      "name": "一起泡澡",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0316",
+        "wx-0286"
+      ],
+      "triggerIds": [
+        "wx-0316",
+        "wx-0286"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自坐在浴盆或木桶里：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0284-wx-0280",
+      "name": "一起吹风消暑",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0284",
+        "wx-0280"
+      ],
+      "triggerIds": [
+        "wx-0284",
+        "wx-0280"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "两人各自拿小风扇：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0268-wx-0280",
+      "name": "一起扇风",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0268",
+        "wx-0280"
+      ],
+      "triggerIds": [
+        "wx-0268",
+        "wx-0280"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "一二扇子与布布风扇：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0303-wx-0333",
+      "name": "带上泳圈出发",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0303",
+        "wx-0333"
+      ],
+      "triggerIds": [
+        "wx-0303",
+        "wx-0333"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "粉色与蓝色泳圈：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0458-wx-0294",
+      "name": "同款泳圈",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0458",
+        "wx-0294"
+      ],
+      "triggerIds": [
+        "wx-0458",
+        "wx-0294"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "两人同款黄绿泳圈：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0023-wx-0113",
+      "name": "一起扮小鸟",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0023",
+        "wx-0113"
+      ],
+      "triggerIds": [
+        "wx-0023",
+        "wx-0113"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "对应黄色鸟形帽衫：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0324-wx-0247",
+      "name": "一起扮狮子",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0324",
+        "wx-0247"
+      ],
+      "triggerIds": [
+        "wx-0324",
+        "wx-0247"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "对应狮子头套：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0046-wx-0381",
+      "name": "小鸡一起出壳",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0046",
+        "wx-0381"
+      ],
+      "triggerIds": [
+        "wx-0046",
+        "wx-0381"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自从蛋壳里冒出来：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0440-wx-0218",
+      "name": "一起扮小羊",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0440",
+        "wx-0218"
+      ],
+      "triggerIds": [
+        "wx-0440",
+        "wx-0218"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "对应白色羊头套：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0403-wx-0070",
+      "name": "一起扮小猫",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0403",
+        "wx-0070"
+      ],
+      "triggerIds": [
+        "wx-0403",
+        "wx-0070"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "对应灰色动物帽衫：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0008-wx-0128",
+      "name": "一起舞狮庆祝",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0008",
+        "wx-0128"
+      ],
+      "triggerIds": [
+        "wx-0008",
+        "wx-0128"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "对应舞狮头帽：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0012-wx-0351",
+      "name": "一起扮木乃伊",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0012",
+        "wx-0351"
+      ],
+      "triggerIds": [
+        "wx-0012",
+        "wx-0351"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自裹绷带探头：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0352-wx-0335",
+      "name": "一起怕冷打喷嚏",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0352",
+        "wx-0335"
+      ],
+      "triggerIds": [
+        "wx-0352",
+        "wx-0335"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "同款帽子围巾、同类喷嚏动作：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0309-wx-0349",
+      "name": "一起戴围巾做鬼脸",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0309",
+        "wx-0349"
+      ],
+      "triggerIds": [
+        "wx-0309",
+        "wx-0349"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "同款红围巾表情：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0439-wx-0204",
+      "name": "星星头饰和围巾",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0439",
+        "wx-0204"
+      ],
+      "triggerIds": [
+        "wx-0439",
+        "wx-0204"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "同款星星头饰、红围巾：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0398-wx-0292",
+      "name": "一起蹦跳",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0398",
+        "wx-0292"
+      ],
+      "triggerIds": [
+        "wx-0398",
+        "wx-0292"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "同款黄垫子、红围巾：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0418-wx-0415",
+      "name": "一起在桌边探头",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0418",
+        "wx-0415"
+      ],
+      "triggerIds": [
+        "wx-0418",
+        "wx-0415"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "相同桌边探头动作：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0314-gsp-0030",
+      "name": "门后与墙角捉迷藏",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0314",
+        "gsp-0030"
+      ],
+      "triggerIds": [
+        "wx-0314",
+        "gsp-0030"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "两人各自在遮挡物后探头：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0125-wx-0088",
+      "name": "一起打卡",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0125",
+        "wx-0088"
+      ],
+      "triggerIds": [
+        "wx-0125",
+        "wx-0088"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "两张各自角色的打卡机表情：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0419-wx-0428",
+      "name": "一起展示蓝色牌",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0419",
+        "wx-0428"
+      ],
+      "triggerIds": [
+        "wx-0419",
+        "wx-0428"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "两张相应展示牌，仅图像无支付功能：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0421-wx-0435",
+      "name": "一起展示绿色牌",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0421",
+        "wx-0435"
+      ],
+      "triggerIds": [
+        "wx-0421",
+        "wx-0435"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "两张相应展示牌，仅图像无支付功能：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0200-wx-0310",
+      "name": "一起骑小摩托",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0200",
+        "wx-0310"
+      ],
+      "triggerIds": [
+        "wx-0200",
+        "wx-0310"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "对应道路、头盔和小摩托：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0447-wx-0317",
+      "name": "一起出来走走",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0447",
+        "wx-0317"
+      ],
+      "triggerIds": [
+        "wx-0447",
+        "wx-0317"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "各自戴帽背包出游：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0472-wx-0057",
+      "name": "一起挂在晾衣绳上",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0472",
+        "wx-0057"
+      ],
+      "triggerIds": [
+        "wx-0472",
+        "wx-0057"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "两张同构夸张趣味场景：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0417-wx-0441",
+      "name": "布布送糖，一二吃糖",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0417",
+        "wx-0441"
+      ],
+      "triggerIds": [
+        "wx-0417",
+        "wx-0441"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "大号棒棒糖与吃棒棒糖动作：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "yier-left",
+      "positionNote": "互动前先走到一二在左、布布在右。 布布将大棒棒糖伸向画面左侧，递给一二时一二在左、布布在右。"
+    },
+    {
+      "id": "sem-wx-0219-wx-0134",
+      "name": "互相打招呼",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0219",
+        "wx-0134"
+      ],
+      "triggerIds": [
+        "wx-0219",
+        "wx-0134"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "粉蓝衬衣、抬手招呼：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0483-wx-0166",
+      "name": "一起跳舞",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0483",
+        "wx-0166"
+      ],
+      "triggerIds": [
+        "wx-0483",
+        "wx-0166"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "两人抬手摆动身体：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0040-wx-0110",
+      "name": "一起累瘫",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0040",
+        "wx-0110"
+      ],
+      "triggerIds": [
+        "wx-0040",
+        "wx-0110"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "两人各自趴椅子：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0389-wx-0145",
+      "name": "一起趴下休息",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0389",
+        "wx-0145"
+      ],
+      "triggerIds": [
+        "wx-0389",
+        "wx-0145"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "两人由站立弯腰到趴地：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0411-wx-0431",
+      "name": "一起捧脸发呆",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0411",
+        "wx-0431"
+      ],
+      "triggerIds": [
+        "wx-0411",
+        "wx-0431"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "托脸与侧脸手势：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0414-wx-0302",
+      "name": "一二逗趣，布布笑",
+      "mode": "simultaneous",
+      "assetIds": [
+        "wx-0414",
+        "wx-0302"
+      ],
+      "triggerIds": [
+        "wx-0414",
+        "wx-0302"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "卷哨玩笑与布布仰头笑：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "yier-left",
+      "positionNote": "互动前先走到一二在左、布布在右。 一二的卷哨展开朝右，逗布布时一二在左、布布在右。"
+    },
+    {
+      "id": "sem-gsp-0027-wx-0258",
+      "name": "一起哈哈笑",
+      "mode": "simultaneous",
+      "assetIds": [
+        "gsp-0027",
+        "wx-0258"
+      ],
+      "triggerIds": [
+        "gsp-0027",
+        "wx-0258"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 4,
+      "note": "大笑与得意笑：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "sem-wx-0452-wx-0183",
+      "name": "一二拖锤追，布布在前面跑",
+      "mode": "chase",
+      "assetIds": [
+        "wx-0452",
+        "wx-0183"
+      ],
+      "triggerIds": [
+        "wx-0452"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 5,
+      "note": "保持一二在后、布布在前的屏幕移动；不新增动作帧：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "mirrorWhenMovingLeft": [
+        "wx-0452"
+      ],
+      "mirrorWhenMovingRight": [
+        "wx-0183"
+      ],
+      "positionRequirement": "chase",
+      "positionNote": "先按行进方向站位：向左时布布左、一二右；向右时一二左、布布右，始终布布在前、一二在后。"
+    },
+    {
+      "id": "sem-wx-0082-wx-0183",
+      "name": "一二挥道具追，布布躲",
+      "mode": "chase",
+      "assetIds": [
+        "wx-0082",
+        "wx-0183"
+      ],
+      "triggerIds": [
+        "wx-0082"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 5,
+      "note": "保持一二在后、布布在前的屏幕移动；不新增动作帧：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "mirrorWhenMovingLeft": [],
+      "mirrorWhenMovingRight": [
+        "wx-0183"
+      ],
+      "positionRequirement": "chase",
+      "positionNote": "先按行进方向站位：向左时布布左、一二右；向右时一二左、布布右，始终布布在前、一二在后。"
+    },
+    {
+      "id": "sem-wx-0195-wx-0183",
+      "name": "一二举拖鞋状道具，布布跑开",
+      "mode": "chase",
+      "assetIds": [
+        "wx-0195",
+        "wx-0183"
+      ],
+      "triggerIds": [
+        "wx-0195"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 5,
+      "note": "保持一二在后、布布在前的屏幕移动；不新增动作帧：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "mirrorWhenMovingLeft": [],
+      "mirrorWhenMovingRight": [
+        "wx-0183"
+      ],
+      "positionRequirement": "chase",
+      "positionNote": "先按行进方向站位：向左时布布左、一二右；向右时一二左、布布右，始终布布在前、一二在后。"
+    },
+    {
+      "id": "sem-wx-0212-wx-0183",
+      "name": "一二扮恐龙，布布跑开",
+      "mode": "chase",
+      "assetIds": [
+        "wx-0212",
+        "wx-0183"
+      ],
+      "triggerIds": [
+        "wx-0212"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 5,
+      "note": "保持一二在后、布布在前的屏幕移动；不新增动作帧：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "mirrorWhenMovingLeft": [],
+      "mirrorWhenMovingRight": [
+        "wx-0212",
+        "wx-0183"
+      ],
+      "positionRequirement": "chase",
+      "positionNote": "先按行进方向站位：向左时布布左、一二右；向右时一二左、布布右，始终布布在前、一二在后。"
+    },
+    {
+      "id": "sem-wx-0232-wx-0183",
+      "name": "一二穿恐龙装追，布布跑开",
+      "mode": "chase",
+      "assetIds": [
+        "wx-0232",
+        "wx-0183"
+      ],
+      "triggerIds": [
+        "wx-0232"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 5,
+      "note": "保持一二在后、布布在前的屏幕移动；不新增动作帧：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "mirrorWhenMovingLeft": [],
+      "mirrorWhenMovingRight": [
+        "wx-0232",
+        "wx-0183"
+      ],
+      "positionRequirement": "chase",
+      "positionNote": "先按行进方向站位：向左时布布左、一二右；向右时一二左、布布右，始终布布在前、一二在后。"
+    },
+    {
+      "id": "sem-wx-0369-wx-0183",
+      "name": "恐龙装追逐游戏",
+      "mode": "chase",
+      "assetIds": [
+        "wx-0369",
+        "wx-0183"
+      ],
+      "triggerIds": [
+        "wx-0369"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "durationSeconds": 5,
+      "note": "保持一二在后、布布在前的屏幕移动；不新增动作帧：根据两份原素材编排的互动设想，并非来源文章中的连续剧情。",
+      "mirrorWhenMovingLeft": [],
+      "mirrorWhenMovingRight": [
+        "wx-0369",
+        "wx-0183"
+      ],
+      "positionRequirement": "chase",
+      "positionNote": "先按行进方向站位：向左时布布左、一二右；向右时一二左、布布右，始终布布在前、一二在后。"
+    }
+  ],
+  "states": {
+    "yier": {
+      "RunningLeft": "wx-0150",
+      "RunningRight": "wx-0150"
+    },
+    "bubu": {
+      "RunningLeft": "wx-0183",
+      "RunningRight": "wx-0183"
+    }
+  },
+  "stateMirrors": {
+    "yier": {
+      "RunningLeft": false,
+      "RunningRight": true
+    },
+    "bubu": {
+      "RunningLeft": false,
+      "RunningRight": true
+    }
+  }
+}

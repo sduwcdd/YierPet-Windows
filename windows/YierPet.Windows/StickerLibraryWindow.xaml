@@ -1,0 +1,184 @@
+<Window x:Class="YierPet.Windows.StickerLibraryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="一二和布布 · 表情与互动" Width="1240" Height="820" MinWidth="800" MinHeight="580"
+        Background="#F7F2EC" Foreground="#412D26" FontFamily="Microsoft YaHei UI" FontSize="13"
+        Icon="pack://application:,,,/YierPet.Windows;component/Assets/app-icon.png"
+        WindowStartupLocation="CenterScreen" SizeChanged="WindowSizeChanged" Activated="WindowActivated">
+    <Window.Resources>
+        <SolidColorBrush x:Key="Ink" Color="#412D26"/>
+        <SolidColorBrush x:Key="Muted" Color="#85756C"/>
+        <SolidColorBrush x:Key="Accent" Color="#A95F43"/>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#F4EAE1"/>
+            <Setter Property="Foreground" Value="{StaticResource Ink}"/>
+            <Setter Property="BorderBrush" Value="#E4D7CC"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="13,9"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Chrome" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="9" Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True"><Setter TargetName="Chrome" Property="Opacity" Value="0.82"/></Trigger>
+                            <Trigger Property="IsPressed" Value="True"><Setter TargetName="Chrome" Property="Opacity" Value="0.65"/></Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="True"><Setter TargetName="Chrome" Property="BorderBrush" Value="#6B452F"/><Setter TargetName="Chrome" Property="BorderThickness" Value="2"/></Trigger>
+                            <Trigger Property="IsEnabled" Value="False"><Setter TargetName="Chrome" Property="Opacity" Value="0.38"/></Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="PrimaryButton" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+            <Setter Property="Background" Value="{StaticResource Accent}"/><Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Accent}"/><Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+        <Style TargetType="CheckBox">
+            <Setter Property="Margin" Value="0,6,22,6"/><Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+        <Style TargetType="ComboBox"><Setter Property="MinHeight" Value="36"/><Setter Property="Padding" Value="8,5"/></Style>
+        <Style x:Key="SectionLabel" TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="SemiBold"/><Setter Property="Margin" Value="0,16,0,7"/>
+        </Style>
+        <Style x:Key="BodyText" TargetType="TextBlock">
+            <Setter Property="TextWrapping" Value="Wrap"/><Setter Property="LineHeight" Value="22"/>
+        </Style>
+        <Style TargetType="ListBoxItem">
+            <Setter Property="Padding" Value="12,12"/><Setter Property="Margin" Value="0,3"/>
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ListBoxItem">
+                        <Border x:Name="Chrome" CornerRadius="9" Padding="{TemplateBinding Padding}" BorderThickness="1" BorderBrush="Transparent" Background="Transparent">
+                            <ContentPresenter/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True"><Setter TargetName="Chrome" Property="Background" Value="#F7F2EC"/></Trigger>
+                            <Trigger Property="IsSelected" Value="True"><Setter TargetName="Chrome" Property="Background" Value="#F0DED1"/><Setter Property="FontWeight" Value="SemiBold"/></Trigger>
+                            <Trigger Property="IsKeyboardFocusWithin" Value="True"><Setter TargetName="Chrome" Property="BorderBrush" Value="#A95F43"/></Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid x:Name="RootLayout" Margin="24,18,24,16">
+        <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+        <Grid Margin="0,0,0,18">
+            <Grid.ColumnDefinitions><ColumnDefinition Width="Auto"/><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+            <Image Source="pack://application:,,,/YierPet.Windows;component/Assets/app-icon.png" Width="83" Height="62" Stretch="Uniform" Margin="0,0,16,0"/>
+            <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                <TextBlock Text="一二和布布" FontSize="27" FontWeight="SemiBold"/>
+                <TextBlock x:Name="SummaryText" Foreground="{StaticResource Muted}" Margin="0,5,0,0"/>
+            </StackPanel>
+            <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
+                <Button Content="＋ 上传表情" Click="UploadClick" Style="{StaticResource PrimaryButton}" Margin="0,0,8,0"/>
+                <Button Content="召回桌宠" Click="RecallClick" ToolTip="让一二和布布回到屏幕右下角" Margin="0,0,8,0"/>
+                <Button Content="收起窗口" Click="HideWindowClick" Background="#FFFDFA" ToolTip="只关闭这个窗口，桌宠继续陪伴"/>
+            </StackPanel>
+        </Grid>
+        <Border Grid.Row="1" Background="#EEE6DC" CornerRadius="12" Padding="16,6" Margin="0,0,0,18">
+            <WrapPanel>
+                <TextBlock Text="桌面陪伴" FontWeight="SemiBold" VerticalAlignment="Center" Margin="0,6,26,6"/>
+                <CheckBox x:Name="RandomToggle" Content="自然活动" ToolTip="各自每隔 4–8 秒尝试表情或走动" Click="SettingsClick"/>
+                <CheckBox x:Name="AutomaticToggle" Content="自动互动" ToolTip="双方空闲时，配套表情会一起播放" Click="SettingsClick"/>
+                <CheckBox x:Name="FollowToggle" Content="布布跟随一二" Click="SettingsClick"/>
+                <CheckBox x:Name="YierToggle" Content="显示一二" Click="SettingsClick"/>
+                <CheckBox x:Name="BubuToggle" Content="显示布布" Click="SettingsClick"/>
+            </WrapPanel>
+        </Border>
+        <Grid Grid.Row="2" x:Name="BodyLayout">
+            <Grid.ColumnDefinitions><ColumnDefinition x:Name="NavigationColumn" Width="168"/><ColumnDefinition x:Name="NavigationGap" Width="16"/><ColumnDefinition Width="*"/><ColumnDefinition Width="16"/><ColumnDefinition x:Name="PreviewColumn" Width="326"/></Grid.ColumnDefinitions>
+            <Border x:Name="NavigationPanel" Background="#FFFDFA" CornerRadius="14" Padding="8,14">
+                <DockPanel>
+                    <TextBlock DockPanel.Dock="Top" Text="我的表情" FontSize="12" Foreground="{StaticResource Muted}" Margin="12,0,0,12"/>
+                    <TextBlock DockPanel.Dock="Bottom" Text="原图保留，随时停用。&#x0a;关闭窗口，陪伴继续。" FontSize="11" Foreground="{StaticResource Muted}" LineHeight="19" Margin="12,18,4,6"/>
+                    <ListBox x:Name="Navigation" Background="Transparent" BorderThickness="0" SelectionChanged="NavigationChanged" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                        <ListBox.ItemTemplate><DataTemplate><Grid><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions><TextBlock Text="{Binding Title}"/><TextBlock Grid.Column="1" Text="{Binding Count}" Foreground="#8D7768" FontSize="11" VerticalAlignment="Center"/></Grid></DataTemplate></ListBox.ItemTemplate>
+                    </ListBox>
+                </DockPanel>
+            </Border>
+            <Border Grid.Column="2" Background="#FFFDFA" CornerRadius="14" Padding="16">
+                <Grid>
+                    <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+                    <Grid>
+                        <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+                        <ComboBox x:Name="CompactFilter" Visibility="Collapsed" DisplayMemberPath="Title" SelectionChanged="CompactFilterChanged" Margin="0,0,0,10" AutomationProperties.Name="表情分类"/>
+                        <Border Grid.Row="1" Background="#F7F2EC" CornerRadius="9" BorderBrush="#E6DCD3" BorderThickness="1" Padding="10,7">
+                            <Grid><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+                                <Grid>
+                                    <TextBox x:Name="SearchBox" BorderThickness="0" Background="Transparent" VerticalContentAlignment="Center" TextChanged="SearchChanged" Padding="2,4" AutomationProperties.Name="搜索表情编号、动作或回应"/>
+                                    <TextBlock x:Name="SearchHint" Text="搜索编号、动作或回应…" Foreground="#9B8B80" IsHitTestVisible="False" VerticalAlignment="Center" Margin="4,0"/>
+                                </Grid>
+                                <Button x:Name="ClearSearchButton" Grid.Column="1" Content="清除" Click="ClearSearchClick" Padding="7,3" Margin="6,0,0,0" BorderThickness="0" Visibility="Collapsed"/>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                    <Grid Grid.Row="1" Margin="1,14,0,12"><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+                        <TextBlock x:Name="ResultsTitle" FontSize="17" FontWeight="SemiBold"/>
+                        <TextBlock x:Name="ResultCount" Grid.Column="1" Foreground="{StaticResource Muted}" VerticalAlignment="Center"/>
+                    </Grid>
+                    <Grid Grid.Row="2">
+                        <ScrollViewer x:Name="TileScroll" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Padding="0,0,5,0"><WrapPanel x:Name="Tiles"/></ScrollViewer>
+                        <StackPanel x:Name="EmptyState" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Collapsed" Margin="12">
+                            <TextBlock Text="还没有找到这个表情" FontSize="18" FontWeight="SemiBold" TextAlignment="Center"/>
+                            <TextBlock Text="换个关键词，或看看其他分类。" Foreground="{StaticResource Muted}" Margin="0,10,0,20" TextAlignment="Center"/>
+                            <Button Content="返回全部表情" Click="ResetFiltersClick" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Grid.Row="3" Margin="0,14,0,0"><Grid.ColumnDefinitions><ColumnDefinition Width="Auto"/><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+                        <Button x:Name="PreviousButton" Content="← 上一页" Click="PreviousClick" Padding="12,8"/>
+                        <TextBlock x:Name="PageText" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource Muted}"/>
+                        <Button x:Name="NextButton" Grid.Column="2" Content="下一页 →" Click="NextClick" Padding="12,8"/>
+                    </Grid>
+                </Grid>
+            </Border>
+            <Border Grid.Column="4" Background="#FFFDFA" CornerRadius="14" Padding="18">
+                <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Padding="0,0,4,0">
+                    <StackPanel x:Name="SelectionPanel">
+                        <Grid><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+                            <TextBlock Text="表情预览" FontSize="17" FontWeight="SemiBold"/>
+                            <Border Grid.Column="1" x:Name="StateBadge" Background="#E4EFE4" CornerRadius="6" Padding="8,4"><TextBlock x:Name="StateText" Text="已启用" FontSize="11" Foreground="#45634D"/></Border>
+                        </Grid>
+                        <Border Background="#F6F0E8" CornerRadius="12" Margin="0,14,0,12" Padding="14" Height="212">
+                            <Image x:Name="PreviewImage" Stretch="Uniform"/>
+                        </Border>
+                        <Grid Margin="0,0,0,12"><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+                            <TextBlock x:Name="FrameText" FontSize="11" Foreground="{StaticResource Muted}" VerticalAlignment="Center"/>
+                            <Button x:Name="PausePreviewButton" Grid.Column="1" Content="暂停预览" Padding="8,4" FontSize="11" Click="PausePreviewClick"/>
+                        </Grid>
+                        <TextBlock x:Name="SelectionTitle" FontSize="17" FontWeight="SemiBold" TextWrapping="Wrap"/>
+                        <TextBlock x:Name="SelectionMeta" Foreground="{StaticResource Muted}" FontSize="11" Margin="0,5,0,10" TextWrapping="Wrap"/>
+                        <Button x:Name="PlayButton" Style="{StaticResource PrimaryButton}" Content="在桌面播放" Click="PlayClick"/>
+                        <Button Content="编辑资料 / 关联关系" Click="EditClick" Margin="0,8,0,0"/>
+                        <TextBlock Text="左右位置 / 入场要求" Style="{StaticResource SectionLabel}"/>
+                        <TextBlock x:Name="PositionText" Style="{StaticResource BodyText}" Foreground="#80563F"/>
+                        <TextBlock Text="TA 在做什么" Style="{StaticResource SectionLabel}"/>
+                        <TextBlock x:Name="ActionText" Style="{StaticResource BodyText}"/>
+                        <TextBlock Text="另一位可以…" Style="{StaticResource SectionLabel}"/>
+                        <TextBlock x:Name="PartnerText" Style="{StaticResource BodyText}" Foreground="#766359"/>
+                        <TextBlock x:Name="UncertaintyText" Text="有局部细节尚未确认，说明中已标注。" Foreground="#916541" FontSize="11" TextWrapping="Wrap" Margin="0,8,0,0" Visibility="Collapsed"/>
+                        <TextBlock Text="一起互动" Style="{StaticResource SectionLabel}"/>
+                        <ComboBox x:Name="LinkSelector" DisplayMemberPath="Name" MaxDropDownHeight="240" SelectionChanged="LinkSelectionChanged" AutomationProperties.Name="选择双人联动"/>
+                        <TextBlock x:Name="LinkHint" TextWrapping="Wrap" FontSize="11" Foreground="{StaticResource Muted}" LineHeight="18" Margin="0,7,0,8"/>
+                        <Button x:Name="PlayLinkButton" Content="播放这组联动" Click="PlayLinkClick"/>
+                        <Border BorderBrush="#EDE3DA" BorderThickness="0,1,0,0" Margin="0,18,0,0" Padding="0,12,0,0">
+                            <StackPanel><Button x:Name="ToggleButton" Content="停用这个表情" Click="ToggleClick" Background="Transparent"/>
+                                <TextBlock Text="停用也会关闭依赖它的联动，可随时恢复。" Foreground="{StaticResource Muted}" FontSize="11" TextWrapping="Wrap" LineHeight="18" Margin="0,8,0,0"/>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+        </Grid>
+        <TextBlock Grid.Row="3" x:Name="FeedbackText" Text="选择表情查看动作说明；双方空闲时可播放关联互动。" Foreground="{StaticResource Muted}" Margin="2,12,0,0" TextWrapping="Wrap" AutomationProperties.LiveSetting="Polite"/>
+    </Grid>
+</Window>

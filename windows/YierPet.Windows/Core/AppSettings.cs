@@ -6,6 +6,11 @@ namespace YierPet.Windows.Core;
 public sealed class AppSettings
 {
     public bool RandomBehaviourEnabled { get; set; } = true;
+    public bool AutomaticInteractionsEnabled { get; set; } = true;
+    public bool BubuFollowsYier { get; set; }
+    public bool YierVisible { get; set; } = true;
+    public bool BubuVisible { get; set; } = true;
+    public HashSet<string> DisabledStickerIds { get; set; } = [];
     public Dictionary<string, bool> ReminderEnabled { get; set; } = [];
 
     public bool IsEnabled(ReminderKind kind) =>

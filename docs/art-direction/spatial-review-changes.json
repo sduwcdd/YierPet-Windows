@@ -1,0 +1,151 @@
+{
+  "correctedFixedOrders": 24,
+  "corrections": [
+    {
+      "id": "pair-0009",
+      "previousLeftCharacter": "bubu",
+      "correctedLeftCharacter": "yier",
+      "note": "一二在左前方，布布在右后方，同盖被子。"
+    },
+    {
+      "id": "pair-0034",
+      "previousLeftCharacter": "bubu",
+      "correctedLeftCharacter": "yier",
+      "note": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0077",
+      "previousLeftCharacter": "bubu",
+      "correctedLeftCharacter": "yier",
+      "note": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0099",
+      "previousLeftCharacter": "yier",
+      "correctedLeftCharacter": "bubu",
+      "note": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0137",
+      "previousLeftCharacter": "bubu",
+      "correctedLeftCharacter": "yier",
+      "note": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0161",
+      "previousLeftCharacter": "bubu",
+      "correctedLeftCharacter": "yier",
+      "note": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0244",
+      "previousLeftCharacter": "bubu",
+      "correctedLeftCharacter": "yier",
+      "note": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0265",
+      "previousLeftCharacter": "bubu",
+      "correctedLeftCharacter": "yier",
+      "note": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0266",
+      "previousLeftCharacter": "bubu",
+      "correctedLeftCharacter": "yier",
+      "note": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0270",
+      "previousLeftCharacter": "yier",
+      "correctedLeftCharacter": "bubu",
+      "note": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0327",
+      "previousLeftCharacter": "bubu",
+      "correctedLeftCharacter": "yier",
+      "note": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0331",
+      "previousLeftCharacter": "yier",
+      "correctedLeftCharacter": "bubu",
+      "note": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0366",
+      "previousLeftCharacter": "yier",
+      "correctedLeftCharacter": "bubu",
+      "note": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0368",
+      "previousLeftCharacter": "bubu",
+      "correctedLeftCharacter": "yier",
+      "note": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0433",
+      "previousLeftCharacter": "bubu",
+      "correctedLeftCharacter": "yier",
+      "note": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0488",
+      "previousLeftCharacter": "bubu",
+      "correctedLeftCharacter": "yier",
+      "note": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "sem-wx-0079-wx-0015",
+      "previousLeftCharacter": "yier",
+      "correctedLeftCharacter": "bubu",
+      "note": "互动前先走到布布在左、一二在右。 布布举相机朝右拍照，拍一二时布布在左、一二在右。"
+    },
+    {
+      "id": "sem-wx-0085-wx-0015",
+      "previousLeftCharacter": "yier",
+      "correctedLeftCharacter": "bubu",
+      "note": "互动前先走到布布在左、一二在右。 布布举相机朝右拍照，拍一二时布布在左、一二在右。"
+    },
+    {
+      "id": "sem-wx-0235-wx-0015",
+      "previousLeftCharacter": "yier",
+      "correctedLeftCharacter": "bubu",
+      "note": "互动前先走到布布在左、一二在右。 布布举相机朝右拍照，拍一二时布布在左、一二在右。"
+    },
+    {
+      "id": "sem-wx-0205-wx-0015",
+      "previousLeftCharacter": "yier",
+      "correctedLeftCharacter": "bubu",
+      "note": "互动前先走到布布在左、一二在右。 布布举相机朝右拍照，拍一二时布布在左、一二在右。"
+    },
+    {
+      "id": "sem-wx-0350-wx-0015",
+      "previousLeftCharacter": "yier",
+      "correctedLeftCharacter": "bubu",
+      "note": "互动前先走到布布在左、一二在右。 布布举相机朝右拍照，拍一二时布布在左、一二在右。"
+    },
+    {
+      "id": "sem-wx-0097-wx-0152",
+      "previousLeftCharacter": "yier",
+      "correctedLeftCharacter": "bubu",
+      "note": "互动前先走到布布在左、一二在右。 布布持教鞭朝右讲解，回应者一二应在右：布布在左、一二在右。"
+    },
+    {
+      "id": "sem-wx-0332-wx-0152",
+      "previousLeftCharacter": "yier",
+      "correctedLeftCharacter": "bubu",
+      "note": "互动前先走到布布在左、一二在右。 布布持教鞭朝右讲解，回应者一二应在右：布布在左、一二在右。"
+    },
+    {
+      "id": "sem-gsp-0026-wx-0152",
+      "previousLeftCharacter": "yier",
+      "correctedLeftCharacter": "bubu",
+      "note": "互动前先走到布布在左、一二在右。 布布持教鞭朝右讲解，回应者一二应在右：布布在左、一二在右。"
+    }
+  ],
+  "sourceImagesHashVerified": 522,
+  "reviewMethod": "All 22 source contact sheets reviewed at four time samples per asset; wx-0306 enlarged. Solo counterpart positions inferred for choreography."
+}

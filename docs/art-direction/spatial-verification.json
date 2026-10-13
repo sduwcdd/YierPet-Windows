@@ -1,0 +1,13 @@
+{
+  "checks": 3452,
+  "assets": 522,
+  "interactions": 225,
+  "placementScenarios": 450,
+  "policies": {
+    "yier-left": 44,
+    "any": 119,
+    "bubu-left": 56,
+    "chase": 6
+  },
+  "verificationScope": "Every interaction starts from both initial orders, both pets arrive before playback; unrestricted order preserved; chase follows travel direction; UI and source examples checked"
+}

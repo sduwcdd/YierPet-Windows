@@ -7,10 +7,19 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <AssemblyName>YierPet.Windows</AssemblyName>
     <RootNamespace>YierPet.Windows</RootNamespace>
+    <ApplicationIcon>Assets\app-icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\app-icon.png" />
+    <Content Include="Assets\app-icon.ico" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\..\content\wechat\**\*.json;..\..\content\wechat\**\*.png" Exclude="..\..\content\wechat\originals\**\*;..\..\content\wechat\review\**\*">
+      <Link>Content\wechat\%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Remove="Assets\spritesheet.png" />
     <Resource Include="Assets\spritesheet.png" />
+    <None Remove="Assets\*-v1.png" />
+    <Resource Include="Assets\*-v1.png" />
   </ItemGroup>
 </Project>

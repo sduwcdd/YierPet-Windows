@@ -31,14 +31,14 @@ public static class PetStateInfo
 
     public static IReadOnlyList<int> Durations(this PetState state) => state switch
     {
-        PetState.Idle => [280, 110, 110, 140, 140, 320],
-        PetState.RunningRight or PetState.RunningLeft => [120, 120, 120, 120, 120, 120, 120, 220],
-        PetState.Waving => [140, 140, 140, 280],
-        PetState.Jumping => [140, 140, 140, 140, 280],
-        PetState.Failed => [140, 140, 140, 140, 140, 140, 140, 240],
-        PetState.Waiting => [150, 150, 150, 150, 150, 260],
-        PetState.Running => [120, 120, 120, 120, 120, 220],
-        PetState.Review => [150, 150, 150, 150, 150, 280],
+        PetState.Idle => [1500, 100, 140, 1300],
+        PetState.RunningRight or PetState.RunningLeft => [130, 130, 130, 130],
+        PetState.Waving => [200, 200, 200, 320],
+        PetState.Jumping => [160, 130, 200, 260],
+        PetState.Failed => [320, 260, 260, 400],
+        PetState.Waiting => [500, 350, 350, 700],
+        PetState.Running => [180, 180, 180, 250],
+        PetState.Review => [600, 400, 650, 600],
         _ => [280]
     };
 

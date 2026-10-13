@@ -1,4 +1,5 @@
 using System.Windows;
+using YierPet.Windows.Core;
 
 namespace YierPet.Windows;
 
@@ -6,6 +7,7 @@ public partial class App : Application
 {
     private Mutex? _instanceMutex;
     private bool _ownsInstanceMutex;
+    private DuoCoordinator? _duo;
 
     protected override void OnStartup(StartupEventArgs e)
     {
@@ -19,10 +21,14 @@ public partial class App : Application
         }
 
         base.OnStartup(e);
+        _duo = new DuoCoordinator(SettingsStore.Load());
+        _duo.Start();
+        if (e.Args.Contains("--library")) _duo.OpenLibrary();
     }
 
     protected override void OnExit(ExitEventArgs e)
     {
+        _duo?.Dispose();
         if (_ownsInstanceMutex)
         {
             _instanceMutex?.ReleaseMutex();

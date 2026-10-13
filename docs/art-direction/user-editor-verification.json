@@ -1,0 +1,26 @@
+{
+  "checks": 703,
+  "baseAssets": 522,
+  "spatialScenarios": 450,
+  "menus": {
+    "actionsPerCharacter": 8,
+    "source": 6,
+    "together": 6
+  },
+  "gifComparison": {
+    "passed": true,
+    "comparedFrames": 49,
+    "reference": "Pillow RGBA coalescing",
+    "checks": [
+      "visible RGB",
+      "alpha",
+      "disposal 0/1/2/3",
+      "partial frame offsets",
+      "transparent GIF",
+      "multi-page atlas",
+      "PNG alpha"
+    ],
+    "invisibleRGB": "ignored when both alpha=0"
+  },
+  "time": "2026-10-11T22:36:30.3731487+08:00"
+}

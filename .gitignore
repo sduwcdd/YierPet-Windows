@@ -16,3 +16,15 @@ Package.resolved
 # Local .NET CLI state
 /.dotnet-cli/
 /.nuget-packages/
+
+# Temporary validation, local data and deployment records
+/.tmp-*/
+**/__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+/docs/art-direction/*deployment*.json
+/content/wechat/review/
+/content/wechat/compiled/motion-run-v1.png

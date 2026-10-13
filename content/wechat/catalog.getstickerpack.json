@@ -1,0 +1,936 @@
+{
+  "schemaVersion": 1,
+  "sourceArticle": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+  "assets": [
+    {
+      "id": "gsp-0001",
+      "name": "布布柴犬装",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_1.png",
+      "original": "originals/gsp-0001.png",
+      "sha256": "c8bded68fb4e0fb880b8a608c2e08c912707b11439fdc72bbadf79f455728604",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0001-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0001.png",
+      "role": "bubu",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 263647,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0002",
+      "name": "布布鸭子装",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_2.png",
+      "original": "originals/gsp-0002.png",
+      "sha256": "74afb24ca741077fbc435436086ac3a7a216b6ee85ada8fadb6637907fb1f72e",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0002-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0002.png",
+      "role": "bubu",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 208432,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0003",
+      "name": "布布小熊装",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_3.png",
+      "original": "originals/gsp-0003.png",
+      "sha256": "2805e2613298a6857dab20179613ada5604e03078e5fa846391968f9c850357f",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0003-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0003.png",
+      "role": "bubu",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 305220,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0004",
+      "name": "布布熊猫装",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_4.png",
+      "original": "originals/gsp-0004.png",
+      "sha256": "3191aa1b12deb49c3328ced2bc29156f6be0f647e343fa291a558c06f590f041",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0004-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0004.png",
+      "role": "bubu",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 236218,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0005",
+      "name": "一二奶牛装",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_5.png",
+      "original": "originals/gsp-0005.png",
+      "sha256": "5e26d11bbc975770c5fcb1d0becb30fcd721e256307950796bb569317dcfd56a",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0005-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0005.png",
+      "role": "yier",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 249445,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0006",
+      "name": "布布背影",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_6.png",
+      "original": "originals/gsp-0006.png",
+      "sha256": "fad09faa692009db64fb6b7404dfdd24bfc94e7c281a11fbef6303a9d2d6ff93",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0006-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0006.png",
+      "role": "bubu",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 217281,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0007",
+      "name": "布布晃晃",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_7.png",
+      "original": "originals/gsp-0007.png",
+      "sha256": "06f6f85aa2d321d3475109830c8b9b40df7296d091a7b4b6a89ba30e45602529",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0007-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0007.png",
+      "role": "bubu",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 218070,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0008",
+      "name": "布布鹅鹅",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_8.png",
+      "original": "originals/gsp-0008.png",
+      "sha256": "a886efcc86afc9aebdacc56d78ed1e5e460e1418b6798e6e9e634d35483fb59e",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0008-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0008.png",
+      "role": "bubu",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 274231,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0009",
+      "name": "背后贴贴",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_9.png",
+      "original": "originals/gsp-0009.png",
+      "sha256": "161932a70f281ab0314cbb69dd0912a86f6d0a5b2d909bcfff95d6bd805894e7",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0009-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0009.png",
+      "role": "pair",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 223851,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0010",
+      "name": "亲亲脸颊",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_10.png",
+      "original": "originals/gsp-0010.png",
+      "sha256": "da37b5a854a93e2e358ef841f07cf581d61d30735dae1d488a9012ffc64bf812",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0010-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0010.png",
+      "role": "pair",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 198554,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0011",
+      "name": "一起摇摆",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_11.png",
+      "original": "originals/gsp-0011.png",
+      "sha256": "a2c214bd8b1253b6166afb00ae877d6a9c1b562eb2d9454f763913ad2b4dca93",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0011-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0011.png",
+      "role": "pair",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 273510,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0012",
+      "name": "背后抱抱",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_12.png",
+      "original": "originals/gsp-0012.png",
+      "sha256": "c6aa5dc968ae010ba7fd62c4cc580569a319c6301c75d0826b67ed0c7b0219f5",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0012-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0012.png",
+      "role": "pair",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 235467,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0013",
+      "name": "一起躺下",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_13.png",
+      "original": "originals/gsp-0013.png",
+      "sha256": "8814b36ce561c201ad5210da3afec0392de60f8993fb1191d4541a08c95307cc",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0013-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0013.png",
+      "role": "pair",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 199073,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0014",
+      "name": "布布晚安",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_14.png",
+      "original": "originals/gsp-0014.png",
+      "sha256": "8854427b61aef2783c54f79084bb252dc46bfb09e752a4c6d4d8c1a71939aa4b",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0014-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0014.png",
+      "role": "bubu",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 264281,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0015",
+      "name": "布布工作",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_15.png",
+      "original": "originals/gsp-0015.png",
+      "sha256": "2d4ad072c1b09903bb6fb5ecd9076e9c635f68f92e428ccb2538876014e657ef",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0015-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0015.png",
+      "role": "bubu",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 251678,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0016",
+      "name": "贴贴依偎",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_16.png",
+      "original": "originals/gsp-0016.png",
+      "sha256": "69f6c48ca086c6c42ebb1e11087d10c5c86b2446244e209db8995435fb79c7aa",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0016-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0016.png",
+      "role": "pair",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 249396,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0017",
+      "name": "布布委屈",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_17.png",
+      "original": "originals/gsp-0017.png",
+      "sha256": "dbcb3be5fca3f2e936a80e19810ff65821c835bfa6cc7ba046b206c8fd63c916",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0017-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0017.png",
+      "role": "bubu",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 197817,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0018",
+      "name": "布布害羞",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_18.png",
+      "original": "originals/gsp-0018.png",
+      "sha256": "3cf346bc7eb38041a4784fc8bae1c854d44120733b5605a978e56e8c26a0d531",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0018-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0018.png",
+      "role": "bubu",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 185132,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0019",
+      "name": "布布哭哭",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_19.png",
+      "original": "originals/gsp-0019.png",
+      "sha256": "0c0fc5535ca06761302f2dc5896c715c151614602e0c08f509c244fdaaad4c8c",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0019-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0019.png",
+      "role": "bubu",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 168011,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0020",
+      "name": "枕头互动",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_20.png",
+      "original": "originals/gsp-0020.png",
+      "sha256": "8a867a3c4361f952016a7423251d0495548de741667061dc29b083689cfd6d52",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0020-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0020.png",
+      "role": "pair",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 248962,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0021",
+      "name": "轻轻推推",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_21.png",
+      "original": "originals/gsp-0021.png",
+      "sha256": "cd2f622e8f9a9a5d851edc8edfacd0471b605ac2db36053dd0c1bac35e3752d3",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0021-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0021.png",
+      "role": "pair",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 157147,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0022",
+      "name": "哄布布",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_22.png",
+      "original": "originals/gsp-0022.png",
+      "sha256": "b23e42162e63b63c2a0823408196bf2ed038cfd152fa85f5a5ed0867d2d891fc",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0022-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0022.png",
+      "role": "pair",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 198731,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0023",
+      "name": "布布好运",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_23.png",
+      "original": "originals/gsp-0023.png",
+      "sha256": "ac3645ea65191fa2975f5332bfa57b24c26bf5ca300ce7122c5bdb505fd65dfb",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0023-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0023.png",
+      "role": "bubu",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 257731,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0024",
+      "name": "布布送花",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_24.png",
+      "original": "originals/gsp-0024.png",
+      "sha256": "b0195a14a2dd099b9355e68781e22b9ba71860814845e03f8cf7340d9390b73e",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0024-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0024.png",
+      "role": "bubu",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 148049,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0025",
+      "name": "抱抱安慰",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_25.png",
+      "original": "originals/gsp-0025.png",
+      "sha256": "ec0ec3856358c83d158480fb6c72930a48b21c901e54aa73fe6014d1549eac50",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0025-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0025.png",
+      "role": "pair",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 233292,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0026",
+      "name": "一二说不对",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_26.png",
+      "original": "originals/gsp-0026.png",
+      "sha256": "7e709625ce184fe908f59dbbbaa031260b8c9ad180f8fcbcee9a7e0ae729e17b",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0026-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0026.png",
+      "role": "yier",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 184324,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0027",
+      "name": "一二大笑",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_27.png",
+      "original": "originals/gsp-0027.png",
+      "sha256": "1ac7511b83fc1b0f66fcb099c4908319fc1708fc1698b8a4b529677c9e53b933",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0027-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0027.png",
+      "role": "yier",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 237312,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0028",
+      "name": "一二拜托",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_28.png",
+      "original": "originals/gsp-0028.png",
+      "sha256": "9aa5d0f287502b261b76cb8d3dce1cd823ed5bb069cee4dfd80825ab67abda45",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0028-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0028.png",
+      "role": "yier",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 158863,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0029",
+      "name": "布布戴帽子",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_29.png",
+      "original": "originals/gsp-0029.png",
+      "sha256": "2992a08ea9b215177d90566a88e0e5799d6aa1d84aa409f0ff28b228c28b44f4",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0029-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0029.png",
+      "role": "bubu",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 217309,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    },
+    {
+      "id": "gsp-0030",
+      "name": "布布躲猫猫",
+      "sourceUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob/sticker_30.png",
+      "original": "originals/gsp-0030.png",
+      "sha256": "7c771c971b3cad8ba401dade0c810cbdeee8a20a5af5f080f043f3b5673902d4",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "frameCount": 1,
+      "durationsMs": [
+        100
+      ],
+      "pages": [
+        {
+          "file": "compiled/gsp-0030-0.png",
+          "firstFrame": 0,
+          "frameCount": 1,
+          "columns": 1
+        }
+      ],
+      "poster": "posters/gsp-0030.png",
+      "role": "bubu",
+      "reviewed": true,
+      "enabled": true,
+      "tags": [],
+      "bytes": 68249,
+      "sourceLabel": "GetStickerPack",
+      "sourcePage": "https://getstickerpack.com/stickers/xiao-xiong-yi-er-he-bu-bu-credits-to-huang-xiaob",
+      "reviewScope": "visually checked every original PNG; all 30 are static"
+    }
+  ]
+}

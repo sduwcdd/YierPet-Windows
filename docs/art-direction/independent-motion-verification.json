@@ -1,0 +1,11 @@
+{
+  "checks": 1114,
+  "assets": 526,
+  "GetStickerPack": 30,
+  "motionClips": 4,
+  "independentPlayback": true,
+  "independentBusyChecks": true,
+  "followDoesNotLock": true,
+  "idleIntervalSeconds": "4\u20138",
+  "mirrorPixelsVerified": true
+}

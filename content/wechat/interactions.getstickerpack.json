@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "interactions": [
+    {
+      "id": "gsp-pair-0009",
+      "name": "背后贴贴 · 原图",
+      "mode": "composite",
+      "assetIds": [
+        "gsp-0009"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "原文件为静态 PNG；只显示原图，不生成动作中间帧。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "gsp-pair-0010",
+      "name": "亲亲脸颊 · 原图",
+      "mode": "composite",
+      "assetIds": [
+        "gsp-0010"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "原文件为静态 PNG；只显示原图，不生成动作中间帧。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "gsp-pair-0011",
+      "name": "一起摇摆 · 原图",
+      "mode": "composite",
+      "assetIds": [
+        "gsp-0011"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "原文件为静态 PNG；只显示原图，不生成动作中间帧。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "gsp-pair-0012",
+      "name": "背后抱抱 · 原图",
+      "mode": "composite",
+      "assetIds": [
+        "gsp-0012"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "原文件为静态 PNG；只显示原图，不生成动作中间帧。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "gsp-pair-0013",
+      "name": "一起躺下 · 原图",
+      "mode": "composite",
+      "assetIds": [
+        "gsp-0013"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "原文件为静态 PNG；只显示原图，不生成动作中间帧。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "gsp-pair-0016",
+      "name": "贴贴依偎 · 原图",
+      "mode": "composite",
+      "assetIds": [
+        "gsp-0016"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "原文件为静态 PNG；只显示原图，不生成动作中间帧。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "gsp-pair-0020",
+      "name": "枕头互动 · 原图",
+      "mode": "composite",
+      "assetIds": [
+        "gsp-0020"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "原文件为静态 PNG；只显示原图，不生成动作中间帧。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "gsp-pair-0021",
+      "name": "轻轻推推 · 原图",
+      "mode": "composite",
+      "assetIds": [
+        "gsp-0021"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "原文件为静态 PNG；只显示原图，不生成动作中间帧。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "gsp-pair-0022",
+      "name": "哄布布 · 原图",
+      "mode": "composite",
+      "assetIds": [
+        "gsp-0022"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "原文件为静态 PNG；只显示原图，不生成动作中间帧。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "gsp-pair-0025",
+      "name": "抱抱安慰 · 原图",
+      "mode": "composite",
+      "assetIds": [
+        "gsp-0025"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "原文件为静态 PNG；只显示原图，不生成动作中间帧。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    }
+  ],
+  "states": {}
+}

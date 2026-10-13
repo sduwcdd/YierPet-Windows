@@ -1,0 +1,20 @@
+{
+  "checks": 2031,
+  "assets": 522,
+  "descriptions": 522,
+  "semanticInteractions": 114,
+  "walkingSources": [
+    "wx-0150",
+    "wx-0183"
+  ],
+  "generatedRunsLoaded": 0,
+  "synchronizedStart": true,
+  "partnerBusyFallback": true,
+  "disableCancels": true,
+  "chaseFrontOrderAndEdges": true,
+  "sourcePixelMirrors": true,
+  "uiDescriptionAndSearch": true,
+  "originalWalkingFramesRgbaVerified": 16,
+  "originalFilesSha256Verified": 522,
+  "temporarySmokeProjectRemoved": true
+}

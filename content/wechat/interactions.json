@@ -1,0 +1,1335 @@
+{
+  "schemaVersion": 1,
+  "interactions": [
+    {
+      "id": "pair-0009",
+      "name": "双人 · wx-0009",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0009"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "一二在左前方，布布在右后方，同盖被子。"
+    },
+    {
+      "id": "pair-0014",
+      "name": "双人 · wx-0014",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0014"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "any",
+      "positionNote": "一二坐在布布造型座椅中，属于上下/包围关系，与左右无关。"
+    },
+    {
+      "id": "pair-0025",
+      "name": "背靠背",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0025"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": true,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0026",
+      "name": "双人 · wx-0026",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0026"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0032",
+      "name": "双人 · wx-0032",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0032"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "any",
+      "positionNote": "一二居中抱着小布布，属于怀抱关系，与左右无关。"
+    },
+    {
+      "id": "pair-0034",
+      "name": "双人 · wx-0034",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0034"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0035",
+      "name": "场景 · wx-0035",
+      "mode": "scene",
+      "assetIds": [
+        "wx-0035"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "独立场景播放，保留原画面，不推断一二布布互动。",
+      "positionRequirement": "any",
+      "positionNote": "人物绕心形装饰穿行，单人装扮场景，与左右无关。"
+    },
+    {
+      "id": "pair-0049",
+      "name": "双人 · wx-0049",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0049"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "any",
+      "positionNote": "布布居中抱着小一二，属于上下/怀抱关系，与左右无关。"
+    },
+    {
+      "id": "pair-0063",
+      "name": "双人 · wx-0063",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0063"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "any",
+      "positionNote": "一二手中的小布布随手势在左右摆动，无稳定左右站位。互动入场与左右无关，保持当前左右顺序即可。"
+    },
+    {
+      "id": "pair-0065",
+      "name": "双人 · wx-0065",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0065"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0075",
+      "name": "双人 · wx-0075",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0075"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0077",
+      "name": "双人 · wx-0077",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0077"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0086",
+      "name": "双人 · wx-0086",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0086"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0094",
+      "name": "一起泡澡",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0094"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": true,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0095",
+      "name": "一起过生日",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0095"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0098",
+      "name": "双人 · wx-0098",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0098"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "any",
+      "positionNote": "一二在画面中央，布布仅出现在右上思念泡泡中，不是两个并排身体；与左右无关。"
+    },
+    {
+      "id": "pair-0099",
+      "name": "双人 · wx-0099",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0099"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0101",
+      "name": "场景 · wx-0101",
+      "mode": "scene",
+      "assetIds": [
+        "wx-0101"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "独立场景播放，保留原画面，不推断一二布布互动。",
+      "positionRequirement": "any",
+      "positionNote": "画面以居中重叠或上下关系为主，与左右无关；保持当前左右顺序靠近即可。"
+    },
+    {
+      "id": "pair-0105",
+      "name": "双人 · wx-0105",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0105"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "any",
+      "positionNote": "一二在上、布布在下，属于叠放关系，与左右无关。"
+    },
+    {
+      "id": "pair-0107",
+      "name": "双人 · wx-0107",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0107"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "any",
+      "positionNote": "布布在上、一二在下，属于叠放关系，与左右无关。"
+    },
+    {
+      "id": "pair-0108",
+      "name": "双人 · wx-0108",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0108"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "any",
+      "positionNote": "一二抱着小布布，画面以居中怀抱为主，与左右无关。"
+    },
+    {
+      "id": "pair-0109",
+      "name": "双人 · wx-0109",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0109"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "any",
+      "positionNote": "一二坐在布布背上，属于上下关系，与左右无关。"
+    },
+    {
+      "id": "pair-0112",
+      "name": "场景 · wx-0112",
+      "mode": "scene",
+      "assetIds": [
+        "wx-0112"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "独立场景播放，保留原画面，不推断一二布布互动。",
+      "positionRequirement": "any",
+      "positionNote": "画面是两个一二的场景，没有可确认的布布站位；与左右无关。"
+    },
+    {
+      "id": "pair-0131",
+      "name": "牵手靠近",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0131"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": true,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0135",
+      "name": "双人 · wx-0135",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0135"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "any",
+      "positionNote": "一二在布布背上，属于上下关系，与左右无关。"
+    },
+    {
+      "id": "pair-0137",
+      "name": "一二给布布洗头",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0137"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0153",
+      "name": "双人 · wx-0153",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0153"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "布布从左侧进入，一二在右侧，互动前布布在左、一二在右。"
+    },
+    {
+      "id": "hug",
+      "name": "抱抱",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0154"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": true,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0160",
+      "name": "双人 · wx-0160",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0160"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0161",
+      "name": "双人 · wx-0161",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0161"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0162",
+      "name": "双人 · wx-0162",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0162"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "开场一二在左、布布在右，转圈过程中交换左右；按开场站位入场，之后保留原动画。"
+    },
+    {
+      "id": "pair-0167",
+      "name": "场景 · wx-0167",
+      "mode": "scene",
+      "assetIds": [
+        "wx-0167"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "独立场景播放，保留原画面，不推断一二布布互动。",
+      "positionRequirement": "any",
+      "positionNote": "画面以居中重叠或上下关系为主，与左右无关；保持当前左右顺序靠近即可。"
+    },
+    {
+      "id": "pair-0168",
+      "name": "双人 · wx-0168",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0168"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "any",
+      "positionNote": "布布居中抱小一二，属于怀抱关系，与左右无关。"
+    },
+    {
+      "id": "pair-0170",
+      "name": "双人 · wx-0170",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0170"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "any",
+      "positionNote": "一二站在布布上方装饰圣诞树，是上下关系，与左右无关。"
+    },
+    {
+      "id": "pair-0173",
+      "name": "双人 · wx-0173",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0173"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0175",
+      "name": "双人 · wx-0175",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0175"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "any",
+      "positionNote": "一二在上、布布趴在下方，属于上下关系，与左右无关。"
+    },
+    {
+      "id": "pair-0181",
+      "name": "相拥",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0181"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0187",
+      "name": "双人 · wx-0187",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0187"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0196",
+      "name": "双人 · wx-0196",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0196"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0203",
+      "name": "双人 · wx-0203",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0203"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "nuzzle",
+      "name": "贴贴依偎",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0210"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": true,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0224",
+      "name": "一二趴在布布头上",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0224"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "any",
+      "positionNote": "一二趴在布布背上，属于上下叠放关系，与左右无关。"
+    },
+    {
+      "id": "pair-0226",
+      "name": "双人 · wx-0226",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0226"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "any",
+      "positionNote": "布布在前、一二从后方抱住，主要是前后重叠关系，与左右无关。"
+    },
+    {
+      "id": "pair-0229",
+      "name": "抱抱靠肩",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0229"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0230",
+      "name": "双人 · wx-0230",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0230"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "any",
+      "positionNote": "一二手持小布布贴近脸部，属于怀抱/道具关系，与左右无关。"
+    },
+    {
+      "id": "pair-0231",
+      "name": "亲吻回应",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0231"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0236",
+      "name": "双人 · wx-0236",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0236"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0241",
+      "name": "双人 · wx-0241",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0241"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0243",
+      "name": "亲亲脸颊",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0243"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": true,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0244",
+      "name": "双人 · wx-0244",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0244"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0249",
+      "name": "双人 · wx-0249",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0249"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0259",
+      "name": "背后抱抱",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0259"
+      ],
+      "leftCharacter": "yier",
+      "automatic": true,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0265",
+      "name": "双人 · wx-0265",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0265"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0266",
+      "name": "双人 · wx-0266",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0266"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0267",
+      "name": "双人 · wx-0267",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0267"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0270",
+      "name": "双人 · wx-0270",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0270"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0271",
+      "name": "面对面亲吻",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0271"
+      ],
+      "leftCharacter": "yier",
+      "automatic": true,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0277",
+      "name": "场景 · wx-0277",
+      "mode": "scene",
+      "assetIds": [
+        "wx-0277"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "独立场景播放，保留原画面，不推断一二布布互动。",
+      "positionRequirement": "any",
+      "positionNote": "画面为两个一二贴近，没有可确认的布布左右站位；与左右无关。"
+    },
+    {
+      "id": "pair-0279",
+      "name": "双人 · wx-0279",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0279"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0306",
+      "name": "一起乘热气球",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0306"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "热气球篮内一二在左、布布在右；互动前按这一左右位置入场。"
+    },
+    {
+      "id": "pair-0311",
+      "name": "双人 · wx-0311",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0311"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0313",
+      "name": "亲密贴脸",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0313"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": true,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0315",
+      "name": "双人 · wx-0315",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0315"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0327",
+      "name": "双人 · wx-0327",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0327"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0331",
+      "name": "喂饮料",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0331"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0336",
+      "name": "亲亲",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0336"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0353",
+      "name": "双人 · wx-0353",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0353"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0360",
+      "name": "双人 · wx-0360",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0360"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0363",
+      "name": "双人 · wx-0363",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0363"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0366",
+      "name": "双人 · wx-0366",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0366"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0368",
+      "name": "一起洗头",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0368"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0378",
+      "name": "双人 · wx-0378",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0378"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0379",
+      "name": "牵着走",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0379"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0384",
+      "name": "双人 · wx-0384",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0384"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "any",
+      "positionNote": "一二坐在布布上方，属于上下叠放关系，与左右无关。"
+    },
+    {
+      "id": "pair-0387",
+      "name": "场景 · wx-0387",
+      "mode": "scene",
+      "assetIds": [
+        "wx-0387"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "独立场景播放，保留原画面，不推断一二布布互动。",
+      "positionRequirement": "any",
+      "positionNote": "长条场景含多个小角色，并非稳定的双人站位，与左右无关。"
+    },
+    {
+      "id": "pair-0393",
+      "name": "双人 · wx-0393",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0393"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0394",
+      "name": "双人 · wx-0394",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0394"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0401",
+      "name": "双人 · wx-0401",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0401"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "开场布布在左、一二在右；抱着转圈时交换左右，先按开场位置入场，再保留原动画。"
+    },
+    {
+      "id": "pair-0402",
+      "name": "一起玩水",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0402"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": true,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0404",
+      "name": "双人 · wx-0404",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0404"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0408",
+      "name": "双人 · wx-0408",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0408"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "开场一二在左、布布在右；转圈中交换左右，按开场位置入场后保留原动画。"
+    },
+    {
+      "id": "pair-0412",
+      "name": "双人 · wx-0412",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0412"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0423",
+      "name": "场景 · wx-0423",
+      "mode": "scene",
+      "assetIds": [
+        "wx-0423"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "独立场景播放，保留原画面，不推断一二布布互动。",
+      "positionRequirement": "any",
+      "positionNote": "教室内有多个人物及多排座位，没有唯一的一二/布布左右配对；与左右无关。"
+    },
+    {
+      "id": "pair-0433",
+      "name": "双人 · wx-0433",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0433"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0446",
+      "name": "一起出发",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0446"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "any",
+      "positionNote": "布布骑车在前下方，一二在后上方，主要是前后叠放关系，与左右无关。"
+    },
+    {
+      "id": "pair-0468",
+      "name": "双人 · wx-0468",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0468"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0475",
+      "name": "一二戳布布",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0475"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0476",
+      "name": "双人 · wx-0476",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0476"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0479",
+      "name": "布布趴在一二头上",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0479"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "any",
+      "positionNote": "布布在上、一二趴在下方，属于上下叠放关系，与左右无关。"
+    },
+    {
+      "id": "pair-0487",
+      "name": "一起玩游戏",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0487"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0488",
+      "name": "一二给布布洗头",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0488"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "yier-left",
+      "positionNote": "画面中一二在左、布布在右；互动前先走到一二左、布布右的位置。"
+    },
+    {
+      "id": "pair-0492",
+      "name": "一起泡澡",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0492"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": true,
+      "note": "保留同一原始 GIF 内两只角色的动作联系与全部帧。左右身份依预览帧标注；重叠时按所在半区拖动。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "hearts-response",
+      "name": "一二发射爱心 → 布布回应",
+      "mode": "response",
+      "assetIds": [
+        "wx-0007",
+        "wx-0304"
+      ],
+      "leftCharacter": "yier",
+      "automatic": true,
+      "note": "两份原图均从举起小道具过渡到前方出现粉色爱心；顺序播放形成回应。这是应用编排，不是文章已有的连续剧情。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "kiss-response",
+      "name": "布布飞吻 → 一二比心",
+      "mode": "response",
+      "assetIds": [
+        "wx-0344",
+        "wx-0079"
+      ],
+      "leftCharacter": "yier",
+      "automatic": true,
+      "note": "原图飞吻与比心动作的应用层语义配对；不生成新画面。",
+      "positionRequirement": "any",
+      "positionNote": "与左右无关，保持当前左右顺序靠近后互动。"
+    },
+    {
+      "id": "take-photo",
+      "name": "布布拍照 → 一二摆姿势",
+      "mode": "response",
+      "assetIds": [
+        "wx-0015",
+        "wx-0079"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "拍照、比心依序编排；不是原文章剧情。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "互动前先走到布布在左、一二在右。 布布举相机朝右拍照，拍一二时布布在左、一二在右。"
+    },
+    {
+      "id": "pair-0044",
+      "name": "原图场景 · wx-0044",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0044"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "多时点复核后纠正人物分类，保留完整原动画，不拆出重复角色。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0188",
+      "name": "原图场景 · wx-0188",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0188"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "多时点复核后纠正人物分类，保留完整原动画，不拆出重复角色。",
+      "positionRequirement": "any",
+      "positionNote": "布布和一二是打卡机画面里的小图案；不构成外部双人左右站位，与左右无关。"
+    },
+    {
+      "id": "pair-0321",
+      "name": "原图场景 · wx-0321",
+      "mode": "scene",
+      "assetIds": [
+        "wx-0321"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "多时点复核后纠正人物分类，保留完整原动画，不拆出重复角色。",
+      "positionRequirement": "any",
+      "positionNote": "画面为多个一二依次叠放的场景，没有可确认的布布左右站位；与左右无关。"
+    },
+    {
+      "id": "pair-0328",
+      "name": "原图场景 · wx-0328",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0328"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "多时点复核后纠正人物分类，保留完整原动画，不拆出重复角色。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0343",
+      "name": "原图场景 · wx-0343",
+      "mode": "composite",
+      "assetIds": [
+        "wx-0343"
+      ],
+      "leftCharacter": "bubu",
+      "automatic": false,
+      "note": "多时点复核后纠正人物分类，保留完整原动画，不拆出重复角色。",
+      "positionRequirement": "bubu-left",
+      "positionNote": "画面中布布在左、一二在右；互动前先走到布布左、一二右的位置。"
+    },
+    {
+      "id": "pair-0453",
+      "name": "原图场景 · wx-0453",
+      "mode": "scene",
+      "assetIds": [
+        "wx-0453"
+      ],
+      "leftCharacter": "yier",
+      "automatic": false,
+      "note": "多时点复核后纠正人物分类，保留完整原动画，不拆出重复角色。",
+      "positionRequirement": "any",
+      "positionNote": "画面为多个布布的场景，没有可确认的一二左右站位；与左右无关。"
+    }
+  ],
+  "states": {
+    "yier": {
+      "Waving": "wx-0483",
+      "Failed": "wx-0068",
+      "Waiting": "wx-0437",
+      "Running": "wx-0482"
+    },
+    "bubu": {
+      "Failed": "wx-0234",
+      "Waiting": "wx-0432",
+      "Running": "wx-0467",
+      "Review": "wx-0290"
+    }
+  }
+}

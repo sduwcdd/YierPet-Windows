@@ -1,0 +1,57 @@
+{
+  "checks": 231,
+  "assets": [
+    {
+      "id": "wx-0150",
+      "beforeCenters": [
+        390.5,
+        374,
+        363,
+        354,
+        343.5,
+        321.5,
+        311.5,
+        294.5
+      ],
+      "afterCenters": [
+        319.5,
+        320,
+        319,
+        320,
+        319.5,
+        319.5,
+        319.5,
+        319.5
+      ],
+      "beforeLoopJumpPixels": 96,
+      "afterLoopJumpPixels": 0
+    },
+    {
+      "id": "wx-0183",
+      "beforeCenters": [
+        390.5,
+        374,
+        363,
+        354,
+        343.5,
+        321.5,
+        311.5,
+        294.5
+      ],
+      "afterCenters": [
+        319.5,
+        320,
+        319,
+        320,
+        319.5,
+        319.5,
+        319.5,
+        319.5
+      ],
+      "beforeLoopJumpPixels": 96,
+      "afterLoopJumpPixels": 0
+    }
+  ],
+  "continuousMovement": "Both characters, both directions, four loops each; no reverse screen movement",
+  "originalFramesAndTimingPreserved": true
+}

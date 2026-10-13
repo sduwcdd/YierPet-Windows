@@ -1,4 +1,4 @@
-[CmdletBinding()]
+﻿[CmdletBinding()]
 param(
     [switch]$NoLaunch
 )
@@ -12,7 +12,10 @@ $installedExecutable = Join-Path $installRoot 'YierPet.Windows.exe'
 $desktopShortcut = Join-Path ([Environment]::GetFolderPath('Desktop')) '一二桌宠.lnk'
 $startupShortcut = Join-Path ([Environment]::GetFolderPath('Startup')) '一二桌宠.lnk'
 
-Get-Process -Name 'YierPet.Windows' -ErrorAction SilentlyContinue | Stop-Process -Force
+Get-Process -Name 'YierPet.Windows' -ErrorAction SilentlyContinue | ForEach-Object {
+    Stop-Process -Id $_.Id -Force
+    if (-not $_.WaitForExit(5000)) { throw "旧桌宠尚未退出，请稍后重试安装。" }
+}
 
 dotnet publish $project -c Release --no-self-contained -o $publishOutput
 if ($LASTEXITCODE -ne 0) {
@@ -32,7 +35,7 @@ function New-YierPetShortcut {
     $shortcut = $shell.CreateShortcut($Path)
     $shortcut.TargetPath = $installedExecutable
     $shortcut.WorkingDirectory = $installRoot
-    $shortcut.IconLocation = "$installedExecutable,0"
+    $shortcut.IconLocation = "$(Join-Path $installRoot 'Assets\app-icon.ico'),0"
     $shortcut.Description = '启动一二 Windows 桌宠'
     $shortcut.Save()
 }
@@ -45,5 +48,5 @@ Write-Host "桌面快捷方式：$desktopShortcut"
 Write-Host "开机自启动：$startupShortcut"
 
 if (-not $NoLaunch) {
-    Start-Process -FilePath $installedExecutable
+    Start-Process -FilePath $installedExecutable -WindowStyle Hidden
 }
