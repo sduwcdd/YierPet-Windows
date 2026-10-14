@@ -48,6 +48,8 @@ public sealed partial class StickerLibraryWindow : Window
         if (_library.UserContentError is { } error) FeedbackText.Text = error;
     }
 
+    private void VoiceClick(object sender, RoutedEventArgs e) => _duo.OpenVoice();
+
     private bool InFilter(StickerAsset a, int index) => index switch
     {
         1 => a.Role == "yier", 2 => a.Role == "bubu", 3 => a.Role == "pair",

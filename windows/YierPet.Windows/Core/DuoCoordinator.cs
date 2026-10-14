@@ -17,8 +17,10 @@ public sealed class DuoCoordinator : IDisposable
     private StickerInteraction? _interaction;
     private string _interactionLeftCharacter = "yier";
     private int _responseIndex;
-    private double _linkedDuration, _chaseDirection = 1;
+    private double _linkedDuration, _togetherDuration, _chaseDirection = 1;
     private StickerLibraryWindow? _libraryWindow;
+    private VoiceWindow? _voiceWindow;
+    private readonly ReminderVoice _reminderVoice = new();
     public StickerLibrary Library { get; }
     public AppSettings Settings { get; }
     public MainWindow Yier { get; }
@@ -41,7 +43,9 @@ public sealed class DuoCoordinator : IDisposable
         Reminders = new ReminderService(settings, (kind, message) =>
         {
             CancelInteraction();
-            (Settings.YierVisible ? Yier : Bubu).HandleReminder(kind, message);
+            var speaker = Settings.YierVisible ? Yier : Bubu;
+            speaker.HandleReminder(kind, message);
+            if (_voiceWindow?.IsPreviewActive != true) _reminderVoice.Play(speaker.Character, message);
         });
         _autoSeconds = 35;
         _timer.Tick += (_, _) =>
@@ -98,6 +102,7 @@ public sealed class DuoCoordinator : IDisposable
                 else
                 {
                     Phase = InteractionPhase.Together;
+                    _togetherDuration = Math.Max(3, Library.Find(_interaction.AssetIds[0])!.DurationSeconds * 2);
                     Pair.Left = (_yierTarget.X + _bubuTarget.X + Yier.Width) / 2 - Pair.Width / 2;
                     Pair.Top = _yierTarget.Y;
                     Pair.SetSticker(Library, Library.Find(_interaction.AssetIds[0])!, 0, _interactionLeftCharacter);
@@ -124,7 +129,7 @@ public sealed class DuoCoordinator : IDisposable
             {
                 if (_interaction is null || !Library.IsAvailable(_interaction)) { CancelInteraction(); return; }
                 var asset = Library.Find(_interaction.AssetIds[0])!;
-                if (_phaseSeconds >= Math.Max(3, asset.DurationSeconds * 2)) { CancelInteraction(); return; }
+                if (_phaseSeconds >= _togetherDuration) { CancelInteraction(); return; }
                 Pair.SetSticker(Library, asset, asset.FrameAt(_phaseSeconds), _interactionLeftCharacter);
             }
             return;
@@ -231,6 +236,55 @@ public sealed class DuoCoordinator : IDisposable
         _phaseSeconds = 0;
     }
 
+    public bool TryCatchThrownYier(MainWindow thrown, Point previousCenter, Point nextCenter)
+    {
+        if (_disposed || thrown != Yier || !Yier.CanBeCaught || !BothEnabled || IsInteracting
+            || !Yier.IsVisible || !Bubu.IsVisible || Bubu.IsUserBusy) return false;
+        var rule = Library.AvailableInteractions.FirstOrDefault(r => r.Id == "pair-0401"
+            && r.Mode == "composite" && r.AssetIds.SequenceEqual(new[] { "wx-0401" }));
+        if (rule is null) return false;
+        // Catch around Bubu's upper body; hovering overhead or falling elsewhere does not count.
+        var reach = new Rect(Bubu.Left + Bubu.Width / 2 - 100, Bubu.Top + Bubu.Height * .1,
+            200, Bubu.Height * .7);
+        if (!CrossesCatchArea(previousCenter, nextCenter, reach)) return false;
+
+        Yier.EndCaughtThrow(); // Do not run the normal impact complaint on a successful catch.
+        Yier.BeginCoordinated(); Bubu.BeginCoordinated();
+        _interaction = rule;
+        _interactionLeftCharacter = "bubu";
+        _phaseSeconds = 0;
+        Phase = InteractionPhase.Together;
+        var catchAsset = Library.Find("wx-0401")!;
+        _togetherDuration = Math.Max(2, Math.Ceiling(3 / catchAsset.DurationSeconds)) * catchAsset.DurationSeconds;
+        var area = SystemParameters.WorkArea;
+        Pair.Left = Math.Clamp(Bubu.Left + Bubu.Width / 2 - Pair.Width / 2,
+            area.Left, Math.Max(area.Left, area.Right - Pair.Width));
+        Pair.Top = Math.Clamp(Bubu.Top, area.Top, Math.Max(area.Top, area.Bottom - Pair.Height));
+        double center = Pair.Left + Pair.Width / 2;
+        // Restore the pair beside the catch, with Bubu on the left, when playback ends.
+        Bubu.Left = Math.Clamp(center - 65 - Bubu.Width / 2, area.Left, Math.Max(area.Left, area.Right - Bubu.Width));
+        Yier.Left = Math.Clamp(center + 65 - Yier.Width / 2, area.Left, Math.Max(area.Left, area.Right - Yier.Width));
+        Yier.Top = Bubu.Top = Pair.Top;
+        Pair.SetSticker(Library, catchAsset, 0, "bubu");
+        Pair.Show(); Yier.Hide(); Bubu.Hide();
+        return true;
+    }
+
+    private static bool CrossesCatchArea(Point from, Point to, Rect area)
+    {
+        double enter = 0, exit = 1;
+        bool Clip(double start, double delta, double min, double max)
+        {
+            if (Math.Abs(delta) < 1e-9) return start >= min && start <= max;
+            double a = (min - start) / delta, b = (max - start) / delta;
+            enter = Math.Max(enter, Math.Min(a, b));
+            exit = Math.Min(exit, Math.Max(a, b));
+            return enter <= exit;
+        }
+        return Clip(from.X, to.X - from.X, area.Left, area.Right)
+            && Clip(from.Y, to.Y - from.Y, area.Top, area.Bottom);
+    }
+
     private void AdvanceLinked(double seconds)
     {
         if (_interaction is null || _phaseSeconds >= _linkedDuration) { CancelInteraction(); return; }
@@ -279,6 +333,19 @@ public sealed class DuoCoordinator : IDisposable
         }
         else _libraryWindow.Activate();
     }
+
+    public void OpenVoice(PetCharacter character = PetCharacter.Yier)
+    {
+        if (_voiceWindow is null)
+        {
+            _voiceWindow = new VoiceWindow(character, stopReminder: _reminderVoice.Stop);
+            _voiceWindow.Closed += (_, _) => _voiceWindow = null;
+            _voiceWindow.Show();
+        }
+        else { if (_voiceWindow.WindowState == WindowState.Minimized) _voiceWindow.WindowState = WindowState.Normal; _voiceWindow.Activate(); }
+    }
+
+    public void StopReminderSpeech() => _reminderVoice.Stop();
 
     private void OnLibraryChanged()
     {
@@ -335,8 +402,8 @@ public sealed class DuoCoordinator : IDisposable
         CancelInteraction();
         Yier.ResumeIndependent(); Bubu.ResumeIndependent();
         var area = SystemParameters.WorkArea;
-        Yier.Left = Math.Max(area.Left, area.Right - 390);
-        Bubu.Left = Math.Max(area.Left, area.Right - 210);
+        Bubu.Left = Math.Max(area.Left, area.Right - 390);
+        Yier.Left = Math.Max(area.Left, area.Right - 210);
         Yier.Top = Bubu.Top = Math.Max(area.Top, area.Bottom - Yier.Height - 20);
         ApplyVisibility();
     }
@@ -348,6 +415,8 @@ public sealed class DuoCoordinator : IDisposable
         _timer.Stop(); _clock.Stop();
         Library.Changed -= OnLibraryChanged;
         _libraryWindow?.Close();
+        _voiceWindow?.Close();
+        _reminderVoice.Dispose();
         Pair.Close(); Yier.Close(); Bubu.Close();
     }
 }

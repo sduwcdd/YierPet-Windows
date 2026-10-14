@@ -2,13 +2,13 @@
 
 ## 环境与常用命令
 
-Windows 10/11 x64 + .NET 8 SDK。Python 仅用于素材开发和校验，普通用户不需要安装。
+Windows 10/11 x64 + .NET 8 SDK。素材开发和校验使用 Python；可选的新台词生成另需独立的 GPT-SoVITS Python 环境。日常桌宠与预录提醒不需要 Python。
 
 ```powershell
 dotnet build windows/YierPet.Windows/YierPet.Windows.csproj -c Release
 python -m pip install -r tools/requirements.txt
 python tools/validate_content.py
-.\windows\publish-release.ps1 -Version 0.0.2
+.\windows\publish-release.ps1 -Version 0.0.3
 ```
 
 `build-windows.ps1 -Run` 构建并运行；`-Publish` 调用完整 EXE 发布脚本。`install-windows.ps1` 为开发机安装框架依赖版本，需 .NET 8 Desktop Runtime，并创建桌面及开机启动快捷方式。
@@ -28,9 +28,13 @@ python tools/validate_content.py
 | `StickerLibraryWindow.xaml(.cs)` | 搜索、预览、启停与编辑入口 |
 | `StickerEditorWindow.cs` | 上传、资料及候选关联编辑 |
 | `Core/AppSettings.cs` / `ReminderService.cs` | 用户开关与健康提醒 |
+| `VoiceWindow.xaml(.cs)` / `Core/VoiceStore.cs` | 语音工坊、声音配置、模型归档和 WAV 保存 |
+| `Core/VoiceRuntime.cs` / `tools/voice_runtime.py` | 按需启动 CPU 推理进程、取消及退出清理 |
+| `Core/VoiceService.cs` / `VoiceAudioProcessor.cs` | 角色权重切换、合成接口及轻度清晰化 |
+| `Core/ReminderVoice.cs` | 离线播放已生成的角色提醒 |
 | `Core/ReleaseVerifier.cs` | 独立 EXE 内的只读素材验证和隔离数据读写检查 |
 
-旧 macOS、Codex 原生宠物包、生成动画类及其图集已移除。角色枚举位于 `Core/PetCharacter.cs`。当前运行仅依赖 `content/wechat` 原图清单及基准图。
+旧 macOS、Codex 原生宠物包、生成动画类及其图集已移除。角色枚举位于 `Core/PetCharacter.cs`。表情运行依赖 `content/wechat` 原图清单及基准图；提醒配音位于 `content/voice/reminders`。训练素材、权重和 Python 环境保持在忽略的 `voice-training/`，不提交到仓库。
 
 ## 素材开发
 
@@ -48,11 +52,11 @@ python tools/validate_content.py
 
 `publish-release.ps1` 使用 .NET 的 self-contained / single-file 发布，将运行时及 Content 一并打包。启用 `IncludeAllContentForSelfExtract`，启动前解包后通过 `AppContext.BaseDirectory` 读取素材；机制见 [微软单文件部署文档](https://learn.microsoft.com/en-us/dotnet/core/deploying/single-file/overview)。
 
-脚本只将 EXE 复制到独立临时目录，调用 `--verify-release <报告路径>`。该入口不占用正常桌宠单实例、不读取用户上传目录，检查 522 项素材、225 条规则、所有首末帧、走路帧、默认菜单和隔离的用户数据保存/重载，并逐张核对导出原文件哈希、批量 ZIP 与旧上传兼容性。临时测试文件退出后删除。
+脚本只将 EXE 复制到独立临时目录，调用 `--verify-release <报告路径>`。该入口不占用正常桌宠单实例、不读取用户上传目录，检查 522 项素材、225 条规则、所有首末帧、走路帧、默认菜单和隔离的用户数据保存/重载，并逐张核对导出原文件哈希、批量 ZIP 与旧上传兼容性。另校验 32 段角色提醒的原音和清晰化版本，共 64 个 WAV，以及语音教程、预设模板、按需启动脚本与默认开关。验证不会启动推理服务。临时测试文件退出后删除。
 
 输出：
 
-- `YierPet-Windows-v0.0.2-win-x64.exe`：供用户直接运行。
+- `YierPet-Windows-v0.0.3-win-x64.exe`：供用户直接运行。
 - `SHA256SUMS.txt`：下载文件哈希。
 - `verification.json`：发布包验证结果；不等同于所有桌面交互的自动化测试。
 
@@ -63,8 +67,8 @@ python tools/validate_content.py
 提交并推送 main 后，创建并推送版本标签：
 
 ```powershell
-git tag -a v0.0.2 -m "Release 0.0.2"
-git push github v0.0.2
+git tag -a v0.0.3 -m "Release 0.0.3"
+git push github v0.0.3
 ```
 
 新克隆通常只有 `origin`，请将命令中的 `github` 换成自己的远程名。`.github/workflows/release.yml` 在 Windows 上重新构建和验证，成功后通过仓库内置 `GITHUB_TOKEN` 创建 Release 并上传 EXE、哈希和报告。已有同名 Release 会停止，避免覆盖已发布文件。权限依据见 [GitHub GITHUB_TOKEN 文档](https://docs.github.com/en/actions/tutorials/authenticate-with-github_token)。

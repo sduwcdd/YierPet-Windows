@@ -21,3 +21,7 @@ build/
 /docs/art-direction/*deployment*.json
 /content/wechat/review/
 /content/wechat/compiled/motion-run-v1.png
+
+# Local voice source videos, extracted audio and model caches
+/voice-training/
+/*.mp4

@@ -1,4 +1,4 @@
-﻿[CmdletBinding()]
+[CmdletBinding()]
 param(
     [switch]$Run,
     [switch]$Publish
@@ -16,7 +16,7 @@ dotnet build $project -c Release
 if ($LASTEXITCODE -ne 0) { throw "构建失败，dotnet 退出码：$LASTEXITCODE" }
 
 if ($Publish) {
-    & (Join-Path $PSScriptRoot 'publish-release.ps1') -Version '0.0.2'
+    & (Join-Path $PSScriptRoot 'publish-release.ps1') -Version '0.0.3'
 }
 
 if ($Run) {

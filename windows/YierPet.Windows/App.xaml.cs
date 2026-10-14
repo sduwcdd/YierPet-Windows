@@ -30,6 +30,7 @@ public partial class App : Application
         _duo = new DuoCoordinator(SettingsStore.Load());
         _duo.Start();
         if (e.Args.Contains("--library")) _duo.OpenLibrary();
+        if (e.Args.Contains("--voice")) _duo.OpenVoice();
     }
 
     protected override void OnExit(ExitEventArgs e)

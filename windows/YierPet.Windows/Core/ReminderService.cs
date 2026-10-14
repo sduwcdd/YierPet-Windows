@@ -29,6 +29,8 @@ public sealed class ReminderService
         };
 
     private readonly AppSettings _settings;
+    public static IEnumerable<(ReminderKind Kind, string Text)> Scripts =>
+        Messages.SelectMany(pair => pair.Value.Select(text => (pair.Key, text)));
     private readonly Action<ReminderKind, string> _onReminder;
     private readonly TimeSpan _tickInterval = TimeSpan.FromSeconds(30);
     private readonly TimeSpan _presenceIdleLimit = TimeSpan.FromMinutes(5);

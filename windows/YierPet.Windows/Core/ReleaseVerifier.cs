@@ -17,6 +17,29 @@ internal static class ReleaseVerifier
             var settings = new AppSettings { RandomBehaviourEnabled = false, AutomaticInteractionsEnabled = false };
             var library = new StickerLibrary(settings, userRoot: temporary);
             void Check(bool condition, string message) { if (!condition) throw new InvalidDataException(message); }
+            // Verify spoken reminders are complete and match the exact displayed scripts in a standalone build.
+            string voiceRoot = Path.Combine(AppContext.BaseDirectory, "Content", "voice", "reminders");
+            using (var voiceManifest = JsonDocument.Parse(File.ReadAllText(Path.Combine(voiceRoot, "manifest.json"))))
+            {
+                var clips = voiceManifest.RootElement.GetProperty("clips").EnumerateArray().ToArray();
+                Check(clips.Length == ReminderService.Scripts.Count() * 2, "Reminder voice count mismatch.");
+                foreach (var role in Enum.GetValues<PetCharacter>())
+                    foreach (var (_, text) in ReminderService.Scripts)
+                        foreach (bool clarity in new[] { false, true })
+                        {
+                            string name = ReminderVoice.FileName(role, text, clarity);
+                            string key = clarity ? "clarity" : "original";
+                            var entry = clips.Single(c => c.GetProperty(key).GetString() == name);
+                            Check(entry.GetProperty("text").GetString() == text, "Reminder text mismatch.");
+                            byte[] bytes = File.ReadAllBytes(Path.Combine(voiceRoot, name));
+                            VoiceService.ValidateWave(bytes);
+                            Check(Convert.ToHexString(SHA256.HashData(bytes)).Equals(entry.GetProperty(key + "Sha256").GetString(), StringComparison.OrdinalIgnoreCase), "Reminder audio hash mismatch.");
+                        }
+            }
+            Check(File.Exists(Path.Combine(AppContext.BaseDirectory, "Docs", "voice-guide.md")), "Voice guide missing.");
+            Check(File.Exists(Path.Combine(AppContext.BaseDirectory, "Docs", "voice-preset.example.json")), "Voice preset template missing.");
+            Check(File.Exists(Path.Combine(AppContext.BaseDirectory, "Tools", "voice_runtime.py")), "On-demand voice launcher missing.");
+            Check(new VoiceSettings().LoadOnDemand, "Voice models must load on demand by default.");
             Check(library.Assets.Count >= 522, "Built-in base assets are missing.");
             Check(library.Rules.Interactions.Count >= 225, "Built-in base interactions are missing.");
             foreach (var character in Enum.GetValues<PetCharacter>())
@@ -86,6 +109,11 @@ internal static class ReleaseVerifier
                 interactions = library.Rules.Interactions.Count, sampledFrames = untouched.Assets.Count * 2,
                 exportedOriginals = untouched.Assets.Count, batchExport = true, userUploadExport = true,
                 userDataIsolated = true,
+                reminderVoiceClips = ReminderService.Scripts.Count() * 2,
+                reminderVoiceFiles = ReminderService.Scripts.Count() * 4,
+                voiceGuideIncluded = true,
+                onDemandVoiceLauncherIncluded = true,
+                voiceLoadsOnDemandByDefault = true,
                 bundledFilesExtracted = !string.Equals(Path.TrimEndingDirectorySeparator(AppContext.BaseDirectory),
                     Path.GetDirectoryName(Environment.ProcessPath), StringComparison.OrdinalIgnoreCase)
             }, new JsonSerializerOptions { WriteIndented = true }));

@@ -1,5 +1,5 @@
-﻿[CmdletBinding()]
-param([string]$Version = '0.0.2')
+[CmdletBinding()]
+param([string]$Version = '0.0.3')
 
 $ErrorActionPreference = 'Stop'
 if ($Version -notmatch '^\d+\.\d+\.\d+$') { throw 'Version must use major.minor.patch.' }

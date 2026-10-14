@@ -38,6 +38,7 @@ public partial class MainWindow : Window
     public bool IsUserBusy => _dragging || _throwTimer.IsEnabled || _menuOpen;
     public bool IsPlayingGesture => _remainingLoops > 0;
     public bool IsCoordinated => _coordinated;
+    public bool CanBeCaught => _throwTimer.IsEnabled && _throwVelocity.Y > 0 && _maxImpact == 0;
 
     private PetState _state = PetState.Idle;
     private int _frameIndex;
@@ -284,6 +285,7 @@ public partial class MainWindow : Window
     {
         const double dt = 1d / 60d;
         var area = SystemParameters.WorkArea;
+        var previous = new Point(Left + Width / 2, Top + Height / 2);
         _throwVelocity.Y += Gravity * dt;
         Left += _throwVelocity.X * dt;
         Top += _throwVelocity.Y * dt;
@@ -298,6 +300,14 @@ public partial class MainWindow : Window
             Left = area.Right - Width;
             _throwVelocity.X = -Math.Abs(_throwVelocity.X) * WallBounce;
         }
+
+        // Sweep the falling path, not just its endpoint, so a fast throw cannot skip Bubu.
+        // Stop the sweep at first ground contact; never catch a trajectory after it hit the floor.
+        var next = new Point(Left + Width / 2, Top + Height / 2);
+        double groundCenter = area.Bottom - Height / 2;
+        if (next.Y > groundCenter && next.Y > previous.Y)
+            next = previous + (next - previous) * Math.Clamp((groundCenter - previous.Y) / (next.Y - previous.Y), 0, 1);
+        if (CanBeCaught && _coordinator.TryCatchThrownYier(this, previous, next)) return;
 
         if (Top < area.Top)
         {
@@ -326,6 +336,13 @@ public partial class MainWindow : Window
         else SetState(PetState.Idle);
     }
 
+    internal void EndCaughtThrow()
+    {
+        _throwTimer.Stop();
+        _throwVelocity = default;
+        _maxImpact = 0;
+    }
+
     private void Window_MouseRightButtonUp(object sender, MouseButtonEventArgs e)
     {
         OpenMenu();
@@ -351,6 +368,9 @@ public partial class MainWindow : Window
         var library = new MenuItem { Header = "表情与互动 · 上传 / 编辑" };
         library.Click += (_, _) => _coordinator.OpenLibrary();
         menu.Items.Add(library);
+        var voice = new MenuItem { Header = "语音工坊 · 生成 / 下载" };
+        voice.Click += (_, _) => _coordinator.OpenVoice(Character);
+        menu.Items.Add(voice);
         var sourceInteractions = new MenuItem { Header = "原表情关联互动", IsEnabled = _coordinator.BothEnabled };
         foreach (var rule in _coordinator.Library.MenuInteractions(false))
         {
@@ -445,6 +465,28 @@ public partial class MainWindow : Window
             item.Click += (_, _) => { _settings.SetEnabled(kind, item.IsChecked); SettingsStore.Save(_settings); };
             group.Items.Add(item);
         }
+        group.Items.Add(new Separator());
+        var speak = new MenuItem { Header = "提醒时自动说话", IsCheckable = true };
+        try { speak.IsChecked = new VoiceStore().Load().ReminderSpeechEnabled; }
+        catch { speak.IsEnabled = false; }
+        speak.Click += (_, _) =>
+        {
+            try
+            {
+                var store = new VoiceStore(); var settings = store.Load();
+                settings.ReminderSpeechEnabled = speak.IsChecked; store.Save(settings);
+                if (!speak.IsChecked) _coordinator.StopReminderSpeech();
+            }
+            catch (Exception ex) { MessageBox.Show("无法保存语音设置：" + ex.Message); }
+        };
+        group.Items.Add(speak);
+        var preview = new MenuItem { Header = "试听一条提醒" };
+        preview.Click += (_, _) =>
+        {
+            if (!Reminders.HealthKinds.Any(_settings.IsEnabled)) { Say("请先启用至少一类健康提醒。"); return; }
+            Reminders.TriggerTest(Reminders.HealthKinds.First(_settings.IsEnabled));
+        };
+        group.Items.Add(preview);
         return group;
     }
 

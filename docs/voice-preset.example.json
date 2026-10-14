@@ -1,0 +1,26 @@
+{
+  "Endpoint": "http://127.0.0.1:9880",
+  "ClarityEnabled": true,
+  "ReminderSpeechEnabled": true,
+  "FfmpegPath": "tools/ffmpeg.exe",
+  "Yier": {
+    "GptPath": "yier/gpt.ckpt",
+    "SovitsPath": "yier/sovits.pth",
+    "ReferencePath": "yier/reference.wav",
+    "ReferenceText": "你就像我生活中的小太阳，总是给我带来温暖和快乐。",
+    "ModelVersion": "v2",
+    "Text": "布布，陪我一起出去散步吧！"
+  },
+  "Bubu": {
+    "GptPath": "bubu/gpt.ckpt",
+    "SovitsPath": "bubu/sovits.pth",
+    "ReferencePath": "bubu/reference.wav",
+    "ReferenceText": "最近有好多人问我，我和一二的声音是怎么来的？",
+    "ModelVersion": "v2",
+    "Text": "一二，今天也要开开心心，我会一直陪着你。"
+  },
+  "LoadOnDemand": true,
+  "RuntimePythonPath": "runtime/venv/Scripts/python.exe",
+  "RuntimeRepositoryPath": "runtime/GPT-SoVITS",
+  "RuntimeConfigPath": "runtime/inference.yaml"
+}

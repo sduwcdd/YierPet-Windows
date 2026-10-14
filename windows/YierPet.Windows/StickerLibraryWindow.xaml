@@ -87,6 +87,7 @@
         </Grid>
         <Border Grid.Row="1" Background="#EEE6DC" CornerRadius="12" Padding="16,6" Margin="0,0,0,18">
             <WrapPanel>
+                <Button Content="语音工坊" Click="VoiceClick" Margin="0,4,16,4" Padding="10,5"/>
                 <TextBlock Text="桌面陪伴" FontWeight="SemiBold" VerticalAlignment="Center" Margin="0,6,26,6"/>
                 <CheckBox x:Name="RandomToggle" Content="自然活动" ToolTip="各自每隔 4–8 秒尝试表情或走动" Click="SettingsClick"/>
                 <CheckBox x:Name="AutomaticToggle" Content="自动互动" ToolTip="双方空闲时，配套表情会一起播放" Click="SettingsClick"/>

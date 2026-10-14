@@ -8,14 +8,14 @@
 
 ## 下载并开始使用
 
-**[下载 v0.0.2 完整 EXE（Windows x64）](https://github.com/sduwcdd/YierPet-Windows/releases/download/v0.0.2/YierPet-Windows-v0.0.2-win-x64.exe)** · [Release 页面](https://github.com/sduwcdd/YierPet-Windows/releases/tag/v0.0.2)
+**[下载 v0.0.3 完整 EXE（Windows x64）](https://github.com/sduwcdd/YierPet-Windows/releases/download/v0.0.3/YierPet-Windows-v0.0.3-win-x64.exe)** · [Release 页面](https://github.com/sduwcdd/YierPet-Windows/releases/tag/v0.0.3)
 
-1. 下载 `YierPet-Windows-v0.0.2-win-x64.exe`，放到准备长期保存的位置。
+1. 下载 `YierPet-Windows-v0.0.3-win-x64.exe`，放到准备长期保存的位置。
 2. 双击运行。一二和布布会出现在主屏幕右下角附近。
 3. **在角色身上右键**，打开“表情与互动 · 上传 / 编辑”，即可搜索、预览、播放或上传表情。
 4. 结束使用时，在角色身上右键 → **退出**。
 
-**不需要安装 .NET、Python 或另外下载素材。** EXE 已包含运行时、应用及全部内置素材，首次启动会先解包，可能比之后启动稍慢。应用本身不显示任务栏按钮，同一时间只运行一个实例。
+**日常桌宠、表情和健康提醒无需安装 .NET、Python 或另外下载素材。** EXE 已包含运行时、应用及全部内置素材；生成新台词需另配 GPT-SoVITS 环境与模型。首次启动会先解包，可能比之后启动稍慢。应用本身不显示任务栏按钮，同一时间只运行一个实例。
 
 适用系统：Windows 10 / 11，64 位 Intel / AMD 电脑。此版本不提供 ARM64 原生构建。请下载 Release 的 EXE；页面中的 `Source code` 压缩包是开发源码。
 
@@ -32,14 +32,17 @@
 
 ## 日常操作
 
+**v0.0.3 新增：语音工坊**。可为一二、布布分别配置 GPT-SoVITS 本机服务所用的模型和参考录音，输入中文生成、试听及下载 WAV，并归档声音文件。生成模型默认按需启动，生成完成、取消或关闭语音工坊后卸载；打开桌宠和语音工坊不加载模型。提供默认声音预设、轻度清晰化以及健康提醒自动播报（16 句 × 两位角色，预录语音无需启动生成服务）。已完成两位角色的本地首版模型训练；发布包已包含语音工坊及提醒音频；训练权重、参考录音和 Python 推理环境未随仓库或 EXE 分发，生成新台词需按教程配置。见 [语音使用与训练说明](docs/voice-guide.md)。
+
 | 操作 | 效果 |
 | --- | --- |
-| 左键单击角色 | 挥手招呼 |
+| 左键单击角色 | 一二挥手招呼，布布飞吻回应 |
 | 按住左键拖动 | 移动角色 |
 | 快速拖动后松开 | 抛掷、落地及边缘反弹 |
+| 将一二甩向布布附近 | 下落且尚未撞地时可被布布接住，播放 `wx-0401` 抱起转圈；未接住则正常摔落 |
 | 右键角色 | 打开控制菜单 |
 | 右键 → 表情与互动 · 上传 / 编辑 | 打开表情库和编辑器 |
-| 右键 → 回到屏幕右下角 | 召回两位角色 |
+| 右键 → 回到屏幕右下角 | 召回两位角色，布布在左、一二在右，面对面待机 |
 | 右键 → 显示一二 / 显示布布 | 显示或隐藏对应角色 |
 | 右键 → 暂停随机行为 | 暂停或恢复自然活动 |
 | 右键 → 健康提醒 | 分别设置各类提醒 |
@@ -78,6 +81,7 @@
 | --- | --- |
 | `settings.json` | 显示、随机行为、提醒及停用清单 |
 | `UserLibrary/` | 上传原文件、图集、说明、关联与菜单配置 |
+| `Voice/` | 语音配置、归档的角色权重与参考录音、生成的 WAV |
 
 - **备份 / 换电脑**：退出应用后复制整个数据目录，在新电脑对应位置恢复。可按 `Win + R`，输入 `%APPDATA%\YierPet-Windows` 打开它。
 - **更新**：右键退出旧版，再替换或运行新版 EXE；保留数据目录即可保留自定义内容。
@@ -99,8 +103,8 @@
 **想直接打开表情库？** 给 EXE 添加 `--library` 启动参数即可；请先退出已有实例。
 
 ```powershell
-& .\YierPet-Windows-v0.0.2-win-x64.exe --library
-Get-FileHash .\YierPet-Windows-v0.0.2-win-x64.exe -Algorithm SHA256
+& .\YierPet-Windows-v0.0.3-win-x64.exe --library
+Get-FileHash .\YierPet-Windows-v0.0.3-win-x64.exe -Algorithm SHA256
 ```
 
 ## 从源码构建
@@ -113,18 +117,19 @@ cd YierPet-Windows
 .\windows\build-windows.ps1 -Run
 ```
 
-构建 `v0.0.2` 完整单文件 EXE（自动验证包含的素材）：
+构建 `v0.0.3` 完整单文件 EXE（自动验证包含的素材）：
 
 ```powershell
-.\windows\publish-release.ps1 -Version 0.0.2
+.\windows\publish-release.ps1 -Version 0.0.3
 ```
 
-输出在 `windows/artifacts/release-0.0.2/`。若要从源码安装到当前用户目录并创建桌面、开机启动快捷方式，可运行 `windows/install-windows.ps1`；普通用户直接使用 Release EXE 即可。
+输出在 `windows/artifacts/release-0.0.3/`。若要从源码安装到当前用户目录并创建桌面、开机启动快捷方式，可运行 `windows/install-windows.ps1`；普通用户直接使用 Release EXE 即可。
 
 ```text
 windows/YierPet.Windows/   WPF 应用、行为协调、表情库和编辑器
 content/wechat/            内置原文件、运行图集、角色与互动清单
-tools/                    素材导入、人工审阅辅助和只读校验
+content/voice/             预生成的角色提醒音频及校验清单
+tools/                    素材工具、只读校验和按需语音启动器
 docs/                     使用说明、开发说明、版本说明
 .github/workflows/        标签构建、完整 EXE 验证和 Release 发布
 ```

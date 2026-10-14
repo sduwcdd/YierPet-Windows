@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 1,
+  "generatedUtc": "2026-10-14T13:11:19.6382501+00:00",
+  "models": [
+    {
+      "gpt": "yier-e10.ckpt",
+      "gptSha256": "d4e3dbc24b61989e7d9abed83deac94ecc4ed59f718946c7e5e6bff9e944e1fd",
+      "sovits": "s2G2333k.pth",
+      "sovitsSha256": "924fdccaa3c574bf139c25c9759aa1ed3b3f99e19a7c529ee996c2bc17663695",
+      "referenceSha256": "3df7ca74de2de823842ef69e758889e8137f362e01306f38fc48a44370ec5de8",
+      "referenceText": "你就像我生活中的小太阳，总是给我带来温暖和快乐。"
+    },
+    {
+      "gpt": "bubu-e10.ckpt",
+      "gptSha256": "6e5422914ca743a811252abc9d3ff6df26c719568c408288f75ab403b2a49265",
+      "sovits": "bubu_e2_s182.pth",
+      "sovitsSha256": "bb5b95810be39d0eccbc6bb3c576a4bd66c7573847b48785016cb210512fafab",
+      "referenceSha256": "9930c1724577b19043e1ead0652fea4a33ae5b9ed964af512549c43b604af4ad",
+      "referenceText": "最近有好多人问我，我和一二的声音是怎么来的？"
+    }
+  ],
+  "equalizer": "highpass=f=65,equalizer=f=350:t=q:w=0.7:g=-2,equalizer=f=2600:t=q:w=0.8:g=2.5,treble=g=1.5:f=4500",
+  "loudnessTargetLufs": -18,
+  "truePeakLimitDbtp": -1.5,
+  "quality": "WAV and hash validated; all 32 clips checked by unprompted ASR; selected anomaly retries recorded; human listening still required",
+  "clips": [
+    {
+      "role": "yier",
+      "kind": "Sedentary",
+      "text": "坐了一个小时啦，起来动动嘛！",
+      "spokenText": "坐了一个小时啦，起来动动嘛！",
+      "original": "yier-7787093aef934b23-original.wav",
+      "originalSha256": "46587256c29d184ec6b50a6066a3bb518816ac1c75f812efacfcf4399504ffac",
+      "clarity": "yier-7787093aef934b23-clarity.wav",
+      "claritySha256": "ea8d609e009d869502e538da37f1b5e53940ccf8a6df6cb9399a54e12b8376ef",
+      "selectionNote": "Re-rendered twice after ASR flagged wording or repetition; lower ASR edit count selected. Original and both candidates retained locally. This is not an independent quality score.",
+      "asrTranscription": "坐了一个小时了 起来动动嘛"
+    },
+    {
+      "role": "yier",
+      "kind": "Sedentary",
+      "text": "屁股要生根啦～站起来伸个懒腰吧！",
+      "spokenText": "屁股要生根啦～站起来伸个懒腰吧！",
+      "original": "yier-e4fa40d1be83eb01-original.wav",
+      "originalSha256": "40f29dc65119b300415de32de64ff581396f2fc273a6205a67833541304412df",
+      "clarity": "yier-e4fa40d1be83eb01-clarity.wav",
+      "claritySha256": "52ed8ef46fd4aea0e0b8421f1aeca2a634fc4aa64ad1c24c5793cba9a73dfc82"
+    },
+    {
+      "role": "yier",
+      "kind": "Sedentary",
+      "text": "陪我走两步？你都坐一小时了！",
+      "spokenText": "陪我走两步？你都坐一小时了！",
+      "original": "yier-c4a5c87b04dd9bf8-original.wav",
+      "originalSha256": "e0e94d042fb784936aafb558cd0a491fbbe11b0aa6df3d69d9eeee2cd527d343",
+      "clarity": "yier-c4a5c87b04dd9bf8-clarity.wav",
+      "claritySha256": "3d809265b0ac1a83e79c51cdcc2a23007b28f29359de156595ef376be61197c9"
+    },
+    {
+      "role": "yier",
+      "kind": "Sedentary",
+      "text": "久坐伤腰！起来倒杯水顺便活动一下～",
+      "spokenText": "久坐伤腰！起来倒杯水顺便活动一下～",
+      "original": "yier-17adaf55639dd423-original.wav",
+      "originalSha256": "67d7c908fa7a33520ba43c980d0ef49f4b2c131894f895a9c372fa739acebfde",
+      "clarity": "yier-17adaf55639dd423-clarity.wav",
+      "claritySha256": "3befae3915e76ee0c85227082f705612c44bac929183efdfe9dfbfb5074eefd9"
+    },
+    {
+      "role": "yier",
+      "kind": "Water",
+      "text": "咕噜咕噜～该喝水啦！",
+      "spokenText": "咕噜咕噜～该喝水啦！",
+      "original": "yier-4bd2f6562355e510-original.wav",
+      "originalSha256": "f93eccc9208a69f4f43c277772b4395fabb7a6e143426156f7e1006867aae673",
+      "clarity": "yier-4bd2f6562355e510-clarity.wav",
+      "claritySha256": "1ef35015d7bc19273585fe9ccc302643ca6b9017d16bfcd5abe7f7d1d5d9568b"
+    },
+    {
+      "role": "yier",
+      "kind": "Water",
+      "text": "你已经半小时没喝水了哦，抿一口嘛",
+      "spokenText": "你已经半小时没喝水了哦，抿一口嘛",
+      "original": "yier-9e97ee1770f74c1f-original.wav",
+      "originalSha256": "498db864c2dba92611b5d1e37d1eb536338dcbed9d84f86c7c0f44c77cab28bf",
+      "clarity": "yier-9e97ee1770f74c1f-clarity.wav",
+      "claritySha256": "bb0b1afdff8f7da77c939817f7d1b6761bff878e94c13926d732121eb9bc525d"
+    },
+    {
+      "role": "yier",
+      "kind": "Water",
+      "text": "多喝水才有精神呀，去接杯水吧！",
+      "spokenText": "多喝水才有精神呀，去接杯水吧！",
+      "original": "yier-98d0b8f7edfdb01f-original.wav",
+      "originalSha256": "659efaceda09c8723dba414147e1a431903a740924ca8ffa7d3e81761963108b",
+      "clarity": "yier-98d0b8f7edfdb01f-clarity.wav",
+      "claritySha256": "625b906c52609a882fcd9b7bbd9d86ccd4c19eb63a4f8a9bc279726ab7e93243",
+      "selectionNote": "Re-rendered twice after ASR flagged wording or repetition; lower ASR edit count selected. Original and both candidates retained locally. This is not an independent quality score.",
+      "asrTranscription": "多喝水才有精神呀去接杯水吧"
+    },
+    {
+      "role": "yier",
+      "kind": "Water",
+      "text": "我都替你渴了……喝口水好不好？",
+      "spokenText": "我都替你渴了……喝口水好不好？",
+      "original": "yier-10e413e230cbc534-original.wav",
+      "originalSha256": "5fc33f83965191b4aa1f11eea587944ac46d37012f67a43a15bebc9f354ea596",
+      "clarity": "yier-10e413e230cbc534-clarity.wav",
+      "claritySha256": "85087b279d0b19229f62320c54f00dd4472a33c3e41cbe4a772d74e193cb72c2"
+    },
+    {
+      "role": "yier",
+      "kind": "LateNight",
+      "text": "这么晚了还在忙呀，早点休息嘛……",
+      "spokenText": "这么晚了还在忙呀，早点休息嘛……",
+      "original": "yier-65609124d74d0216-original.wav",
+      "originalSha256": "32b914ff49a0db28265d2dafec10a447c9028a0b2f21e7a56eb50f94e0d3501b",
+      "clarity": "yier-65609124d74d0216-clarity.wav",
+      "claritySha256": "0bc1a99a3b6986cf9773f8ca0cf4453990accf0e9b67e55aa46edfb813297d18"
+    },
+    {
+      "role": "yier",
+      "kind": "LateNight",
+      "text": "夜深了，工作再多也要爱惜自己哦",
+      "spokenText": "夜深了，工作再多也要爱惜自己哦",
+      "original": "yier-fe47d99c0eeec35a-original.wav",
+      "originalSha256": "d2e7c878d404dd9fd0662cbcf24ca219769aef3d16e56b0e0f33db6f9d48ca7f",
+      "clarity": "yier-fe47d99c0eeec35a-clarity.wav",
+      "claritySha256": "cfedabe7ddb85fa22f59592afaf03cac775add02e78e758a1a3fe90cb48c0a43"
+    },
+    {
+      "role": "yier",
+      "kind": "LateNight",
+      "text": "我都困了 zzZ……你也快睡吧？",
+      "spokenText": "我都困了 ……你也快睡吧？",
+      "original": "yier-82ed10904524ed70-original.wav",
+      "originalSha256": "2c47ba9ec849c9c27635c3b14a97b684161b3b1addafe9bcaa93ea5f805fbc13",
+      "clarity": "yier-82ed10904524ed70-clarity.wav",
+      "claritySha256": "01e1c6d94decb45be659ccdd283b8cc6a7989eddc1954acde10d36c2e77bf27a"
+    },
+    {
+      "role": "yier",
+      "kind": "LateNight",
+      "text": "熬夜会秃的！明天再做也来得及～",
+      "spokenText": "熬夜会秃的！明天再做也来得及～",
+      "original": "yier-96d5e7e90d1cce4b-original.wav",
+      "originalSha256": "9b11fc2d798893161f6267cda836b44f43570c044c494a9248089bc59abdeefc",
+      "clarity": "yier-96d5e7e90d1cce4b-clarity.wav",
+      "claritySha256": "4f1ff1bc2d6c9f7a3c64d92aefc9a670c06a24632107a9f35513cd61aae7ee73"
+    },
+    {
+      "role": "yier",
+      "kind": "Slacking",
+      "text": "都摸鱼半小时了哦……我可什么都没看见",
+      "spokenText": "都摸鱼半小时了哦……我可什么都没看见",
+      "original": "yier-3e2a9e4c70b93db8-original.wav",
+      "originalSha256": "7f29957bc762f9ec585e3708f2942cdb884d4b44db761baa96678a1224e5b903",
+      "clarity": "yier-3e2a9e4c70b93db8-clarity.wav",
+      "claritySha256": "dcc4b462861c488334a91a2b5a0cffb2b44ee003d073eec2263964352d323496"
+    },
+    {
+      "role": "yier",
+      "kind": "Slacking",
+      "text": "视频好看吗？要不要考虑干点活？",
+      "spokenText": "视频好看吗？要不要考虑干点活？",
+      "original": "yier-6467a10108ad36df-original.wav",
+      "originalSha256": "c838ae6310cbf643575d077e4c158d6c07f0ff332c7582167d3ac1b1425cbe6f",
+      "clarity": "yier-6467a10108ad36df-clarity.wav",
+      "claritySha256": "9c951a25c56917608adbe96be022cbd0fc8d95a98aa6512eafc94fa115f1587c"
+    },
+    {
+      "role": "yier",
+      "kind": "Slacking",
+      "text": "嘘——老板来了！（骗你的，但也该收心啦）",
+      "spokenText": "嘘——老板来了！（骗你的，但也该收心啦）",
+      "original": "yier-52361c2f8d1861f5-original.wav",
+      "originalSha256": "40cd6c9a801ff2c0818eaa6e7f1cc9130dcae5b7824b9ea06c4648fcc35ac426",
+      "clarity": "yier-52361c2f8d1861f5-clarity.wav",
+      "claritySha256": "467585ec2350088bff38e8d4d12cd16e3b2d6e06acfe8ab5c30280efb4c471ba"
+    },
+    {
+      "role": "yier",
+      "kind": "Slacking",
+      "text": "摸鱼一时爽，一直摸鱼一直慌哦～",
+      "spokenText": "摸鱼一时爽，一直摸鱼一直慌哦～",
+      "original": "yier-cf08ec8cfb4a4904-original.wav",
+      "originalSha256": "be48087fd13ec6f11dc8ca0f286b287d5868c184554e9acccc04886a8211b0a2",
+      "clarity": "yier-cf08ec8cfb4a4904-clarity.wav",
+      "claritySha256": "d6575bb02366a325cbb54c61f00a5a3d3964d8a7b40cc83044e3e2c625dd209d"
+    },
+    {
+      "role": "bubu",
+      "kind": "Sedentary",
+      "text": "坐了一个小时啦，起来动动嘛！",
+      "spokenText": "坐了一个小时啦，起来动动嘛！",
+      "original": "bubu-7787093aef934b23-original.wav",
+      "originalSha256": "c38fb9b95b04cdc7bc2063f45d2473d4fef8a2d29aa32a854eac015bdcc6ad9f",
+      "clarity": "bubu-7787093aef934b23-clarity.wav",
+      "claritySha256": "8d43e94c26fa98bd6623574934f179ab01f06678ef58ef8035eee1bb65ed8719"
+    },
+    {
+      "role": "bubu",
+      "kind": "Sedentary",
+      "text": "屁股要生根啦～站起来伸个懒腰吧！",
+      "spokenText": "屁股要生根啦～站起来伸个懒腰吧！",
+      "original": "bubu-e4fa40d1be83eb01-original.wav",
+      "originalSha256": "16e8951fd059fafda436d1ad51b136117576daaf1df0d83df4d6fe82f289cb47",
+      "clarity": "bubu-e4fa40d1be83eb01-clarity.wav",
+      "claritySha256": "37a1acd6b979a518d16c4f78a6e75e6278c36db7fd6c7a78a947356d899696e4"
+    },
+    {
+      "role": "bubu",
+      "kind": "Sedentary",
+      "text": "陪我走两步？你都坐一小时了！",
+      "spokenText": "陪我走两步？你都坐一小时了！",
+      "original": "bubu-c4a5c87b04dd9bf8-original.wav",
+      "originalSha256": "130ec9008f428b7f45e3e46f1c774d0c58b13a10feb83a20078cba63d967cc5a",
+      "clarity": "bubu-c4a5c87b04dd9bf8-clarity.wav",
+      "claritySha256": "64b3834678afb14a38dbb2c7c060f3c5f4171cafc81973ba14b82339ed5af70f"
+    },
+    {
+      "role": "bubu",
+      "kind": "Sedentary",
+      "text": "久坐伤腰！起来倒杯水顺便活动一下～",
+      "spokenText": "久坐伤腰！起来倒杯水顺便活动一下～",
+      "original": "bubu-17adaf55639dd423-original.wav",
+      "originalSha256": "aa60f9e1b62f21d94690f36e2f52c636137ce0fdb76ef7d2dccfbd2bdac93cec",
+      "clarity": "bubu-17adaf55639dd423-clarity.wav",
+      "claritySha256": "f1b418184635fe7281a235e23c2ce5ced7411dc25c477f2072941d27d2a3b853"
+    },
+    {
+      "role": "bubu",
+      "kind": "Water",
+      "text": "咕噜咕噜～该喝水啦！",
+      "spokenText": "咕噜咕噜～该喝水啦！",
+      "original": "bubu-4bd2f6562355e510-original.wav",
+      "originalSha256": "5f99c46204ad5f26d6faf8a687b22f1f0fb6e7b473a66e0be49ba54b5b031936",
+      "clarity": "bubu-4bd2f6562355e510-clarity.wav",
+      "claritySha256": "bdd8177e9ae7057046a702ba90beed43740b0524f6ec2d8c731ade9856d21a77"
+    },
+    {
+      "role": "bubu",
+      "kind": "Water",
+      "text": "你已经半小时没喝水了哦，抿一口嘛",
+      "spokenText": "你已经半小时没喝水了哦，抿一口嘛",
+      "original": "bubu-9e97ee1770f74c1f-original.wav",
+      "originalSha256": "022ca2171253d7ab05423e41d7d8beba3327c9069f3e47b14d340ca4993157fa",
+      "clarity": "bubu-9e97ee1770f74c1f-clarity.wav",
+      "claritySha256": "8704c851a6b835dbc007655011c61fd005a0d55b57514ba06d5a6582ab3004b2"
+    },
+    {
+      "role": "bubu",
+      "kind": "Water",
+      "text": "多喝水才有精神呀，去接杯水吧！",
+      "spokenText": "多喝水才有精神呀，去接杯水吧！",
+      "original": "bubu-98d0b8f7edfdb01f-original.wav",
+      "originalSha256": "28e525eb6ec36b3791b57744c28646ff20313152dd85fcfcc23ad8cd57646833",
+      "clarity": "bubu-98d0b8f7edfdb01f-clarity.wav",
+      "claritySha256": "1a11c02dacf44029f926a236fdc552eda9b6f50dcd30e734d72199aeb9546f28"
+    },
+    {
+      "role": "bubu",
+      "kind": "Water",
+      "text": "我都替你渴了……喝口水好不好？",
+      "spokenText": "我都替你渴了……喝口水好不好？",
+      "original": "bubu-10e413e230cbc534-original.wav",
+      "originalSha256": "464d59e3170a543ddb21c9d455bcfcf424b092f08bf35314e488cca69753316c",
+      "clarity": "bubu-10e413e230cbc534-clarity.wav",
+      "claritySha256": "ea303a605610c045c7a05cca574b86737d444db0b612bb22ef4132575324fb70"
+    },
+    {
+      "role": "bubu",
+      "kind": "LateNight",
+      "text": "这么晚了还在忙呀，早点休息嘛……",
+      "spokenText": "这么晚了还在忙呀，早点休息嘛……",
+      "original": "bubu-65609124d74d0216-original.wav",
+      "originalSha256": "3c7eb1004ccd7288c6317187e79016ebb358320f3832ae0b568dd479709cad33",
+      "clarity": "bubu-65609124d74d0216-clarity.wav",
+      "claritySha256": "2cfe61ad5d4ffc1c521c176861217bb3fa20300390d29bfaa19e54df65c91316"
+    },
+    {
+      "role": "bubu",
+      "kind": "LateNight",
+      "text": "夜深了，工作再多也要爱惜自己哦",
+      "spokenText": "夜深了，工作再多也要爱惜自己哦",
+      "original": "bubu-fe47d99c0eeec35a-original.wav",
+      "originalSha256": "2bdc69b5bfbe726eeb5d15e5cf5196c998f65bea6b3ae9bc50283dfc2ff86a1f",
+      "clarity": "bubu-fe47d99c0eeec35a-clarity.wav",
+      "claritySha256": "568ddb6c5e94a296b6cd81383eaa055e76a78ccc64c0082d6b2a02a615ffb653"
+    },
+    {
+      "role": "bubu",
+      "kind": "LateNight",
+      "text": "我都困了 zzZ……你也快睡吧？",
+      "spokenText": "我都困了 ……你也快睡吧？",
+      "original": "bubu-82ed10904524ed70-original.wav",
+      "originalSha256": "a8c5e10fc37970da4a642661302223795bcefacea60e2e152fe8a206fd73d69c",
+      "clarity": "bubu-82ed10904524ed70-clarity.wav",
+      "claritySha256": "7897e316d4740ef7df3bf3edba58f0c6b6a29493692a38b73b9a6a5d4c68d8d5"
+    },
+    {
+      "role": "bubu",
+      "kind": "LateNight",
+      "text": "熬夜会秃的！明天再做也来得及～",
+      "spokenText": "熬夜会秃的！明天再做也来得及～",
+      "original": "bubu-96d5e7e90d1cce4b-original.wav",
+      "originalSha256": "3d4d0990955e7453ae03763e28d9470e0740a57f622e50cb88f34e57460ebbff",
+      "clarity": "bubu-96d5e7e90d1cce4b-clarity.wav",
+      "claritySha256": "ceff52d5751160692c45544b393d7864a309ff5ef20c6bbe4851bc38ca2feb32"
+    },
+    {
+      "role": "bubu",
+      "kind": "Slacking",
+      "text": "都摸鱼半小时了哦……我可什么都没看见",
+      "spokenText": "都摸鱼半小时了哦……我可什么都没看见",
+      "original": "bubu-3e2a9e4c70b93db8-original.wav",
+      "originalSha256": "b466fe846c9401747ab0e28cfb8f461755684b3f4d5d302032adfe1b3f01b339",
+      "clarity": "bubu-3e2a9e4c70b93db8-clarity.wav",
+      "claritySha256": "bd832fbb822c739aa503b7eac5667194708e39bfd4e9fe9a1f1887ad950b63a8"
+    },
+    {
+      "role": "bubu",
+      "kind": "Slacking",
+      "text": "视频好看吗？要不要考虑干点活？",
+      "spokenText": "视频好看吗？要不要考虑干点活？",
+      "original": "bubu-6467a10108ad36df-original.wav",
+      "originalSha256": "31616ae2890f77bb6f9be413270bfaf368000503346bfebb6591426b9e4897b0",
+      "clarity": "bubu-6467a10108ad36df-clarity.wav",
+      "claritySha256": "90a29d83447d40b8519d685d82c5777133ebc712fcc9ea9641a0c5bbd27a9dd2"
+    },
+    {
+      "role": "bubu",
+      "kind": "Slacking",
+      "text": "嘘——老板来了！（骗你的，但也该收心啦）",
+      "spokenText": "嘘，老板来了！骗你的，但也该收心啦。",
+      "original": "bubu-52361c2f8d1861f5-original.wav",
+      "originalSha256": "3ab4baa8391fd3271fde3d626c4b845b3b5cae66a34600c137505566a71779e0",
+      "clarity": "bubu-52361c2f8d1861f5-clarity.wav",
+      "claritySha256": "1fcb62e886f3ccf8f4ffd23afe0a09bbe996fbcb54de98d1391b9510c168723b",
+      "selectionNote": "Re-rendered after ASR flagged wording or repetition; lower ASR edit count selected. Original and both candidates retained locally. This is not an independent quality score.",
+      "asrTranscription": "谢,老板来了骗你的,那也该收心了"
+    },
+    {
+      "role": "bubu",
+      "kind": "Slacking",
+      "text": "摸鱼一时爽，一直摸鱼一直慌哦～",
+      "spokenText": "摸鱼一时爽，一直摸鱼一直慌哦～",
+      "original": "bubu-cf08ec8cfb4a4904-original.wav",
+      "originalSha256": "11b446baec405ac77fdb3b9bb3a5d8184b34189f81abfd27274aadb8f8235eca",
+      "clarity": "bubu-cf08ec8cfb4a4904-clarity.wav",
+      "claritySha256": "e3ca55d0ea97972b043b6cd2f6c6999a02c08f7fbedcff943984036685083aef"
+    }
+  ]
+}
