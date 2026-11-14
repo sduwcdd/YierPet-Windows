@@ -107,6 +107,10 @@
 Get-FileHash .\YierPet-Windows-v0.0.3-win-x64.exe -Algorithm SHA256
 ```
 
+## 源码与语音恢复
+
+第一方训练/推理脚本、上游补丁、固定依赖和可迁移配置已纳入仓库。角色模型、参考录音、审核切片与完整训练检查点仍只在本地，不能仅凭 GitHub 恢复现有全部语音成果。清理项目目录前请阅读 **[完整恢复步骤与仍须保留的文件](docs/voice-recovery.md)**。
+
 ## 从源码构建
 
 仅开发者需要安装 **.NET 8 SDK**。在 PowerShell 执行：

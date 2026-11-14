@@ -1,0 +1,77 @@
+{
+  "repository": "https://github.com/RVC-Boss/GPT-SoVITS.git",
+  "commit": "1b47ca07ef43a284e0b8bd7f29d3e1e3ff76082a",
+  "python": "3.10.18",
+  "torch": "2.5.1+cpu",
+  "torchaudio": "2.5.1+cpu",
+  "device": "cpu",
+  "patch": "voice-training/runtime/local-memory-compatibility.patch",
+  "patchedFilesLfSha256": {
+    "GPT_SoVITS/AR/data/data_module.py": "6ea9b8ffa2442666343e5bdc5bb77fb6b29a009523c6f6f5d8f3f2d7aaa9fd51",
+    "GPT_SoVITS/module/data_utils.py": "ac4b3452f21c1dbb7c4b385669f67d59c388ba96b2146d299459874aaeb57463",
+    "GPT_SoVITS/s2_train.py": "d86485c96831bc364a675295665d64aead47291bcf6b799bc9938de3e0d5a569"
+  },
+  "ffmpeg": {
+    "source": "imageio-ffmpeg==0.6.0 bundled ffmpeg-win-x86_64-v7.1.exe",
+    "sha256": "2ce797a0f88d7f067180338fb227f7b1928ea727bd9a4d7a1d022f7c52af71a3"
+  },
+  "fasttext": {
+    "url": "https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.bin",
+    "bytes": 131266198,
+    "md5": "01810bc59c6a3d2b79c79e6336612f65",
+    "sha256": "7e69ec5451bc261cc7844e49e4792a85d7f09c06789ec800fc4a44aec362764e"
+  },
+  "asr": {
+    "python": "3.13.9",
+    "small": {
+      "repository": "Systran/faster-whisper-small",
+      "revision": "536b0662742c02347bc0e980a01041f333bce120"
+    },
+    "turbo": {
+      "repository": "mobiuslabsgmbh/faster-whisper-large-v3-turbo",
+      "revision": "0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf"
+    }
+  },
+  "frontendAssets": [
+    {
+      "path": "GPT_SoVITS/text/G2PWModel/bopomofo_to_pinyin_wo_tune_dict.json",
+      "bytes": 7739,
+      "sha256": "0fe90e26be7653023772b3ad2d08952961bbf295fb39ba685c7172d3d9769f52"
+    },
+    {
+      "path": "GPT_SoVITS/text/G2PWModel/char_bopomofo_dict.json",
+      "bytes": 1851143,
+      "sha256": "4832fb6a553a9c5ee0c18b5cb698ce0acc312f324ee77ee61c340266d228184d"
+    },
+    {
+      "path": "GPT_SoVITS/text/G2PWModel/config.py",
+      "bytes": 347,
+      "sha256": "b6154e494355d14a8d2c8a38d07720f77b34479e26aab21a5f63495ae904da76"
+    },
+    {
+      "path": "GPT_SoVITS/text/G2PWModel/g2pW.onnx",
+      "bytes": 635212732,
+      "sha256": "2eb3c71fd95117b2e1abef8d2d0cd78aae894bbe7f0fac105ddc9c32ce63cbd0"
+    },
+    {
+      "path": "GPT_SoVITS/text/G2PWModel/MONOPHONIC_CHARS.txt",
+      "bytes": 120744,
+      "sha256": "fe7ed53098648441a94f414ed5fd3395789d1dceb98dc1e584489c2d43036b69"
+    },
+    {
+      "path": "GPT_SoVITS/text/G2PWModel/POLYPHONIC_CHARS.txt",
+      "bytes": 102444,
+      "sha256": "cc7e5a3eb377e3289af5e3a6be7505ac11a0d21422f80cfbf161059798f8671b"
+    },
+    {
+      "path": "GPT_SoVITS/text/G2PWModel/version",
+      "bytes": 5,
+      "sha256": "cf063c2ce8ac1403d4dca358f0568dfd32684e7a4412e24bc6e7cd1a7cd0cefb"
+    },
+    {
+      "path": "GPT_SoVITS/pretrained_models/fast_langdetect/lid.176.bin",
+      "bytes": 131266198,
+      "sha256": "7e69ec5451bc261cc7844e49e4792a85d7f09c06789ec800fc4a44aec362764e"
+    }
+  ]
+}

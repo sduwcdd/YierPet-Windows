@@ -139,7 +139,7 @@ voice-training/
 
 本次于 2026-10-14 核对的上游提交：`1b47ca07ef43a284e0b8bd7f29d3e1e3ff76082a`。接口依据为该版本的 [api_v2.py](https://github.com/RVC-Boss/GPT-SoVITS/blob/1b47ca07ef43a284e0b8bd7f29d3e1e3ff76082a/api_v2.py)，配置参考 [tts_infer.yaml](https://github.com/RVC-Boss/GPT-SoVITS/blob/1b47ca07ef43a284e0b8bd7f29d3e1e3ff76082a/GPT_SoVITS/configs/tts_infer.yaml)。本机虽有 RTX 3070 Laptop GPU / 8 GB 显存，但 GPU 尝试受到 Windows 内存提交上限限制；按用户选择，最终在独立 Python 3.10.18 / PyTorch 2.5.1+cpu 环境完成 CPU 训练。
 
-本次每位角色训练 SoVITS 2 轮、GPT 10 轮，批量分别为 1 和 2。为适配本机内存，数据加载使用主进程，SoVITS 随机训练窗口为 10240 个采样点（0.32 秒），关闭了本机出现原生崩溃的 MKLDNN 卷积路径。完整录音未截短，全部 24 段通过特征和训练过滤检查。修改补丁、实际配置、源码哈希、依赖版本及上游原结构日志均在本地保留。
+本次每位角色训练 SoVITS 2 轮、GPT 10 轮，批量分别为 1 和 2。为适配本机内存，数据加载使用主进程，SoVITS 随机训练窗口为 10240 个采样点（0.32 秒），关闭了本机出现原生崩溃的 MKLDNN 卷积路径。完整录音未截短，全部 24 段通过特征和训练过滤检查。可迁移配置和来源快照已保存在 `voice-training/recovery/`，恢复与备份边界见[恢复教程](voice-recovery.md)。修改补丁、实际配置、源码哈希、依赖版本及上游原结构日志均在本地保留。
 
 本机结果目录为 `voice-training/trained-20261014-v2/`，两位角色各自的 GPT `.ckpt`、SoVITS `.pth`、`reference.wav` 和 `reference.txt` 分开保存。`model-verification.json` 记录最终轮数、文件哈希、有限数值检查以及相对基础模型实际发生变化的权重。后续输入不同文本直接使用这些权重，不需要再次训练。
 
@@ -149,7 +149,7 @@ voice-training/
 .\voice-training\runtime\venv\Scripts\python.exe .\voice-training\runtime\serve_voice.py
 ```
 
-也可运行 `voice-training/runtime/start_voice_service.ps1`。服务只监听 `127.0.0.1:9880`，使用本次验证的 CPU 设置；不要同时启动两份占用同一端口的服务。首次载入模型较慢，等服务就绪后再点击桌宠的“检查准备情况”。上述本地辅助脚本和运行环境不包含在 Git 仓库中；其他电脑仍按下面的官方流程准备环境。
+也可运行 `voice-training/runtime/start_voice_service.ps1`。服务只监听 `127.0.0.1:9880`，使用本次验证的 CPU 设置；不要同时启动两份占用同一端口的服务。首次载入模型较慢，等服务就绪后再点击桌宠的“检查准备情况”。辅助脚本、固定依赖和兼容补丁现已纳入 Git；Python 环境与模型仍未打包。其他电脑按[恢复教程](voice-recovery.md)准备，或参考下面的官方流程。
 
 两位角色均已用三句不在训练标注中的新台词生成 WAV，并使用相同参考录音和随机种子生成基础模型对照，共 12 条。结果目录中的 `试听对比.html` 可离线播放和下载，`training-curves.png` 展示训练损失。新文本试音和训练曲线不等于人工音色相似度验收。
 

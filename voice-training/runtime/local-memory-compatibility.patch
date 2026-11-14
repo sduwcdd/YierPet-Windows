@@ -1,0 +1,90 @@
+diff --git a/GPT_SoVITS/AR/data/data_module.py b/GPT_SoVITS/AR/data/data_module.py
+index f360503..fa805f6 100644
+--- a/GPT_SoVITS/AR/data/data_module.py
++++ b/GPT_SoVITS/AR/data/data_module.py
+@@ -56,8 +56,8 @@ class Text2SemanticDataModule(LightningDataModule):
+             sampler=sampler,
+             collate_fn=self._train_dataset.collate,
+             num_workers=self.num_workers,
+-            persistent_workers=True,
+-            prefetch_factor=16,
++            persistent_workers=self.num_workers > 0,
++            prefetch_factor=16 if self.num_workers > 0 else None,
+         )
+ 
+     def val_dataloader(self):
+diff --git a/GPT_SoVITS/module/data_utils.py b/GPT_SoVITS/module/data_utils.py
+index 46eff5f..eb6d909 100644
+--- a/GPT_SoVITS/module/data_utils.py
++++ b/GPT_SoVITS/module/data_utils.py
+@@ -119,22 +119,21 @@ class TextAudioSpeakerLoader(torch.utils.data.Dataset):
+                 ssl.requires_grad = False
+                 if self.is_v2Pro:
+                     sv_emb = torch.load("%s/%s.pt" % (self.path7, audiopath), map_location="cpu")
+-        except:
+-            traceback.print_exc()
+-            spec = torch.zeros(1025, 100)
+-            wav = torch.zeros(1, 100 * self.hop_length)
+-            ssl = torch.zeros(1, 768, 100)
+-            text = text[-1:]
+-            if self.is_v2Pro:
+-                sv_emb = torch.zeros(1, 20480)
+-            print("load audio or ssl error!!!!!!", audiopath)
++        except Exception as exc:
++            raise RuntimeError(f"Cannot load approved training sample: {audiopath}") from exc
+         if self.is_v2Pro:
+             return (ssl, spec, wav, text, sv_emb)
+         else:
+             return (ssl, spec, wav, text)
+ 
+     def get_audio(self, filename):
+-        audio_array = load_audio(filename, self.sampling_rate)  # load_audio的方法是已经归一化到-1~1之间的，不用再/32768
++        # Prepared training WAVs already have the target sample rate. Avoid spawning
++        # FFmpeg for every sample on memory-constrained Windows hosts.
++        import soundfile as sf
++        audio_array, sample_rate = sf.read(filename, dtype="float32", always_2d=True)
++        if sample_rate != self.sampling_rate:
++            raise ValueError(f"Unexpected prepared WAV sample rate: {sample_rate}")
++        audio_array = audio_array.mean(axis=1)
+         audio = torch.FloatTensor(audio_array)  # /32768
+         audio_norm = audio
+         audio_norm = audio_norm.unsqueeze(0)
+diff --git a/GPT_SoVITS/s2_train.py b/GPT_SoVITS/s2_train.py
+index 58998c7..bb6808f 100644
+--- a/GPT_SoVITS/s2_train.py
++++ b/GPT_SoVITS/s2_train.py
+@@ -6,10 +6,13 @@ import os
+ import utils
+ 
+ hps = utils.get_hparams(stage=2)
+-os.environ["CUDA_VISIBLE_DEVICES"] = hps.train.gpu_numbers.replace("-", ",")
++os.environ["CUDA_VISIBLE_DEVICES"] = "-1" if os.environ.get("YIER_TRAIN_DEVICE") == "cpu" else hps.train.gpu_numbers.replace("-", ",")
+ import logging
+ 
+ import torch
++if os.environ.get("YIER_TRAIN_DEVICE") == "cpu":
++    # Avoid the CPU convolution backend that crashes on this Windows host.
++    torch.backends.mkldnn.enabled = False
+ import torch.distributed as dist
+ import torch.multiprocessing as mp
+ from torch.cuda.amp import GradScaler, autocast
+@@ -130,15 +133,16 @@ def _run(rank, n_gpus, hps, use_ddp):
+         shuffle=True,
+     )
+     collate_fn = TextAudioSpeakerCollate(version=hps.model.version)
++    num_workers = int(os.environ.get("YIER_DATA_WORKERS", "4"))
+     train_loader = DataLoader(
+         train_dataset,
+-        num_workers=4,
++        num_workers=num_workers,
+         shuffle=False,
+         pin_memory=True,
+         collate_fn=collate_fn,
+         batch_sampler=train_sampler,
+-        persistent_workers=True,
+-        prefetch_factor=2,
++        persistent_workers=num_workers > 0,
++        prefetch_factor=2 if num_workers > 0 else None,
+     )
+     # if rank == 0:
+     #     eval_dataset = TextAudioSpeakerLoader(hps.data.validation_files, hps.data, val=True)

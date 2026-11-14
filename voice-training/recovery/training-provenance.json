@@ -1,0 +1,73 @@
+{
+  "upstream_commit": "1b47ca07ef43a284e0b8bd7f29d3e1e3ff76082a",
+  "approved_dataset": "${PROJECT_ROOT}/voice-training/approved-20261014-04205443",
+  "review_sha256": "0420544334f8e8e46ec244050e017b4ee1752974c99c2e729d4c4e72e4b0d15e",
+  "clips": {
+    "yier": 11,
+    "bubu": 13
+  },
+  "s2_epochs": 2,
+  "s1_epochs": 10,
+  "batch_size": {
+    "s2": 1,
+    "s1": 2
+  },
+  "seed": 1234,
+  "python": "${PROJECT_ROOT}/voice-training/runtime/venv/Scripts/python.exe",
+  "status": "training_inference_and_desktop_client_verified",
+  "runtime": {
+    "python": "3.10.18",
+    "torch": "2.5.1+cpu",
+    "torchaudio": "2.5.1+cpu",
+    "device": "cpu",
+    "data_loader_workers": 0,
+    "threads": 4
+  },
+  "memory_retry": "Initial batch=2 failed due to Windows commit limit; preserved failure; batch=1 with native PCM loading and fail-fast data loader.",
+  "training_device": "cpu",
+  "cpu_reason": "User chose CPU training rather than closing other applications after Windows commit-limit failures.",
+  "initial_cuda_runtime": {
+    "python": "3.10.18",
+    "torch": "2.5.1+cu124",
+    "torchaudio": "2.5.1+cu124",
+    "cuda_tensor_operation_passed": true,
+    "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU",
+    "gpu_memory_mib": 8192,
+    "data_loader_workers": 0,
+    "upstream_memory_compatibility_patch": "../runtime/local-memory-compatibility.patch"
+  },
+  "source_sha256": {
+    "GPT_SoVITS/s2_train.py": "20ae2808b35b741b495946e8c38ec5b3846b5962d71b7422f11a8168e085226e",
+    "GPT_SoVITS/s1_train.py": "fd97c7bc62ae29d8b3646a34549a09a5ca32f4f27f62a9d1aa38d61a11c6a203",
+    "GPT_SoVITS/module/data_utils.py": "ad04a05520195f88edb85ef3ca8636a60acf919c3375d56952676d489e25a369",
+    "GPT_SoVITS/AR/data/data_module.py": "1aec85d5b632615f5a2f7f9b3de08bb8dfcf8a02dfde5584d405b349d2ba0c0d",
+    "GPT_SoVITS/AR/modules/lr_schedulers.py": "65f90e0af273e365b9e6acea970208c7b2eb771a4fbb0899d7f3c4a3559b5806"
+  },
+  "s2_segment_samples": 10240,
+  "s2_segment_seconds": 0.32,
+  "cpu_compatibility": [
+    "no DataLoader subprocesses",
+    "native PCM training audio loading",
+    "fail on sample read errors",
+    "MKLDNN disabled for SoVITS CPU convolutions",
+    "10240-sample random training window"
+  ],
+  "gpt_effective_lr": 0.002,
+  "gpt_lr_source": "Upstream AR/modules/lr_schedulers.py overrides the YAML learning rate; kept unchanged.",
+  "inference_module_import_verified": true,
+  "completed_utc": "2026-10-14T12:07:38.048211+00:00",
+  "development_sample_count": 30,
+  "desktop_novel_sample_count": 2,
+  "subjective_voice_quality": "awaiting user listening",
+  "selected_modes": {
+    "yier": "gpt10-sovitsbase",
+    "bubu": "trained"
+  },
+  "quality_observation": "Fine-tuning did not consistently improve ASR text agreement over the base models; all original and alternative outputs retained.",
+  "fasttext_asset": {
+    "url": "https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.bin",
+    "bytes": 131266198,
+    "md5": "01810bc59c6a3d2b79c79e6336612f65",
+    "sha256": "7e69ec5451bc261cc7844e49e4792a85d7f09c06789ec800fc4a44aec362764e"
+  }
+}

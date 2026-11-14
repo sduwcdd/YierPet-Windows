@@ -1,0 +1,735 @@
+{
+  "trained-20261014-v2/model-verification.json": {
+    "yier": {
+      "s1": {
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/yier/yier-e10.ckpt",
+        "bytes": 155309245,
+        "sha256": "d4e3dbc24b61989e7d9abed83deac94ecc4ed59f718946c7e5e6bff9e944e1fd",
+        "info": "GPT-e10",
+        "common_tensors": 295,
+        "changed_tensors": 294,
+        "all_finite": true,
+        "training_seconds": 730.53
+      },
+      "s2": {
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/yier/yier_e2_s198.pth",
+        "bytes": 84998919,
+        "sha256": "78673d086b2a1ae36ce4cfc0eb81a93f06adb4e483c17edfc4595023770840bc",
+        "info": "2epoch_198iteration",
+        "common_tensors": 673,
+        "changed_tensors": 667,
+        "all_finite": true,
+        "training_seconds": 661.46
+      },
+      "gpt_final_epoch": 10,
+      "gpt_optimizer_steps": 120
+    },
+    "bubu": {
+      "s1": {
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/bubu/bubu-e10.ckpt",
+        "bytes": 155308946,
+        "sha256": "6e5422914ca743a811252abc9d3ff6df26c719568c408288f75ab403b2a49265",
+        "info": "GPT-e10",
+        "common_tensors": 295,
+        "changed_tensors": 294,
+        "all_finite": true,
+        "training_seconds": 568.95
+      },
+      "s2": {
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/bubu/bubu_e2_s182.pth",
+        "bytes": 84998242,
+        "sha256": "bb5b95810be39d0eccbc6bb3c576a4bd66c7573847b48785016cb210512fafab",
+        "info": "2epoch_182iteration",
+        "common_tensors": 673,
+        "changed_tensors": 667,
+        "all_finite": true,
+        "training_seconds": 564.76
+      },
+      "gpt_final_epoch": 10,
+      "gpt_optimizer_steps": 110
+    }
+  },
+  "trained-20261014-v2/training-curves.json": {
+    "yier_SoVITS": [
+      [
+        0,
+        29.471595764160156
+      ],
+      [
+        10,
+        43.02643966674805
+      ],
+      [
+        20,
+        24.04439926147461
+      ],
+      [
+        30,
+        25.477134704589844
+      ],
+      [
+        40,
+        29.55702018737793
+      ],
+      [
+        50,
+        22.64833641052246
+      ],
+      [
+        60,
+        25.986774444580078
+      ],
+      [
+        70,
+        23.259206771850586
+      ],
+      [
+        80,
+        39.74747085571289
+      ],
+      [
+        90,
+        30.992876052856445
+      ],
+      [
+        100,
+        30.329574584960938
+      ],
+      [
+        110,
+        26.42939567565918
+      ],
+      [
+        120,
+        33.09466552734375
+      ],
+      [
+        130,
+        25.058258056640625
+      ],
+      [
+        140,
+        25.07274627685547
+      ],
+      [
+        150,
+        24.812217712402344
+      ],
+      [
+        160,
+        32.873111724853516
+      ],
+      [
+        170,
+        28.24367904663086
+      ],
+      [
+        180,
+        24.756542205810547
+      ],
+      [
+        190,
+        23.24506187438965
+      ]
+    ],
+    "yier_GPT": [
+      [
+        49,
+        915.7416381835938
+      ],
+      [
+        99,
+        593.1044921875
+      ],
+      [
+        149,
+        343.89373779296875
+      ],
+      [
+        199,
+        174.95606994628906
+      ],
+      [
+        249,
+        80.78009796142578
+      ],
+      [
+        299,
+        37.18979263305664
+      ],
+      [
+        349,
+        20.715347290039062
+      ],
+      [
+        399,
+        12.213858604431152
+      ],
+      [
+        449,
+        8.6628999710083
+      ],
+      [
+        499,
+        6.600771427154541
+      ]
+    ],
+    "bubu_SoVITS": [
+      [
+        0,
+        25.723054885864258
+      ],
+      [
+        10,
+        29.91693115234375
+      ],
+      [
+        20,
+        27.986331939697266
+      ],
+      [
+        30,
+        27.479515075683594
+      ],
+      [
+        40,
+        39.59050750732422
+      ],
+      [
+        50,
+        39.80952835083008
+      ],
+      [
+        60,
+        28.75318717956543
+      ],
+      [
+        70,
+        41.57304763793945
+      ],
+      [
+        80,
+        38.86362838745117
+      ],
+      [
+        90,
+        35.048309326171875
+      ],
+      [
+        100,
+        27.20484161376953
+      ],
+      [
+        110,
+        32.29082107543945
+      ],
+      [
+        120,
+        33.79863357543945
+      ],
+      [
+        130,
+        26.38246726989746
+      ],
+      [
+        140,
+        25.223234176635742
+      ],
+      [
+        150,
+        28.579072952270508
+      ],
+      [
+        160,
+        28.16271209716797
+      ],
+      [
+        170,
+        27.137794494628906
+      ],
+      [
+        180,
+        28.659440994262695
+      ]
+    ],
+    "bubu_GPT": [
+      [
+        45,
+        766.1629638671875
+      ],
+      [
+        91,
+        510.3590393066406
+      ],
+      [
+        137,
+        307.67327880859375
+      ],
+      [
+        183,
+        170.0580291748047
+      ],
+      [
+        229,
+        92.79959106445312
+      ],
+      [
+        275,
+        58.09683609008789
+      ],
+      [
+        321,
+        32.45441436767578
+      ],
+      [
+        367,
+        20.723522186279297
+      ],
+      [
+        413,
+        15.27942943572998
+      ],
+      [
+        459,
+        9.834964752197266
+      ]
+    ]
+  },
+  "trained-20261014-v2/asr-evaluation.json": {
+    "method": "faster-whisper large-v3-turbo CPU int8; Traditional Chinese normalized to Simplified; punctuation removed; no prompt",
+    "limitation": "ASR agreement is only an intelligibility proxy, not a human evaluation or speaker similarity measurement.",
+    "samples": [
+      {
+        "role": "yier",
+        "mode": "base",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/yier/samples/base-welcome.wav",
+        "expected": "你回来啦，今天也辛苦了，快来抱抱。",
+        "transcription": "你回来啦今天也辛苦啦快来包包",
+        "character_edits": 3,
+        "reference_characters": 14,
+        "cer": 0.2143
+      },
+      {
+        "role": "yier",
+        "mode": "base",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/yier/samples/base-water.wav",
+        "expected": "工作再忙，也要记得喝水和休息哦。",
+        "transcription": "工作再忙,也要记得喝水和休息哦",
+        "character_edits": 0,
+        "reference_characters": 14,
+        "cer": 0.0
+      },
+      {
+        "role": "yier",
+        "mode": "base",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/yier/samples/base-play.wav",
+        "expected": "我们一起出去散步吧，回来再吃小蛋糕。",
+        "transcription": "我们一起出去散步吧回来再吃小蛋糕",
+        "character_edits": 0,
+        "reference_characters": 16,
+        "cer": 0.0
+      },
+      {
+        "role": "yier",
+        "mode": "trained",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/yier/samples/trained-welcome.wav",
+        "expected": "你回来啦，今天也辛苦了，快来抱抱。",
+        "transcription": "你回來了今天也辛苦了快來抱抱",
+        "character_edits": 1,
+        "reference_characters": 14,
+        "cer": 0.0714
+      },
+      {
+        "role": "yier",
+        "mode": "trained",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/yier/samples/trained-water.wav",
+        "expected": "工作再忙，也要记得喝水和休息哦。",
+        "transcription": "紅酒在馬,也要記得喝水和羞羞",
+        "character_edits": 7,
+        "reference_characters": 14,
+        "cer": 0.5
+      },
+      {
+        "role": "yier",
+        "mode": "trained",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/yier/samples/trained-play.wav",
+        "expected": "我们一起出去散步吧，回来再吃小蛋糕。",
+        "transcription": "我們一起出這三道吧,回家吃小蛋糕。",
+        "character_edits": 5,
+        "reference_characters": 16,
+        "cer": 0.3125
+      },
+      {
+        "role": "bubu",
+        "mode": "base",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/bubu/samples/base-welcome.wav",
+        "expected": "你回来啦，今天也辛苦了，快来抱抱。",
+        "transcription": "你回来啦今天也辛苦啦快来抱抱",
+        "character_edits": 1,
+        "reference_characters": 14,
+        "cer": 0.0714
+      },
+      {
+        "role": "bubu",
+        "mode": "base",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/bubu/samples/base-water.wav",
+        "expected": "工作再忙，也要记得喝水和休息哦。",
+        "transcription": "工作再忙,也要記得喝水和休息哦!",
+        "character_edits": 0,
+        "reference_characters": 14,
+        "cer": 0.0
+      },
+      {
+        "role": "bubu",
+        "mode": "base",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/bubu/samples/base-play.wav",
+        "expected": "我们一起出去散步吧，回来再吃小蛋糕。",
+        "transcription": "我们一起出去散步吧回来再吃小蛋糕",
+        "character_edits": 0,
+        "reference_characters": 16,
+        "cer": 0.0
+      },
+      {
+        "role": "bubu",
+        "mode": "trained",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/bubu/samples/trained-welcome.wav",
+        "expected": "你回来啦，今天也辛苦了，快来抱抱。",
+        "transcription": "你回来啦今天也辛苦了快来到吧",
+        "character_edits": 2,
+        "reference_characters": 14,
+        "cer": 0.1429
+      },
+      {
+        "role": "bubu",
+        "mode": "trained",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/bubu/samples/trained-water.wav",
+        "expected": "工作再忙，也要记得喝水和休息哦。",
+        "transcription": "工作再忙,也要记得喝水和休息啊",
+        "character_edits": 1,
+        "reference_characters": 14,
+        "cer": 0.0714
+      },
+      {
+        "role": "bubu",
+        "mode": "trained",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/bubu/samples/trained-play.wav",
+        "expected": "我们一起出去散步吧，回来再吃小蛋糕。",
+        "transcription": "我们一起出去散步吧,回来再吃小蛋糕。",
+        "character_edits": 0,
+        "reference_characters": 16,
+        "cer": 0.0
+      }
+    ],
+    "aggregate": [
+      {
+        "role": "yier",
+        "mode": "base",
+        "samples": 3,
+        "character_edits": 3,
+        "reference_characters": 44,
+        "cer": 0.06818181818181818
+      },
+      {
+        "role": "yier",
+        "mode": "trained",
+        "samples": 3,
+        "character_edits": 13,
+        "reference_characters": 44,
+        "cer": 0.29545454545454547
+      },
+      {
+        "role": "bubu",
+        "mode": "base",
+        "samples": 3,
+        "character_edits": 1,
+        "reference_characters": 44,
+        "cer": 0.022727272727272728
+      },
+      {
+        "role": "bubu",
+        "mode": "trained",
+        "samples": 3,
+        "character_edits": 3,
+        "reference_characters": 44,
+        "cer": 0.06818181818181818
+      }
+    ]
+  },
+  "trained-20261014-v2/asr-checkpoint-comparison.json": {
+    "method": "faster-whisper large-v3-turbo CPU int8; Traditional Chinese normalized to Simplified; punctuation removed; no prompt",
+    "limitation": "ASR agreement is only an intelligibility proxy, not a human evaluation or speaker similarity measurement.",
+    "samples": [
+      {
+        "role": "yier",
+        "mode": "gpt5-sovits2",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/yier/samples/gpt5-sovits2-welcome.wav",
+        "expected": "你回来啦，今天也辛苦了，快来抱抱。",
+        "transcription": "你回來了星星也辛苦了快來逗逗",
+        "character_edits": 5,
+        "reference_characters": 14,
+        "cer": 0.3571
+      },
+      {
+        "role": "yier",
+        "mode": "gpt5-sovits2",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/yier/samples/gpt5-sovits2-water.wav",
+        "expected": "工作再忙，也要记得喝水和休息哦。",
+        "transcription": "紅酒店啊有藥酒的喝水和消消",
+        "character_edits": 11,
+        "reference_characters": 14,
+        "cer": 0.7857
+      },
+      {
+        "role": "yier",
+        "mode": "gpt5-sovits2",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/yier/samples/gpt5-sovits2-play.wav",
+        "expected": "我们一起出去散步吧，回来再吃小蛋糕。",
+        "transcription": "我没得起初吃酸豆吧回来再吃小蛋糕",
+        "character_edits": 6,
+        "reference_characters": 16,
+        "cer": 0.375
+      },
+      {
+        "role": "yier",
+        "mode": "gptbase-sovits2",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/yier/samples/gptbase-sovits2-welcome.wav",
+        "expected": "你回来啦，今天也辛苦了，快来抱抱。",
+        "transcription": "你回來了今天也辛苦了快點逗逗",
+        "character_edits": 4,
+        "reference_characters": 14,
+        "cer": 0.2857
+      },
+      {
+        "role": "yier",
+        "mode": "gptbase-sovits2",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/yier/samples/gptbase-sovits2-water.wav",
+        "expected": "工作再忙，也要记得喝水和休息哦。",
+        "transcription": "回家再玩,也要記得喝水和休息哦",
+        "character_edits": 3,
+        "reference_characters": 14,
+        "cer": 0.2143
+      },
+      {
+        "role": "yier",
+        "mode": "gptbase-sovits2",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/yier/samples/gptbase-sovits2-play.wav",
+        "expected": "我们一起出去散步吧，回来再吃小蛋糕。",
+        "transcription": "我们一起出去散步吧回来再吃小炖糕",
+        "character_edits": 1,
+        "reference_characters": 16,
+        "cer": 0.0625
+      },
+      {
+        "role": "bubu",
+        "mode": "gpt5-sovits2",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/bubu/samples/gpt5-sovits2-welcome.wav",
+        "expected": "你回来啦，今天也辛苦了，快来抱抱。",
+        "transcription": "你回来了,今天也辛苦了,快来到吧。",
+        "character_edits": 3,
+        "reference_characters": 14,
+        "cer": 0.2143
+      },
+      {
+        "role": "bubu",
+        "mode": "gpt5-sovits2",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/bubu/samples/gpt5-sovits2-water.wav",
+        "expected": "工作再忙，也要记得喝水和休息哦。",
+        "transcription": "工作再忙,饮料记得喝水和休息啊。",
+        "character_edits": 3,
+        "reference_characters": 14,
+        "cer": 0.2143
+      },
+      {
+        "role": "bubu",
+        "mode": "gpt5-sovits2",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/bubu/samples/gpt5-sovits2-play.wav",
+        "expected": "我们一起出去散步吧，回来再吃小蛋糕。",
+        "transcription": "我們一起出去散步吧回來再吃小蛋糕",
+        "character_edits": 0,
+        "reference_characters": 16,
+        "cer": 0.0
+      },
+      {
+        "role": "yier",
+        "mode": "gpt10-sovits1",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/yier/samples/gpt10-sovits1-welcome.wav",
+        "expected": "你回来啦，今天也辛苦了，快来抱抱。",
+        "transcription": "你回來了今天也辛苦了回來了抱抱",
+        "character_edits": 3,
+        "reference_characters": 14,
+        "cer": 0.2143
+      },
+      {
+        "role": "yier",
+        "mode": "gpt10-sovits1",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/yier/samples/gpt10-sovits1-water.wav",
+        "expected": "工作再忙，也要记得喝水和休息哦。",
+        "transcription": "紅酒在馬,也要記得好適合羞羞",
+        "character_edits": 10,
+        "reference_characters": 14,
+        "cer": 0.7143
+      },
+      {
+        "role": "yier",
+        "mode": "gpt10-sovits1",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/yier/samples/gpt10-sovits1-play.wav",
+        "expected": "我们一起出去散步吧，回来再吃小蛋糕。",
+        "transcription": "我们一起出这小冬吧回来就吃小蛋糕",
+        "character_edits": 4,
+        "reference_characters": 16,
+        "cer": 0.25
+      },
+      {
+        "role": "yier",
+        "mode": "gpt10-sovitsbase",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/yier/samples/gpt10-sovitsbase-welcome.wav",
+        "expected": "你回来啦，今天也辛苦了，快来抱抱。",
+        "transcription": "你回来了,今天也辛苦了,快来抱抱。",
+        "character_edits": 1,
+        "reference_characters": 14,
+        "cer": 0.0714
+      },
+      {
+        "role": "yier",
+        "mode": "gpt10-sovitsbase",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/yier/samples/gpt10-sovitsbase-water.wav",
+        "expected": "工作再忙，也要记得喝水和休息哦。",
+        "transcription": "紅桌在馬,也要記得喝水和休息哦",
+        "character_edits": 4,
+        "reference_characters": 14,
+        "cer": 0.2857
+      },
+      {
+        "role": "yier",
+        "mode": "gpt10-sovitsbase",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/yier/samples/gpt10-sovitsbase-play.wav",
+        "expected": "我们一起出去散步吧，回来再吃小蛋糕。",
+        "transcription": "我们一起出去散步吧回来家吃小蛋糕",
+        "character_edits": 1,
+        "reference_characters": 16,
+        "cer": 0.0625
+      },
+      {
+        "role": "yier",
+        "mode": "gptbase-sovits1",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/yier/samples/gptbase-sovits1-welcome.wav",
+        "expected": "你回来啦，今天也辛苦了，快来抱抱。",
+        "transcription": "你回来啦今天也辛苦啦快乐抱抱",
+        "character_edits": 2,
+        "reference_characters": 14,
+        "cer": 0.1429
+      },
+      {
+        "role": "yier",
+        "mode": "gptbase-sovits1",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/yier/samples/gptbase-sovits1-water.wav",
+        "expected": "工作再忙，也要记得喝水和休息哦。",
+        "transcription": "本集在玩也要記得喝水喝休息哦",
+        "character_edits": 5,
+        "reference_characters": 14,
+        "cer": 0.3571
+      },
+      {
+        "role": "yier",
+        "mode": "gptbase-sovits1",
+        "file": "${PROJECT_ROOT}/voice-training/trained-20261014-v2/yier/samples/gptbase-sovits1-play.wav",
+        "expected": "我们一起出去散步吧，回来再吃小蛋糕。",
+        "transcription": "我们一起出去散步吧回来再吃小蛋糕",
+        "character_edits": 0,
+        "reference_characters": 16,
+        "cer": 0.0
+      }
+    ],
+    "aggregate": [
+      {
+        "role": "yier",
+        "mode": "gpt10-sovits1",
+        "samples": 3,
+        "character_edits": 17,
+        "reference_characters": 44,
+        "cer": 0.38636363636363635
+      },
+      {
+        "role": "yier",
+        "mode": "gpt10-sovitsbase",
+        "samples": 3,
+        "character_edits": 6,
+        "reference_characters": 44,
+        "cer": 0.13636363636363635
+      },
+      {
+        "role": "yier",
+        "mode": "gpt5-sovits2",
+        "samples": 3,
+        "character_edits": 22,
+        "reference_characters": 44,
+        "cer": 0.5
+      },
+      {
+        "role": "yier",
+        "mode": "gptbase-sovits1",
+        "samples": 3,
+        "character_edits": 7,
+        "reference_characters": 44,
+        "cer": 0.1590909090909091
+      },
+      {
+        "role": "yier",
+        "mode": "gptbase-sovits2",
+        "samples": 3,
+        "character_edits": 8,
+        "reference_characters": 44,
+        "cer": 0.18181818181818182
+      },
+      {
+        "role": "bubu",
+        "mode": "gpt5-sovits2",
+        "samples": 3,
+        "character_edits": 6,
+        "reference_characters": 44,
+        "cer": 0.13636363636363635
+      }
+    ]
+  },
+  "approved-20261014-04205443/verification.json": {
+    "success": true,
+    "review_sha256": "0420544334f8e8e46ec244050e017b4ee1752974c99c2e729d4c4e72e4b0d15e",
+    "total_approved": 24,
+    "counts": {
+      "yier": {
+        "clips": 11,
+        "seconds": 49.91
+      },
+      "bubu": {
+        "clips": 13,
+        "seconds": 52.95
+      }
+    },
+    "role_changes": [
+      {
+        "id": "pending-001",
+        "before": "unknown",
+        "after": "bubu"
+      },
+      {
+        "id": "pending-002",
+        "before": "unknown",
+        "after": "yier"
+      },
+      {
+        "id": "pending-003",
+        "before": "unknown",
+        "after": "yier"
+      },
+      {
+        "id": "pending-004",
+        "before": "unknown",
+        "after": "yier"
+      }
+    ],
+    "all_audio_hashes_verified": true,
+    "all_label_paths_verified": true,
+    "reference_count": 2,
+    "trained_models": 0
+  }
+}

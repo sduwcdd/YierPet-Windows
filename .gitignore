@@ -23,5 +23,33 @@ build/
 /content/wechat/compiled/motion-run-v1.png
 
 # Local voice source videos, extracted audio and model caches
-/voice-training/
+/voice-training/**
+!/voice-training/runtime/
+!/voice-training/2026-10-14-six-videos/
+!/voice-training/clarity-review-20261014/
+!/voice-training/runtime/build_report.py
+!/voice-training/runtime/check_samples.py
+!/voice-training/runtime/download_cpu_torch.py
+!/voice-training/runtime/download_g2pw.py
+!/voice-training/runtime/download_models.py
+!/voice-training/runtime/download_torch.py
+!/voice-training/runtime/environment-lock.txt
+!/voice-training/runtime/evaluate_voices.py
+!/voice-training/runtime/local-memory-compatibility.patch
+!/voice-training/runtime/package_models.py
+!/voice-training/runtime/requirements-local.in
+!/voice-training/runtime/requirements-resolved.txt
+!/voice-training/runtime/select_trial_models.py
+!/voice-training/runtime/serve_voice.py
+!/voice-training/runtime/start_voice_service.ps1
+!/voice-training/runtime/train_pipeline.py
+!/voice-training/runtime/verify_models.py
+!/voice-training/2026-10-14-six-videos/apply_review.py
+!/voice-training/2026-10-14-six-videos/build_pack.py
+!/voice-training/2026-10-14-six-videos/process_sources.py
+!/voice-training/clarity-review-20261014/make_comparison.py
+!/voice-training/recovery/
+!/voice-training/recovery/**
 /*.mp4
+
+!/voice-training/runtime/download_frontend.py

@@ -1,0 +1,2161 @@
+{
+  "date": "2026-11-14",
+  "note": "Inventory only; listed binary files are NOT stored in this Git repository. Do not delete local originals based on this manifest.",
+  "archives": [
+    {
+      "path": "voice-training/approved-20261014-04205443.zip",
+      "bytes": 18698060,
+      "sha256": "a8f3830bbb935a059cf4ee3724cb43554521d5008d3e7f03fe2c63c8fe2eb946",
+      "remoteBackup": "not present in GitHub releases checked 2026-11-14"
+    },
+    {
+      "path": "voice-training/一二布布-六视频语音切片-20261014.zip",
+      "bytes": 44046904,
+      "sha256": "ca67bfec9ec60143ffcaa86661252e2129d40ef6fb2843a077c47285b99a8120",
+      "remoteBackup": "not present in GitHub releases checked 2026-11-14"
+    },
+    {
+      "path": "voice-training/一二布布-声音模型-20261014-v2.zip",
+      "bytes": 597349689,
+      "sha256": "0efc46891a1aa70b3b11ade37d0b213ef401ddd605f7f15b3570bba4937760c0",
+      "remoteBackup": "not present in GitHub releases checked 2026-11-14"
+    }
+  ],
+  "files": [
+    {
+      "path": "voice-training/2026-10-14-six-videos/apply_review.py",
+      "bytes": 7928,
+      "sha256": "6b9bed18cf69c8fe8dfd1ac6acf3af86c24e4fd3dde5ca3a201f56071160618f"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/asr/13436440147704881.json",
+      "bytes": 9928,
+      "sha256": "e15e047bf0d70568e72fb17fa424cddb299f7ebeb178ae067351af1fe39ad86a"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/asr/13436440169362419.json",
+      "bytes": 9174,
+      "sha256": "fa40bdf53792cc57789d9112804842d905acc4c68b9ef9f206bc95eba03cac4d"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/asr/13436440184337709.json",
+      "bytes": 7808,
+      "sha256": "2b8b0f74ee497c6a6b8fd99857acc7455b27575429edbfa38b19548d16f3f22e"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/asr/13436440199616983.json",
+      "bytes": 10263,
+      "sha256": "3aab541c4aa19a9ded29c74af85c227ee56dd83532fc825c79ec1f64b5ee6a09"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/asr/13436440212397614.json",
+      "bytes": 7949,
+      "sha256": "418ac8e4e03e15a78c3ad26c74eb913161e23f2806b67869a1a618a055c73314"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/asr/13436440231623196.json",
+      "bytes": 8664,
+      "sha256": "dc123fce349de42672463f6871b8a18167f534bb8bf4e3fdf1e9069f32e4ba31"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/asr-turbo/13436440147704881.json",
+      "bytes": 8211,
+      "sha256": "4918f4c6d9fb41612cc710b4612e270b84d7f5b0ad1443f623e4a678dbf054ee"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/asr-turbo/13436440169362419.json",
+      "bytes": 9062,
+      "sha256": "191b5ad30e2ed8dcecfc2820d1a67dd13acfb61236c5a1ba1c01b14360f26a6b"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/asr-turbo/13436440184337709.json",
+      "bytes": 7015,
+      "sha256": "a6d4a8df09fb53577a8b54bc83619b2dda6b58fc5dabd08c2f72413dd1847938"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/asr-turbo/13436440199616983.json",
+      "bytes": 8882,
+      "sha256": "589afc6b4c9eba9a412c3db32e2baab32d2b25cae78d724267d8d5692330dbcb"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/asr-turbo/13436440212397614.json",
+      "bytes": 8328,
+      "sha256": "d00c4efc9cd95322520f6362828e4dd39174a99d178a080f21538c883ef5e7f9"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/asr-turbo/13436440231623196.json",
+      "bytes": 8473,
+      "sha256": "40319983c0f3abf2552058095952adad4ba5a9ba4c3cf441a4a9b9dd369599f9"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/audio-original/13436440147704881.wav",
+      "bytes": 3293308,
+      "sha256": "1bd87a584f0681b10d2321c065c4157d66a8e5eeaa118bc2f82fac0a4fc25c25"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/audio-original/13436440169362419.wav",
+      "bytes": 3043452,
+      "sha256": "f2012f469fa90da54bab1909fc156a9ede16425b2ec175f906ab87fa5d4704ca"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/audio-original/13436440184337709.wav",
+      "bytes": 2703484,
+      "sha256": "9586e8f2603a4742675b1b005c1fd666df3523a992836dc7dce1a7d9e331452b"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/audio-original/13436440199616983.wav",
+      "bytes": 3219580,
+      "sha256": "b138e7e72f0e80ff148b3f292d6bf22323c16085791c3f7e8e011253c687954f"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/audio-original/13436440212397614.wav",
+      "bytes": 3149948,
+      "sha256": "5d0daa7e735fd3902051d081b73ec2a723252b2c22a806af7a1ea4de2e007723"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/audio-original/13436440231623196.wav",
+      "bytes": 3506300,
+      "sha256": "e06c64c902b32507db31ce0da4af6b8c1a1004ce7a5a913d394f6952fd8d4458"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/build_pack.py",
+      "bytes": 18518,
+      "sha256": "20121bcea592dc351d5144e58c180c16ac1e831e327967397de618fc1aa07235"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/bubu/bubu-001.txt",
+      "bytes": 56,
+      "sha256": "fec262dce07f961f74ef2fa68ce3f73acaaadfcbd74abf2a88705f7b8b86f659"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/bubu/bubu-001.wav",
+      "bytes": 723284,
+      "sha256": "1e8ea1b199fd41564ef4dab9b38b86b37d85a09d86888b58195a6d44bc1ae12f"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/bubu/bubu-002.txt",
+      "bytes": 56,
+      "sha256": "12676f3f852533b176b729cf3c03b7f02a4e8dc44f06f6028f6b8215d728cd9a"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/bubu/bubu-002.wav",
+      "bytes": 864404,
+      "sha256": "17420161f6edcef84018ed2b08d52ad6b64dbcb6f6197fe64a4bd0895e418083"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/bubu/bubu-003.txt",
+      "bytes": 56,
+      "sha256": "c9c9d5422bf7f22c265f150c78f990b8b26f2dc6284318c6cd45e060fc015b85"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/bubu/bubu-003.wav",
+      "bytes": 899684,
+      "sha256": "03722d10bd75e7223ce6c45777e531229ca3ac039b3b42278b02b02eca304f23"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/bubu/bubu-004.txt",
+      "bytes": 56,
+      "sha256": "6d2c6b1fd61ec7307802853cf60fea5621ebea029d6f1aaf67b6650a352af1eb"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/bubu/bubu-004.wav",
+      "bytes": 749744,
+      "sha256": "6223a11dc3ff3328ba7221b4bb6ac92660735fba1085c1c63561da0d5001fe35"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/bubu/bubu-005.txt",
+      "bytes": 59,
+      "sha256": "bac1b45759d1e4b903286c3177a7c4f39126a42aca26704eb3492c088ebc778b"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/bubu/bubu-005.wav",
+      "bytes": 797372,
+      "sha256": "8b60a7e2aeea2404883b0a90fcfbd77da2138e4cf227d995b43a6c238d5f59c5"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/bubu/bubu-006.txt",
+      "bytes": 44,
+      "sha256": "332af40af9567c95985b8005c2ff942092765ff6bb3abdcec26178438cf1cfe5"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/bubu/bubu-006.wav",
+      "bytes": 617444,
+      "sha256": "9879315d4246cccced14824c3e66d7bbd2b2b7576b92de84957e8dcb7712afcb"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/bubu/bubu-007.txt",
+      "bytes": 74,
+      "sha256": "5031cc33f64c1ae1c16f98fbbace8f489f05cb11da335ff66ae6ba3ef271462b"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/bubu/bubu-007.wav",
+      "bytes": 959660,
+      "sha256": "686a03ddb38d292e6cb69e3624a5820e48cd8b06e458f4efb08b3f01264e9df9"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/bubu/bubu-008.txt",
+      "bytes": 44,
+      "sha256": "564463dc01c07a3c2d1d6aabd5524ac5fc7ae6c45e855f1b424e77cdbd71a96d"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/bubu/bubu-008.wav",
+      "bytes": 726812,
+      "sha256": "d5687dc4d221b5622294258f9fbf6a97ca3b70658a31a1990c108c38f2cd2af5"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/bubu/bubu-009.txt",
+      "bytes": 68,
+      "sha256": "1d19345a9fd70f386ebce410768ebc07573bb1e99780682f0ff4448835629da7"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/bubu/bubu-009.wav",
+      "bytes": 786788,
+      "sha256": "9930c1724577b19043e1ead0652fea4a33ae5b9ed964af512549c43b604af4ad"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/bubu/bubu-010.txt",
+      "bytes": 59,
+      "sha256": "2566da6fe3ff35ec9e40e117dfabccae06302fd9ab2e41478f08a1320cecd0a7"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/bubu/bubu-010.wav",
+      "bytes": 686240,
+      "sha256": "6900c7fc15fa3f38edfa8c43e0f0985e835a864476ea0bb2a4511ea99bf1900e"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/bubu/bubu-011.txt",
+      "bytes": 35,
+      "sha256": "e5a4110f2fa5c0d5830dd6311cefa84bcecef22438d2d3386ae7d227883af2ba"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/bubu/bubu-011.wav",
+      "bytes": 437516,
+      "sha256": "9d29760be8d52ef66da5d824596095ab6908112301c6953323979c62225fd7db"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/needs-review/pending-001.txt",
+      "bytes": 50,
+      "sha256": "b517ee28e5f7e9235bbecf526bbd947ecb50b9974878bbd401978c45508e19f5"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/needs-review/pending-001.wav",
+      "bytes": 501020,
+      "sha256": "a8f08188877d252dbdcbfb751d61841f364dc6fa8dd8fdba19f0a5b05da6e06e"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/needs-review/pending-002.txt",
+      "bytes": 50,
+      "sha256": "a4e66d004d6b290ac630d4cdddd7e2a82fa6fc12ede98a8f4d2f3508ab14731b"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/needs-review/pending-002.wav",
+      "bytes": 590984,
+      "sha256": "8ce5bfdbcee5e93ae06bc6c1e37d59c0e7fabce0457320d5439e5adab334eb9f"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/needs-review/pending-003.txt",
+      "bytes": 50,
+      "sha256": "2327efe742877a247978ab1bed878caf7e8be9f30e964dbcd5f28a4098a69b6a"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/needs-review/pending-003.wav",
+      "bytes": 702116,
+      "sha256": "7c5338c324af401277df582a83e26b49b011a29ebcf9a0e01403593b2eaebce2"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/needs-review/pending-004.txt",
+      "bytes": 50,
+      "sha256": "b6f564be26d01f4a0e7ccf2098f431e9a4d9a94a0b0eea9149780e43f1303230"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/needs-review/pending-004.wav",
+      "bytes": 705644,
+      "sha256": "4dfe7ddf2b164c29096618b090aa92d3a20738ed30611d4395cb951b35ed742c"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/needs-review/pending-005.txt",
+      "bytes": 32,
+      "sha256": "11ce8aa7e52a19a419ed4da941613499e419e04a69145e0059a77650760b5cb3"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/needs-review/pending-005.wav",
+      "bytes": 472796,
+      "sha256": "c24e6f087c079d8054aaacf855ae9f507692c83c50ac9e89369f79752c8f309d"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/needs-review/pending-006.txt",
+      "bytes": 47,
+      "sha256": "56415f794b6436857834800a88bd7d63dfa4c1022eb7ea41a9c8757e11f40ae1"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/needs-review/pending-006.wav",
+      "bytes": 590984,
+      "sha256": "ccd2acedab65698e34b66fc4933b919844a550bc628ef29b421f31e414f50271"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/needs-review/pending-007.txt",
+      "bytes": 29,
+      "sha256": "bcefbb460dd029c90fecd0519027c3ffb9f154baade033febe8ce94fb076ca9e"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/needs-review/pending-007.wav",
+      "bytes": 467504,
+      "sha256": "604cd180e55a49c11ed496c58305da5154201308d362dfd13d804b0555019fb1"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/yier/yier-001.txt",
+      "bytes": 62,
+      "sha256": "e0ba10a732421ad7b27396d6627e75e911e298dba7e978d05dc3cab045860174"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/yier/yier-001.wav",
+      "bytes": 793844,
+      "sha256": "66e511ee2b0670785821215e1b70b33bb33ac5772a0dcc9661433bb04d4cbec7"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/yier/yier-002.txt",
+      "bytes": 74,
+      "sha256": "d26faf2ab7cd59b463971ee9b2e376ee79634a0286f7058e861c05a285a05b9e"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/yier/yier-002.wav",
+      "bytes": 956132,
+      "sha256": "3df7ca74de2de823842ef69e758889e8137f362e01306f38fc48a44370ec5de8"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/yier/yier-003.txt",
+      "bytes": 71,
+      "sha256": "22d64732798c9d0aaf4cabfef5200051ae02f114e5c87e6b10d0088b8a4bdde0"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/yier/yier-003.wav",
+      "bytes": 931436,
+      "sha256": "479c1053286173a25b7324c35c9b12a063392b1d513707c671b4015df2eacb71"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/yier/yier-004.txt",
+      "bytes": 77,
+      "sha256": "0ff6faab6a459dc17c588b6bc8300f3118ffa862fe362811ae98e48ae58661b2"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/yier/yier-004.wav",
+      "bytes": 987884,
+      "sha256": "fe0509f14ebf1a8d7d1dd2ae7c46bc38c9c7e97825164aa2d6af914968534ce5"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/yier/yier-005.txt",
+      "bytes": 80,
+      "sha256": "dd298ab530db9ba4d1ea7ac8f4803c4898deb33b261f8a612f883d825584d120"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/yier/yier-005.wav",
+      "bytes": 1047860,
+      "sha256": "de42e8894e51c1419a2b51f4c55a1f2e69e9e935778faad3455ef9b896bf24c0"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/yier/yier-006.txt",
+      "bytes": 74,
+      "sha256": "3553d2ff211347384eb9ef5457080e309104285bbc01de6e295db0ae547b3550"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/clips/yier/yier-006.wav",
+      "bytes": 1148408,
+      "sha256": "0d3f746b5d3563dbaa0503af16b4a14ea53f70ab264fd46bd2947e1456750f11"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/manifest.json",
+      "bytes": 28133,
+      "sha256": "c6589701d2b820b67e132df54f26fe671b39c48570428e584a5471b38251c1c8"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/original-videos/13436440147704881.mp4",
+      "bytes": 958250,
+      "sha256": "acfc20389cffd771e42dea8d6cc1fa52ddf37bcdf6ba50b2cee0b20d34f4bf28"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/original-videos/13436440169362419.mp4",
+      "bytes": 683181,
+      "sha256": "9b686b2616b92226d5052f87d51f54ccb096345a8f6400cef31205a22079e2ef"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/original-videos/13436440184337709.mp4",
+      "bytes": 445650,
+      "sha256": "4f959d1b4e81e0d96b244afaa9dd8ed0384d480c09fe7de4b9a435472fe06343"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/original-videos/13436440199616983.mp4",
+      "bytes": 575824,
+      "sha256": "fc8ae6629ebc773867f371360d6fd5e1680c34eb004719db04bd63e944985c43"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/original-videos/13436440212397614.mp4",
+      "bytes": 528969,
+      "sha256": "4ee70ae688b2f297e3bd403588735f42d776da5586fafdb833ed458d91586081"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/original-videos/13436440231623196.mp4",
+      "bytes": 695290,
+      "sha256": "81e4edc6e97feec10d239f56306b4e6ea09c40c4a5482f5c6c6e631f498fa93d"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/process-turbo.log",
+      "bytes": 5031,
+      "sha256": "136cd892dc9f495863cf1996d13d85eefaa09c2dddebf3ea1c18219248faad39"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/process.log",
+      "bytes": 6399,
+      "sha256": "41ac685a5daafea61ed62176be281d07c86b05db71cdf6ac753c474524f8f703"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/process_sources.py",
+      "bytes": 3214,
+      "sha256": "2f0719c152ef6436a8d2242ad643c2af869298e5e60de1006c3f7271383d479d"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/README.md",
+      "bytes": 2969,
+      "sha256": "b04c1b2b7a167cbede05d616351f8800c09cc5d9c4210a790892bed8f9376c6b"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/reference-candidates/bubu-reference.txt",
+      "bytes": 68,
+      "sha256": "1d19345a9fd70f386ebce410768ebc07573bb1e99780682f0ff4448835629da7"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/reference-candidates/bubu-reference.wav",
+      "bytes": 786788,
+      "sha256": "9930c1724577b19043e1ead0652fea4a33ae5b9ed964af512549c43b604af4ad"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/reference-candidates/references.json",
+      "bytes": 387,
+      "sha256": "a21e69da8d7700dc8de6dd04ec8623e1d243f972700b3836bbf10487dce35687"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/reference-candidates/yier-reference.txt",
+      "bytes": 74,
+      "sha256": "d26faf2ab7cd59b463971ee9b2e376ee79634a0286f7058e861c05a285a05b9e"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/reference-candidates/yier-reference.wav",
+      "bytes": 956132,
+      "sha256": "3df7ca74de2de823842ef69e758889e8137f362e01306f38fc48a44370ec5de8"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440147704881-full.png",
+      "bytes": 671676,
+      "sha256": "da09af953cec89c0bf7c4ebd344fd23c9e1cc911e6e90094fa1eb6d4b1ec3a54"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440147704881.jpg",
+      "bytes": 70517,
+      "sha256": "f4538355ea209ba03563a8ec91e35a76074a10f20fa2de660dd91e03d1a3b8c1"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440169362419-10.jpg",
+      "bytes": 74603,
+      "sha256": "ad1035f35a7a97034516def5d67befa6579a3f0959ef7e2d68516a5ba335f1c8"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440169362419-13.jpg",
+      "bytes": 62179,
+      "sha256": "b4298afbc5d5a938705a67bd57b8267d1ca19afa81131140e516115fa49338d9"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440169362419-15.5.jpg",
+      "bytes": 59363,
+      "sha256": "94242f571f5db6c9f9eb20a9c4512427540cb98c7e76af08ff46360ac8b816b5"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440169362419-3.5.jpg",
+      "bytes": 79685,
+      "sha256": "3c376e0e7c53f59f3b02e51f319affda67d1e4d280b969d82bf5423ffdb1381d"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440169362419-7.jpg",
+      "bytes": 77033,
+      "sha256": "c04fbc8873d312fabcb3bf842fc54a1bb37eab3cc39bbb178511c2ada7df6f1a"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440169362419-full.png",
+      "bytes": 230626,
+      "sha256": "a2901a486380f6ae8273d4919f7dc8149fffd23a330bad51cd7fe088e529d68a"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440169362419.jpg",
+      "bytes": 39084,
+      "sha256": "e08ba91e6d688e9b4c35843b6e5da38f40d4847d1cef9160d8514d1da4d8904e"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440184337709-10.5.jpg",
+      "bytes": 72368,
+      "sha256": "c2f333b84ef971d8c97709ad3ac773047ed6ca8e5fb072bb88beab165334b6f0"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440184337709-12.jpg",
+      "bytes": 72348,
+      "sha256": "3329de895433473a5f52ec3e62e73891e874b922993ca6211cf94db26c344f88"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440184337709-14.jpg",
+      "bytes": 72410,
+      "sha256": "f20e8b32a9de103ab02186dafa5f46a7ea69896494422c3d354c760ecedc9dd6"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440184337709-9.jpg",
+      "bytes": 77215,
+      "sha256": "a2fde3001b32e252b7503dbec6f5766cb9b16e16c882248fd9326c214fa69415"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440184337709-full.png",
+      "bytes": 370929,
+      "sha256": "411166fb4f2a92d49fe4dea4a467193004d4d6c5f89f36cd5868c3d16f404649"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440184337709.jpg",
+      "bytes": 60737,
+      "sha256": "85fc912491ee379ed0a4191df33089d41ae59c06e93fef32c90f34a71371d0df"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440199616983-full.png",
+      "bytes": 342418,
+      "sha256": "04429972bdf7c78ffc520a25be70a1c65473c210084cb93a2de2047a0a1ea7b7"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440199616983.jpg",
+      "bytes": 55697,
+      "sha256": "e6793858b4635ec4f13967bf9eeb97ecfbee3f53f5bcea07ce94da5056c51964"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440212397614-full.png",
+      "bytes": 306534,
+      "sha256": "e2f8bf385417fcfea5a14b16d42d11c380f94b30968bcc97892e1fe5e06aafbc"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440212397614.jpg",
+      "bytes": 41500,
+      "sha256": "bffc22c1e2dd6bcc152fb181ba982445ae61b2ed424811baba5e2e513410513d"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440231623196-10.jpg",
+      "bytes": 27244,
+      "sha256": "599d451b3d2b5c0aee4cbb64ac923c39940e723dc39398ec8b347b5561b0301a"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440231623196-12.jpg",
+      "bytes": 27955,
+      "sha256": "9ebeb21eb48b22dc0609c6f15ec571e895b6797e750d041dc84e3a5afb1bfe01"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440231623196-15.jpg",
+      "bytes": 26224,
+      "sha256": "6e0c5b9910c0369a5e64229e0a0a1cd60c2a28a47785b9a18196989b86ca0449"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440231623196-18.jpg",
+      "bytes": 30117,
+      "sha256": "22cd15e2884bbb1ee1910211aed079ec8f18557d5f753235b50c28786bf44b82"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440231623196-8.jpg",
+      "bytes": 65685,
+      "sha256": "4052de16bf11ec7800cbe763e4c46a933274cd83654a86dddeac6ba3d2e2dea1"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440231623196-full.png",
+      "bytes": 320757,
+      "sha256": "4e24fb81598dc7a160ea955038cac239e3852b3d7f3c1818973fb22e25ccc3ea"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/13436440231623196.jpg",
+      "bytes": 33679,
+      "sha256": "4bd0c510c8d4540fdb29b80c612e4a9b712b7f5a9b8af140f6a94d1e490dba70"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/source1-end.png",
+      "bytes": 676329,
+      "sha256": "8976ff6357402a7547cfeee2bc33adade270dba02f589006a55983dc90a02388"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/review/source6-timeline.jpg",
+      "bytes": 70992,
+      "sha256": "1914fed3cd7143e8e1fe85feeaaba62486ded45c2cebc07a0371e8c114d9cab9"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/setup.log",
+      "bytes": 8329,
+      "sha256": "d17eb1d7d9d4e2a40088311355cd531bae1dc4920538d5ae9cdeaff93b293479"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/signal-stats.json",
+      "bytes": 837,
+      "sha256": "f5cbaf48bb0b856a31bc66970427add251d98507e95ecdc77bd296a905cae11c"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/sources.json",
+      "bytes": 1934,
+      "sha256": "da5ab131f78c43ef98f7a1aa857002c77ddb93acf913893cad56bffff01848f6"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/verification.json",
+      "bytes": 376,
+      "sha256": "44250abd2641e6753692de2e906fcf9b67df271b23ed8da54cab750536468868"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/片段清单.csv",
+      "bytes": 5615,
+      "sha256": "9477c67ee0172b4bf17313a73846b6727c68873bff19ddbe5e9362394c1bb90f"
+    },
+    {
+      "path": "voice-training/2026-10-14-six-videos/试听与核对.html",
+      "bytes": 28816,
+      "sha256": "69b24a905f12fde6ede2b7d51b9659984d6c8a000aa1ef001746c8e85dd132d8"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/bubu-001.txt",
+      "bytes": 56,
+      "sha256": "fec262dce07f961f74ef2fa68ce3f73acaaadfcbd74abf2a88705f7b8b86f659"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/bubu-001.wav",
+      "bytes": 723284,
+      "sha256": "1e8ea1b199fd41564ef4dab9b38b86b37d85a09d86888b58195a6d44bc1ae12f"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/bubu-002.txt",
+      "bytes": 56,
+      "sha256": "12676f3f852533b176b729cf3c03b7f02a4e8dc44f06f6028f6b8215d728cd9a"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/bubu-002.wav",
+      "bytes": 864404,
+      "sha256": "17420161f6edcef84018ed2b08d52ad6b64dbcb6f6197fe64a4bd0895e418083"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/bubu-003.txt",
+      "bytes": 56,
+      "sha256": "c9c9d5422bf7f22c265f150c78f990b8b26f2dc6284318c6cd45e060fc015b85"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/bubu-003.wav",
+      "bytes": 899684,
+      "sha256": "03722d10bd75e7223ce6c45777e531229ca3ac039b3b42278b02b02eca304f23"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/bubu-004.txt",
+      "bytes": 56,
+      "sha256": "6d2c6b1fd61ec7307802853cf60fea5621ebea029d6f1aaf67b6650a352af1eb"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/bubu-004.wav",
+      "bytes": 749744,
+      "sha256": "6223a11dc3ff3328ba7221b4bb6ac92660735fba1085c1c63561da0d5001fe35"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/bubu-005.txt",
+      "bytes": 59,
+      "sha256": "bac1b45759d1e4b903286c3177a7c4f39126a42aca26704eb3492c088ebc778b"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/bubu-005.wav",
+      "bytes": 797372,
+      "sha256": "8b60a7e2aeea2404883b0a90fcfbd77da2138e4cf227d995b43a6c238d5f59c5"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/bubu-006.txt",
+      "bytes": 44,
+      "sha256": "332af40af9567c95985b8005c2ff942092765ff6bb3abdcec26178438cf1cfe5"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/bubu-006.wav",
+      "bytes": 617444,
+      "sha256": "9879315d4246cccced14824c3e66d7bbd2b2b7576b92de84957e8dcb7712afcb"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/bubu-007.txt",
+      "bytes": 74,
+      "sha256": "5031cc33f64c1ae1c16f98fbbace8f489f05cb11da335ff66ae6ba3ef271462b"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/bubu-007.wav",
+      "bytes": 959660,
+      "sha256": "686a03ddb38d292e6cb69e3624a5820e48cd8b06e458f4efb08b3f01264e9df9"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/bubu-008.txt",
+      "bytes": 44,
+      "sha256": "564463dc01c07a3c2d1d6aabd5524ac5fc7ae6c45e855f1b424e77cdbd71a96d"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/bubu-008.wav",
+      "bytes": 726812,
+      "sha256": "d5687dc4d221b5622294258f9fbf6a97ca3b70658a31a1990c108c38f2cd2af5"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/bubu-009.txt",
+      "bytes": 68,
+      "sha256": "1d19345a9fd70f386ebce410768ebc07573bb1e99780682f0ff4448835629da7"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/bubu-009.wav",
+      "bytes": 786788,
+      "sha256": "9930c1724577b19043e1ead0652fea4a33ae5b9ed964af512549c43b604af4ad"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/bubu-010.txt",
+      "bytes": 59,
+      "sha256": "2566da6fe3ff35ec9e40e117dfabccae06302fd9ab2e41478f08a1320cecd0a7"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/bubu-010.wav",
+      "bytes": 686240,
+      "sha256": "6900c7fc15fa3f38edfa8c43e0f0985e835a864476ea0bb2a4511ea99bf1900e"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/bubu-011.txt",
+      "bytes": 35,
+      "sha256": "e5a4110f2fa5c0d5830dd6311cefa84bcecef22438d2d3386ae7d227883af2ba"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/bubu-011.wav",
+      "bytes": 437516,
+      "sha256": "9d29760be8d52ef66da5d824596095ab6908112301c6953323979c62225fd7db"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/pending-001.txt",
+      "bytes": 50,
+      "sha256": "b517ee28e5f7e9235bbecf526bbd947ecb50b9974878bbd401978c45508e19f5"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/pending-001.wav",
+      "bytes": 501020,
+      "sha256": "a8f08188877d252dbdcbfb751d61841f364dc6fa8dd8fdba19f0a5b05da6e06e"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/pending-006.txt",
+      "bytes": 47,
+      "sha256": "56415f794b6436857834800a88bd7d63dfa4c1022eb7ea41a9c8757e11f40ae1"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/bubu/pending-006.wav",
+      "bytes": 590984,
+      "sha256": "ccd2acedab65698e34b66fc4933b919844a550bc628ef29b421f31e414f50271"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/yier/pending-002.txt",
+      "bytes": 50,
+      "sha256": "a4e66d004d6b290ac630d4cdddd7e2a82fa6fc12ede98a8f4d2f3508ab14731b"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/yier/pending-002.wav",
+      "bytes": 590984,
+      "sha256": "8ce5bfdbcee5e93ae06bc6c1e37d59c0e7fabce0457320d5439e5adab334eb9f"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/yier/pending-003.txt",
+      "bytes": 50,
+      "sha256": "2327efe742877a247978ab1bed878caf7e8be9f30e964dbcd5f28a4098a69b6a"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/yier/pending-003.wav",
+      "bytes": 702116,
+      "sha256": "7c5338c324af401277df582a83e26b49b011a29ebcf9a0e01403593b2eaebce2"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/yier/pending-004.txt",
+      "bytes": 50,
+      "sha256": "b6f564be26d01f4a0e7ccf2098f431e9a4d9a94a0b0eea9149780e43f1303230"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/yier/pending-004.wav",
+      "bytes": 705644,
+      "sha256": "4dfe7ddf2b164c29096618b090aa92d3a20738ed30611d4395cb951b35ed742c"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/yier/pending-005.txt",
+      "bytes": 32,
+      "sha256": "11ce8aa7e52a19a419ed4da941613499e419e04a69145e0059a77650760b5cb3"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/yier/pending-005.wav",
+      "bytes": 472796,
+      "sha256": "c24e6f087c079d8054aaacf855ae9f507692c83c50ac9e89369f79752c8f309d"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/yier/pending-007.txt",
+      "bytes": 29,
+      "sha256": "bcefbb460dd029c90fecd0519027c3ffb9f154baade033febe8ce94fb076ca9e"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/yier/pending-007.wav",
+      "bytes": 467504,
+      "sha256": "604cd180e55a49c11ed496c58305da5154201308d362dfd13d804b0555019fb1"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/yier/yier-001.txt",
+      "bytes": 62,
+      "sha256": "e0ba10a732421ad7b27396d6627e75e911e298dba7e978d05dc3cab045860174"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/yier/yier-001.wav",
+      "bytes": 793844,
+      "sha256": "66e511ee2b0670785821215e1b70b33bb33ac5772a0dcc9661433bb04d4cbec7"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/yier/yier-002.txt",
+      "bytes": 74,
+      "sha256": "d26faf2ab7cd59b463971ee9b2e376ee79634a0286f7058e861c05a285a05b9e"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/yier/yier-002.wav",
+      "bytes": 956132,
+      "sha256": "3df7ca74de2de823842ef69e758889e8137f362e01306f38fc48a44370ec5de8"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/yier/yier-003.txt",
+      "bytes": 71,
+      "sha256": "22d64732798c9d0aaf4cabfef5200051ae02f114e5c87e6b10d0088b8a4bdde0"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/yier/yier-003.wav",
+      "bytes": 931436,
+      "sha256": "479c1053286173a25b7324c35c9b12a063392b1d513707c671b4015df2eacb71"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/yier/yier-004.txt",
+      "bytes": 77,
+      "sha256": "0ff6faab6a459dc17c588b6bc8300f3118ffa862fe362811ae98e48ae58661b2"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/yier/yier-004.wav",
+      "bytes": 987884,
+      "sha256": "fe0509f14ebf1a8d7d1dd2ae7c46bc38c9c7e97825164aa2d6af914968534ce5"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/yier/yier-005.txt",
+      "bytes": 80,
+      "sha256": "dd298ab530db9ba4d1ea7ac8f4803c4898deb33b261f8a612f883d825584d120"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/yier/yier-005.wav",
+      "bytes": 1047860,
+      "sha256": "de42e8894e51c1419a2b51f4c55a1f2e69e9e935778faad3455ef9b896bf24c0"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/yier/yier-006.txt",
+      "bytes": 74,
+      "sha256": "3553d2ff211347384eb9ef5457080e309104285bbc01de6e295db0ae547b3550"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/audio/yier/yier-006.wav",
+      "bytes": 1148408,
+      "sha256": "0d3f746b5d3563dbaa0503af16b4a14ea53f70ab264fd46bd2947e1456750f11"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/labels/bubu.list",
+      "bytes": 2205,
+      "sha256": "fc4597558ddb33efca1e7a64487715d2e65455f16bb2e638678e9694ae641a53"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/labels/bubu.relative.list",
+      "bytes": 1126,
+      "sha256": "81772323482544626fb3119ba590962261a4c44431b594f258fa75e8f7b9cfcf"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/labels/yier.list",
+      "bytes": 1929,
+      "sha256": "1170a13b2f2e92ea5655744980aab1a16afd2a35509cc97229b80b2c20becfff"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/labels/yier.relative.list",
+      "bytes": 1016,
+      "sha256": "28de93524c4e4c75044310f81587eeb6c1ac4cb8d9c74a6ff695d3868cc5d2a7"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/manifest.json",
+      "bytes": 23561,
+      "sha256": "752af9f9e9605334e6d3f662f857098fb0e5199c5dbd95a3a3dca00abb563ffd"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/README.md",
+      "bytes": 1612,
+      "sha256": "24eecc18725d6b5457586bc838991258a066ecfa1bab023b23304daddcd0cfc7"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/references/bubu/reference.txt",
+      "bytes": 68,
+      "sha256": "1d19345a9fd70f386ebce410768ebc07573bb1e99780682f0ff4448835629da7"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/references/bubu/reference.wav",
+      "bytes": 786788,
+      "sha256": "9930c1724577b19043e1ead0652fea4a33ae5b9ed964af512549c43b604af4ad"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/references/yier/reference.txt",
+      "bytes": 74,
+      "sha256": "d26faf2ab7cd59b463971ee9b2e376ee79634a0286f7058e861c05a285a05b9e"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/references/yier/reference.wav",
+      "bytes": 956132,
+      "sha256": "3df7ca74de2de823842ef69e758889e8137f362e01306f38fc48a44370ec5de8"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/verification.json",
+      "bytes": 816,
+      "sha256": "636e1329daf3af682089f0ef76303859a59a353beb26c9b9a16ab6f9c224f2a7"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/voice-review.original.json",
+      "bytes": 28151,
+      "sha256": "0420544334f8e8e46ec244050e017b4ee1752974c99c2e729d4c4e72e4b0d15e"
+    },
+    {
+      "path": "voice-training/approved-20261014-04205443/已确认片段.csv",
+      "bytes": 3611,
+      "sha256": "179d328dc2ef5202533b3f69ed58efa0c880a0e7dc7dac30aecd487c7dc6397c"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/asr-checkpoint-comparison.json",
+      "bytes": 9429,
+      "sha256": "332e11880a872cbcc7b51bcb06d52fe0b5cb6dce937c1fcb25f9ef2f767d7a74"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/asr-evaluation.json",
+      "bytes": 6151,
+      "sha256": "1f5d1b76e26431b4688d9478b663559077fc94853ca76df5fa3af34f42bac729"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/bubu-e10.ckpt",
+      "bytes": 155308946,
+      "sha256": "6e5422914ca743a811252abc9d3ff6df26c719568c408288f75ab403b2a49265"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/bubu-e5.ckpt",
+      "bytes": 155309245,
+      "sha256": "2514dba50f3cb04fa8d8fa5394b24777249043413f12656dc717d07d2aad0f1b"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/bubu_e1_s91.pth",
+      "bytes": 84998242,
+      "sha256": "833642d4b3b9cfac74128de84f61ff14534e5e0ff4dac502af8c6519417b81d8"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/bubu_e2_s182.pth",
+      "bytes": 84998242,
+      "sha256": "bb5b95810be39d0eccbc6bb3c576a4bd66c7573847b48785016cb210512fafab"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/inference.yaml",
+      "bytes": 594,
+      "sha256": "58dffb4a2b0ea487989ab155d4f7cf7d08367d2af922f82a384e1136b925a4a0"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/preparation-verified.json",
+      "bytes": 957,
+      "sha256": "e9f6453e4969d9019905a5c09b4bb46a6daf93ca25c36f0ed579ddb6e24ef93a"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/prepare-hubert.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/prepare-hubert.result.json",
+      "bytes": 278,
+      "sha256": "44bad6332f387514cc623e33d3ae827b44f662f6b6bbdea3ee3f7d3f207eb0c5"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/prepare-semantic.log",
+      "bytes": 33,
+      "sha256": "14592600858d38eb267b0ab23255e439d0cc7f2642dab988bda04618d67d920c"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/prepare-semantic.result.json",
+      "bytes": 275,
+      "sha256": "a671371f067d2365445c512ff47b861a96942c9c6b9eb7fe03985b22efbf65cc"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/prepare-text.log",
+      "bytes": 360,
+      "sha256": "6b0b12e814a4e91fc1a5af28ba0979fef68db16360a877169d95bc99437e1c82"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/prepare-text.result.json",
+      "bytes": 267,
+      "sha256": "6d0b0081bc4d8e2b87e40a4aac14d9b17efa0f6581a03522645a311e6bd5c30c"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/reference.txt",
+      "bytes": 68,
+      "sha256": "1d19345a9fd70f386ebce410768ebc07573bb1e99780682f0ff4448835629da7"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/reference.wav",
+      "bytes": 786788,
+      "sha256": "9930c1724577b19043e1ead0652fea4a33ae5b9ed964af512549c43b604af4ad"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/s1.yaml",
+      "bytes": 1304,
+      "sha256": "62c3ebe1c8abcaa9102506ebdb1d819aad3c902972cf8660b095f2da4e0210ed"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/s2.json",
+      "bytes": 2555,
+      "sha256": "7a6d68fefd5621164074acb51364f24a03f44e239370a7dc69aa654f3610fe6f"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/samples/base-inference.yaml",
+      "bytes": 3563,
+      "sha256": "19ac6d481fdde57b123efe23a5fae721848626ddf19794c067f236c4db3e0ff0"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/samples/base-play.wav",
+      "bytes": 284204,
+      "sha256": "194058ca778aaa88f7ed45c8862d0a9f18acb360897d2a7774b4a7d6df940788"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/samples/base-results.json",
+      "bytes": 4557,
+      "sha256": "eecccc093a15968c7a92b35eceafb8da9f2f9676bd70c9ef91fc1d584e198ae7"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/samples/base-water.wav",
+      "bytes": 268844,
+      "sha256": "3e226a9c0a1e1fd39d77dea4d5fe786b1c8dc7450d49617098f103c485836ba0"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/samples/base-welcome.wav",
+      "bytes": 431404,
+      "sha256": "786cbf70a4cdbe1e1bbdeda5f00c5a9c8135b2a0376f75f2ebc3bbacd58b4725"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/samples/gpt5-sovits2-inference.yaml",
+      "bytes": 3440,
+      "sha256": "b73d60f1d93723a379be0abf1978774af6789a83ed42286b19f0bae1ed62a982"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/samples/gpt5-sovits2-play.wav",
+      "bytes": 240684,
+      "sha256": "9bf93a6171f63241549a236c8680aa74ce6077551ed88411f47cd08694b8bc49"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/samples/gpt5-sovits2-results.json",
+      "bytes": 4482,
+      "sha256": "a89d041322a4088b96a877c62d0995b74c8668a96f6de5f15c5d43bba5321ad2"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/samples/gpt5-sovits2-water.wav",
+      "bytes": 240684,
+      "sha256": "ed0c8a8b173345f76df4b4ff8192b6e0b9632b246d14de911437e5bd5a4f2290"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/samples/gpt5-sovits2-welcome.wav",
+      "bytes": 280364,
+      "sha256": "75038ab6a54fb1b1978314c0d0e58298079a6b914bf5d45fecfe6e5459eab04a"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/samples/trained-inference.yaml",
+      "bytes": 3441,
+      "sha256": "eea6356be27dc581455c4bc38dca007c7421f47f21371e50e3236599ce98c807"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/samples/trained-play.wav",
+      "bytes": 253484,
+      "sha256": "8ac2bc1ea96967d574d55804efbad48fdcbdb2db410518b4751c73921e0e5ed3"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/samples/trained-results.json",
+      "bytes": 4450,
+      "sha256": "78d35d963ff132ae5da8cc8f2a7efa32b9b728bb72332d920ffe76230e955bbc"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/samples/trained-water.wav",
+      "bytes": 245804,
+      "sha256": "67a9f48e6a2c652603f440f5f7539a715a1677a36596483bb7338ffc084ea943"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/samples/trained-welcome.wav",
+      "bytes": 270124,
+      "sha256": "38daa1b4fc0eba851626a27f98a0c333a3355f434dac565483f358e8e153cc8c"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/train-s1.log",
+      "bytes": 187358,
+      "sha256": "8773f22ea19a6d0eb87577015d891372ac8ebb70ce4fa5b50ae20f6b7c51e4df"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/train-s1.result.json",
+      "bytes": 373,
+      "sha256": "da8cd4c39a7ca93119869294418c0d113a3963695a9a129afdb0ac9363e03e52"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/train-s2.log",
+      "bytes": 18540,
+      "sha256": "aa91e2c4bc9085242d636cfee10778f523d69c62a6fb09b1fcd93e2f9d79bfe4"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/bubu/train-s2.result.json",
+      "bytes": 368,
+      "sha256": "69cdf260fe6d69c7d66a4b6439b8f01905a95ca547d15d6772efd71fdc55f583"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/desktop-asr-evaluation.json",
+      "bytes": 1102,
+      "sha256": "52e51243bd869aee18e1a3327c07e29baa8bc9ed939dd47ad0e430a5a3e0ec12"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/desktop-client/audio/bubu-20261014-200531-ca61f4eb39f7460394322e03058588cd.wav",
+      "bytes": 302124,
+      "sha256": "c94a30c23029e383fcadc5d8315d0b576ef150159fc3b45fedd8608b16dbd085"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/desktop-client/audio/yier-20261014-200523-1985f06bb11a4c7e89e5174a93d9ec90.wav",
+      "bytes": 206124,
+      "sha256": "07fb25ffd385588c6ff2e38afb73f6c105158e9d44a5348c1245faa8a21955a9"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/desktop-client-verification.json",
+      "bytes": 1213,
+      "sha256": "486d37f5630cf5f862e8d903e804197fa3db6520806268dd7651717c79262c24"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/model-package.json",
+      "bytes": 255,
+      "sha256": "55d17c71762df9b3bf6824a5d57ffe2216f92182d5850e0f1b97c64db0de05d4"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/model-verification.json",
+      "bytes": 1801,
+      "sha256": "3b6dcb3567854c7bcbc300ee7fbd19fd0b3a7364851370cabd7fa46078e37bd6"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/provenance.json",
+      "bytes": 3297,
+      "sha256": "0ac9bad5965a3cc71dedbb1cb55302fef77a9d7939d57ae22676c9e2d3573ac1"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/selected-models.json",
+      "bytes": 2368,
+      "sha256": "6552155007d8e55c68f3bdc3427822208a738eabf9c8aab801e05b03b5601b0a"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/service-inference.yaml",
+      "bytes": 3483,
+      "sha256": "2e7acfede7ea8f63a98eec07a9afb672dd0bf446aefd7761a4a9e8391bddfaa6"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/service-process.json",
+      "bytes": 186,
+      "sha256": "53834c28e1fe11e930f732ae193898adaa300268cd82e0a1e086f4fac394c9b9"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/training-curves.json",
+      "bytes": 3158,
+      "sha256": "79b7aa045a67f17cc56608260685804eab1d01e31593db5a91cbcfbe5e37f0b5"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/training-curves.png",
+      "bytes": 186747,
+      "sha256": "443f99aa91ee284df79cac4944eb625079c63f44d925ecfada3e2a26d64199cb"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/verification.json",
+      "bytes": 20682,
+      "sha256": "3970a212ec1508fda0e22f651fe8a93c93934bc4b19eaf88f0631fa3bb210c6b"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/cpu-window-sizing/events.out.tfevents.1791975457.sduwcdd.39368.0",
+      "bytes": 512,
+      "sha256": "223095777b382e0e4af3dca0472ee5606ed0eea8f1acbd6c995a80a3550d322f"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/cpu-window-sizing/train-s2.log",
+      "bytes": 8230,
+      "sha256": "541962e872516981b413119311c5f54b0f4bf19751bc2931b8d7cac13bb7b669"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/cpu-window-sizing/train-s2.result.json",
+      "bytes": 376,
+      "sha256": "6ac9e53c8ecd6ed5664e3cf7d7088132c5fa4db0d597fa4fc752ccf9bcefd49e"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/cpu-window-sizing/upstream-train.log",
+      "bytes": 2697,
+      "sha256": "c27eeda14deb3025801382077f479b5f437dea11198f15fc9252800778d06893"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/failed-cpu-convolution-attempt/events.out.tfevents.1791975534.sduwcdd.22380.0",
+      "bytes": 954,
+      "sha256": "136303683ab88376244e03c59963bf4d8daf22e2b6d26a3e336dee6d004f78ad"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/failed-cpu-convolution-attempt/train-s2.log",
+      "bytes": 9025,
+      "sha256": "9bf05c6b776115a4f4dcba9783cb59cd007c65bccba9185f2fcc857aaf910699"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/failed-cpu-convolution-attempt/train-s2.result.json",
+      "bytes": 377,
+      "sha256": "54025d6dee8bf50ebbd542869fde82d501b466786173be3b6141d6893e98df8b"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/failed-cpu-convolution-attempt/upstream-train.log",
+      "bytes": 2932,
+      "sha256": "057cd40861c111af3422f9b5dbbdb7fa90597685b1f8111ae42bcd6d19c99a02"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/failed-cuda-build-cpu-attempt/events.out.tfevents.1791975068.sduwcdd.43392.0",
+      "bytes": 88,
+      "sha256": "aa051f02650b3cc72ea364a57ea4804d48684049a265eb4fa9306f524c3ad281"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/failed-cuda-build-cpu-attempt/events.out.tfevents.1791975137.sduwcdd.36272.0",
+      "bytes": 512,
+      "sha256": "41c776b84440fc70f882f8997e5c4974fca11fd76d48414b408335e2896a22ed"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/failed-cuda-build-cpu-attempt/train-s2.log",
+      "bytes": 3475,
+      "sha256": "ca7c7af2b9b35d46e00beeb97a7794293e663af7ff85d7137d53cbe9c61b7efc"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/failed-cuda-build-cpu-attempt/train-s2.result.json",
+      "bytes": 375,
+      "sha256": "d10828a789405d72c925268d98ca83f229fb923a48d26f6af6c96135b90cee98"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/failed-cuda-build-cpu-attempt/upstream-train.log",
+      "bytes": 4753,
+      "sha256": "78af8127eb2d670b739edf74a77e5f9039e11eb2c6d85a0bd03740d48e18fb29"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/failed-memory-attempt/events.out.tfevents.1791974786.sduwcdd.2116.0",
+      "bytes": 512,
+      "sha256": "d7b55b8dbcf4f29c57fbff4366ae8e56838c733c7fab503c9a9c36bac7fb5618"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/failed-memory-attempt/train-s2.log",
+      "bytes": 12333,
+      "sha256": "00483518b8424ed2768d5a36d1c889ae4689d94f1add5be86903b6d5a8bf3cad"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/failed-memory-attempt/train-s2.result.json",
+      "bytes": 367,
+      "sha256": "877ec3ed15832e6079148f4aa6c42a66b293d6d280f1ef4e7b45d1d0e5474aaa"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/failed-memory-attempt-2/events.out.tfevents.1791974915.sduwcdd.36648.0",
+      "bytes": 512,
+      "sha256": "0ccb41359049d70e1deee3aed9e4a93bae745b2d0c46f5d37b4e54a4488536c0"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/failed-memory-attempt-2/train-s2.log",
+      "bytes": 7124,
+      "sha256": "0636932ccb56521649589cbd0519bb2a20204d487d8caec64b0c149e7aedd33f"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/failed-memory-attempt-2/train-s2.result.json",
+      "bytes": 366,
+      "sha256": "8f2c38b4cb3006107ba09449f80e055649ce8d4ac72bd420e2d5adcb3a9c10dc"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/failed-memory-attempt-2/upstream-train.log",
+      "bytes": 5396,
+      "sha256": "e10b9cff384f6d0354e3f2edd8579e76b356dabee2debb4427b774b58e1711da"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/inference.yaml",
+      "bytes": 636,
+      "sha256": "218097c764ea82d12f8f135a6ec6674a46bcb015b216ab9e58413a49643de9f4"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/preparation-verified.json",
+      "bytes": 855,
+      "sha256": "c229a1d0bc8c6a79faa437a21695abe657a542775eb5d59303e46a6d3aca9d2a"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/prepare-hubert.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/prepare-hubert.result.json",
+      "bytes": 278,
+      "sha256": "e8f660748dbc5e2e728bfb9ea902ac1c07e7ab29a2804950c99b20effdb30f3d"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/prepare-semantic.log",
+      "bytes": 33,
+      "sha256": "14592600858d38eb267b0ab23255e439d0cc7f2642dab988bda04618d67d920c"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/prepare-semantic.result.json",
+      "bytes": 275,
+      "sha256": "b6a07a6b06dcfa6dc7ad769863cde91fe35da714f18d088035d52ddf355a13a2"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/prepare-text.log",
+      "bytes": 341,
+      "sha256": "59732e8a007b945c56cf657425bfb74c7533865766ef3595cff6215deee11993"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/prepare-text.result.json",
+      "bytes": 267,
+      "sha256": "6d2003b99fd950e293a0533bd29318cc958ccaa357c10faa0ae8116a186f2c7d"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/reference.txt",
+      "bytes": 74,
+      "sha256": "d26faf2ab7cd59b463971ee9b2e376ee79634a0286f7058e861c05a285a05b9e"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/reference.wav",
+      "bytes": 956132,
+      "sha256": "3df7ca74de2de823842ef69e758889e8137f362e01306f38fc48a44370ec5de8"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/s1.yaml",
+      "bytes": 1304,
+      "sha256": "fa9ac67d2e8cba929cf71591f9ceb0a82c1f00f6470abaa27219dd4534e686b2"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/s2.json",
+      "bytes": 2555,
+      "sha256": "604c34c1fa37ca523df37d44c86b162da8600fbd94194130e855f092225b0fcf"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/base-inference.yaml",
+      "bytes": 3563,
+      "sha256": "19ac6d481fdde57b123efe23a5fae721848626ddf19794c067f236c4db3e0ff0"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/base-play.wav",
+      "bytes": 258604,
+      "sha256": "1d328bcd05f3dc32abae853d648f084af815876583db90f929c3d4c064e3e34f"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/base-results.json",
+      "bytes": 4576,
+      "sha256": "7155b5939ea4305e2bc78c8071a0ae0bbea8675d9fafe764cb5ae119c3a9d515"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/base-water.wav",
+      "bytes": 273964,
+      "sha256": "dfa6df9016475b180f058ac92a25417142ae439ac958cedb413faeb3ea322acc"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/base-welcome.wav",
+      "bytes": 293164,
+      "sha256": "af9655d73de07072cd5797a3a991f7c3a0093931dd8cce4fe28dbdd57eca3fcd"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/gpt10-sovits1-inference.yaml",
+      "bytes": 3440,
+      "sha256": "b4f58ef5958f8c0cf8cad211dcf9637fe498a003b87ed336be8d6d66ad8b4ffa"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/gpt10-sovits1-play.wav",
+      "bytes": 279084,
+      "sha256": "d50a6594092b1ba07c8e0eb2c392c181dc52010a3b814c23a174a30a2f0aad19"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/gpt10-sovits1-results.json",
+      "bytes": 4503,
+      "sha256": "d36e7d5717aa0b92a04731384f452955887a8adcd1d9c6d0bacc181d15499af3"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/gpt10-sovits1-water.wav",
+      "bytes": 235564,
+      "sha256": "1fea74182c96196540ac15de83c83043145a3dc351ee149232cd74b8739763a1"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/gpt10-sovits1-welcome.wav",
+      "bytes": 285484,
+      "sha256": "27c3b724748a38ca7d38872d9c6fbf5eba6ab03fc5b6cf33cae7816ffc5407a8"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/gpt10-sovitsbase-inference.yaml",
+      "bytes": 3483,
+      "sha256": "2e7acfede7ea8f63a98eec07a9afb672dd0bf446aefd7761a4a9e8391bddfaa6"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/gpt10-sovitsbase-play.wav",
+      "bytes": 279084,
+      "sha256": "631c7378d17b357523578c0158b12bf6d690676d2d23de11677a2f941c512f78"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/gpt10-sovitsbase-results.json",
+      "bytes": 4569,
+      "sha256": "58b7078be19a9459d5251c27c49d229da11e5fa372617a6146d6e4272e9f3186"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/gpt10-sovitsbase-water.wav",
+      "bytes": 235564,
+      "sha256": "5c812106bd8b9744cfdfe5ce9b7d1ba81b1ff813329b5df00752872e00eeebb2"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/gpt10-sovitsbase-welcome.wav",
+      "bytes": 285484,
+      "sha256": "fe6342e60fe32984e2052849ea1875412b902af93a803c6673193ad06c2d3a0d"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/gpt5-sovits2-inference.yaml",
+      "bytes": 3440,
+      "sha256": "e98dc3f085d1dc79174e8ea4d4098eb4705ad1fc8461a4d5001244b873fb3b38"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/gpt5-sovits2-play.wav",
+      "bytes": 273964,
+      "sha256": "94c368194a0d5cdb62dd056d057c3424ed73a558ebead1161030fde378c99bab"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/gpt5-sovits2-results.json",
+      "bytes": 4494,
+      "sha256": "8e785f766a188e03a33e0e6c3a00ed1fffb93e07a0c0b61dbf49f9c355096bf0"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/gpt5-sovits2-water.wav",
+      "bytes": 243244,
+      "sha256": "ec9cfb6180feed3666a0b82c61ff512c1c5aa8d48bf78768cf47dc73cd4a3e38"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/gpt5-sovits2-welcome.wav",
+      "bytes": 272684,
+      "sha256": "dc9bf542f8f5327c4d830266aa58b47d2f826b73a85aa359b621fbcd9bbcf154"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/gptbase-sovits1-inference.yaml",
+      "bytes": 3520,
+      "sha256": "06f27409dcbde713ba30d1a930c2895d6eaef1eca720afb4e41123a87da023a1"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/gptbase-sovits1-play.wav",
+      "bytes": 258604,
+      "sha256": "6737af616206224e6fc31438c4fd58a4719f9324c35c123700657290b257d961"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/gptbase-sovits1-results.json",
+      "bytes": 4602,
+      "sha256": "9282843c3323d03cdc4e99b99c54828fa742dc83a46de9ccfdc3f7d75c2e92d5"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/gptbase-sovits1-water.wav",
+      "bytes": 273964,
+      "sha256": "65dc1ebfad35f890ac938decbe64645ac7358f295dac362f9cc46f56bcd2ee6f"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/gptbase-sovits1-welcome.wav",
+      "bytes": 293164,
+      "sha256": "64d0165c42eb0583ab120069bc9a5579d15da9168b4a20da323364dd59281f33"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/gptbase-sovits2-inference.yaml",
+      "bytes": 3521,
+      "sha256": "d8e2e041b71caaac9572c1d8133407cc94768a8b3d05a57f02257a98348dbc66"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/gptbase-sovits2-play.wav",
+      "bytes": 258604,
+      "sha256": "54a47f71342de0183f7e2cc5d0a99df72eb1e9bbb0428b07e48f7f44c818265e"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/gptbase-sovits2-results.json",
+      "bytes": 4600,
+      "sha256": "93af1a5fb9f63296ca2d8fe266f070be362c661732756a056e104e7cdf740536"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/gptbase-sovits2-water.wav",
+      "bytes": 273964,
+      "sha256": "c1dbdff92a0f30574a1483061bec6e70b525992e1af3dbdf706c95e1d76761c8"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/gptbase-sovits2-welcome.wav",
+      "bytes": 293164,
+      "sha256": "cd4fa4a74a6660ea6f91bfe604ec2a25c37711c021c39f3c945ba2beea819d4a"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/trained-inference.yaml",
+      "bytes": 3441,
+      "sha256": "8b7ec893dc18b1ee3780c464d377f823de5ae8c97a33df0635f77617b39482e1"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/trained-play.wav",
+      "bytes": 279084,
+      "sha256": "3141115d2009462aecd3e6c52e32263be09193a6d47b7db03444068ba815d375"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/trained-results.json",
+      "bytes": 4472,
+      "sha256": "53196b65ab72c36bb7b7bea22ad2df2a7143a55a945f5b27a376101c835f55f4"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/trained-water.wav",
+      "bytes": 235564,
+      "sha256": "c677d02444ea93ad0a4604f48faab5558d371a1fd00bf6ebd702a1cb16f1bcc7"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/samples/trained-welcome.wav",
+      "bytes": 285484,
+      "sha256": "c30c3cf9ca1d3c83e67aa54bcf4618fb5bcb31403007e324110635d26d0550fa"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/train-s1.log",
+      "bytes": 202474,
+      "sha256": "23e46e9bb2595ec2ae9d95f0928e051101f46f26645fedfb9c877748cd209daa"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/train-s1.result.json",
+      "bytes": 373,
+      "sha256": "ceba422e59a0cfb1682230acb19901690aaa31ca24f88f4ed2e16980e057d56d"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/train-s2.log",
+      "bytes": 19666,
+      "sha256": "d758fbbcc28962d4d3ef17b7f94d97d50bf4140bd0c41a17fda5d7d27dc23088"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/train-s2.result.json",
+      "bytes": 368,
+      "sha256": "b91293322dc32a8fa7df2385227fd9429b065b89e3b31aaab7d120aeda3a66eb"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/yier-e10.ckpt",
+      "bytes": 155309245,
+      "sha256": "d4e3dbc24b61989e7d9abed83deac94ecc4ed59f718946c7e5e6bff9e944e1fd"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/yier-e5.ckpt",
+      "bytes": 155309245,
+      "sha256": "2f7bfcb3f50c962110f1c9d6510a6761d65b2f3bc438612f98aecd71aae30e9a"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/yier_e1_s99.pth",
+      "bytes": 84998919,
+      "sha256": "b5e9554c81f64501a93b75f39866853a3bfd5d4b86ef5f45aa62ba53105d80f7"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/yier/yier_e2_s198.pth",
+      "bytes": 84998919,
+      "sha256": "78673d086b2a1ae36ce4cfc0eb81a93f06adb4e483c17edfc4595023770840bc"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/使用说明.md",
+      "bytes": 3083,
+      "sha256": "0c49d62dc8051d53a1fb9723a31637212bd6ccfc70e086f4c83ffe2865d68432"
+    },
+    {
+      "path": "voice-training/trained-20261014-v2/试听对比.html",
+      "bytes": 13926,
+      "sha256": "c259be5bbbbc56bd6d28d57ec37d6f781b4597d2859a03cc0447ec2604c0a701"
+    },
+    {
+      "path": "voice-training/clarity-review-20261014/accepted-model-configurations.json",
+      "bytes": 1171,
+      "sha256": "7e252bb5341a5f30097c9d20401d07bab9547c1d5c91b85bdb10b2c79e11239c"
+    },
+    {
+      "path": "voice-training/clarity-review-20261014/audio/bubu-reference.wav",
+      "bytes": 285518,
+      "sha256": "417d855975cc716fc68939b3758eb2e578e7c11df0990da4b8e979da9a99fd31"
+    },
+    {
+      "path": "voice-training/clarity-review-20261014/audio/bubu-water-clarity.wav",
+      "bytes": 245838,
+      "sha256": "cfc3d2c20ff5cf2ad788e593ecc9c42eddc65d78975a05a9609506547d11adcb"
+    },
+    {
+      "path": "voice-training/clarity-review-20261014/audio/bubu-water-original.wav",
+      "bytes": 245838,
+      "sha256": "1ca67bb81f2a1a1626d7123a55b127b4ce8c27157d798be4a3c56fca6bd1429c"
+    },
+    {
+      "path": "voice-training/clarity-review-20261014/audio/bubu-welcome-clarity.wav",
+      "bytes": 270158,
+      "sha256": "0151149435b873fe20c137aca1015ab8a5455ceadfe51c1ff38e648e916068ae"
+    },
+    {
+      "path": "voice-training/clarity-review-20261014/audio/bubu-welcome-original.wav",
+      "bytes": 270158,
+      "sha256": "a05cb247576519502819f50cc739769ba5988c517326ec50b081368bf45da2c0"
+    },
+    {
+      "path": "voice-training/clarity-review-20261014/audio/yier-reference.wav",
+      "bytes": 346958,
+      "sha256": "151d7472117b9fec4f5a30db272fa25f1f172f5a3998dcade928d46e23fb3833"
+    },
+    {
+      "path": "voice-training/clarity-review-20261014/audio/yier-water-clarity.wav",
+      "bytes": 235598,
+      "sha256": "4d6e048e41be1dcce65a8198e377382b9a3cc4db06e9388cd2eba88fe9208200"
+    },
+    {
+      "path": "voice-training/clarity-review-20261014/audio/yier-water-original.wav",
+      "bytes": 235598,
+      "sha256": "864fa990b04a3f9282ac07ee816ec46aec0d94abdbb16f8208d32f1f84aba5e6"
+    },
+    {
+      "path": "voice-training/clarity-review-20261014/audio/yier-welcome-clarity.wav",
+      "bytes": 285518,
+      "sha256": "de86662ab4a828d18dcab7ba72ac4fe4f7a64d1c87f3ac6b093d97ea6799e7e0"
+    },
+    {
+      "path": "voice-training/clarity-review-20261014/audio/yier-welcome-original.wav",
+      "bytes": 285518,
+      "sha256": "5123b1c837ad61bae5cf0b0b8bc7b471492c4f4d33deecf09bc6cb6b429a4be4"
+    },
+    {
+      "path": "voice-training/clarity-review-20261014/audio-audit.json",
+      "bytes": 30435,
+      "sha256": "aac98c3fa8835c224949b78a39e8f97632444d052fe3bff247816ddfcdce82db"
+    },
+    {
+      "path": "voice-training/clarity-review-20261014/comparison-manifest.json",
+      "bytes": 7338,
+      "sha256": "b16f57bb0e292deec36012b74de19f49b95f252b8d3ff8cac7837fe869615dc0"
+    },
+    {
+      "path": "voice-training/clarity-review-20261014/make_comparison.py",
+      "bytes": 5429,
+      "sha256": "25359e63854cf8dc4454d37b46318fd530d093f8d2120d22940d790ac32b7106"
+    },
+    {
+      "path": "voice-training/clarity-review-20261014/preview.log",
+      "bytes": 1174,
+      "sha256": "c31ca0afdcb07a3b61dc7a2245f16ff570bed9f2e915cc292b627a9ebe4e8054"
+    },
+    {
+      "path": "voice-training/clarity-review-20261014/render.log",
+      "bytes": 59,
+      "sha256": "ffdc17fa3612d58f431689258e1c71a77e050ab44819b75420603b01723476c2"
+    },
+    {
+      "path": "voice-training/clarity-review-20261014/清晰度对照.html",
+      "bytes": 3540,
+      "sha256": "47af03d2c386845ddc57fc2db51dfa4ae4c68a5fb3d543a7ef6405d7288fa773"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/2-name2text-0.txt",
+      "bytes": 2753,
+      "sha256": "9f8c437e42f90e509855028a3c021089d09c4f580b57b724f1fd2941d06a1777"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/2-name2text.txt",
+      "bytes": 2753,
+      "sha256": "9f8c437e42f90e509855028a3c021089d09c4f580b57b724f1fd2941d06a1777"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/3-bert/bubu-001.wav.pt",
+      "bytes": 70867,
+      "sha256": "daa3e3af89b4469a503546dd1ed0c1e5aa501e351cd6b335584bfd719ab1fc85"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/3-bert/bubu-002.wav.pt",
+      "bytes": 68824,
+      "sha256": "7ffb9382e3df9353a3299cfeebd76869d713b65269eac9e2a185c0156c6feda6"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/3-bert/bubu-003.wav.pt",
+      "bytes": 68824,
+      "sha256": "e40532e55798b80f8ea0852f4cd838d9542e33815fae33689e936109088ebc92"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/3-bert/bubu-004.wav.pt",
+      "bytes": 68819,
+      "sha256": "d16985ef6983667085f78aad13c5e00debc8d8a71a77f0ad935ee2d9ce4633ca"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/3-bert/bubu-005.wav.pt",
+      "bytes": 72915,
+      "sha256": "2e70fb525417d5640b6fa0155514d0da34d73be7211de380a95eb23a6d631b40"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/3-bert/bubu-006.wav.pt",
+      "bytes": 54488,
+      "sha256": "e6dc489cba2f9329b0095a061021019c2de5c04386f72db47119768fb7deaf00"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/3-bert/bubu-007.wav.pt",
+      "bytes": 95448,
+      "sha256": "2cb393f97e4c8630ef35efa4565e41b3a985198a6cbd8b0c9144567c26b3636d"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/3-bert/bubu-008.wav.pt",
+      "bytes": 54488,
+      "sha256": "6527c8aec39fa278b0975821f84ef0687ebe18a68a836306266394579f7eca98"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/3-bert/bubu-009.wav.pt",
+      "bytes": 87256,
+      "sha256": "9cd1418a00e426e288b3f1bc592a074aa00342db116bfa49bbea9ff211bbd848"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/3-bert/bubu-010.wav.pt",
+      "bytes": 77016,
+      "sha256": "f9c0bdcba880667adcca0a7637a90a2bdf686e08582416cc4a4b882d3b6e26e7"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/3-bert/bubu-011.wav.pt",
+      "bytes": 42200,
+      "sha256": "1abf024400d1665b3a0adfdcbdc1ea0d2895b55bad55d9a910bc71ed386108cf"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/3-bert/pending-001.wav.pt",
+      "bytes": 64728,
+      "sha256": "def690af3b4953251d366eba469871ecbfc8b89184bc0e7f86053d6ae65b73ba"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/3-bert/pending-006.wav.pt",
+      "bytes": 52440,
+      "sha256": "957b389a0b7aad1e972d83ae339af35817db19c1d248ba51d15483f783181e67"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/4-cnhubert/bubu-001.wav.pt",
+      "bytes": 314579,
+      "sha256": "c6a22b0e783ea4c01932fb6aaba928ebce7e31f7a8d8e4d87a279cdc0bc1fc5c"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/4-cnhubert/bubu-002.wav.pt",
+      "bytes": 376024,
+      "sha256": "8afff7542fae0a54a7ff437230c116fd2cb467f9ba50e83de4b0798635b8e8e5"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/4-cnhubert/bubu-003.wav.pt",
+      "bytes": 391384,
+      "sha256": "c3b5371834ea7977301e4962dc31a40bd43bd6a1fabf82e2e642860790a9a25d"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/4-cnhubert/bubu-004.wav.pt",
+      "bytes": 326867,
+      "sha256": "e66e8f3e17fb08fd4ea9ae575ffb23b6a2693255ea97334dba97a8f9301c3a78"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/4-cnhubert/bubu-005.wav.pt",
+      "bytes": 346835,
+      "sha256": "b4bfba1fc51ef1a1ba94382f197e38eca895e536c6f13b716e65d451c7e8c393"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/4-cnhubert/bubu-006.wav.pt",
+      "bytes": 268504,
+      "sha256": "5aaf1b8966f98aaeb3c17711d85ec17ebf02a78861c0caadaa55003af2ca86cf"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/4-cnhubert/bubu-007.wav.pt",
+      "bytes": 417496,
+      "sha256": "5ed7bb68c7cc38fc9c833001e9a5ba48b8040010ea0768166efb496bab885b35"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/4-cnhubert/bubu-008.wav.pt",
+      "bytes": 316120,
+      "sha256": "a0fd9db3880baa1f5d83f48ec79c5d7fd24ac73f6119e3756baa49c604dcdf1a"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/4-cnhubert/bubu-009.wav.pt",
+      "bytes": 342227,
+      "sha256": "684bafa540bce64018d78979a839766cabe4dc7a79eec04d77ae3f0ef26c2c05"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/4-cnhubert/bubu-010.wav.pt",
+      "bytes": 299224,
+      "sha256": "c455424c9c1bc20445e306143a74eb3badfe736d9fcb2d022272b365be22684c"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/4-cnhubert/bubu-011.wav.pt",
+      "bytes": 190163,
+      "sha256": "a5a8fb2053981140492b088a5dd2be2c2ac85dd7c404de0be9382d19eb4edc94"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/4-cnhubert/pending-001.wav.pt",
+      "bytes": 217816,
+      "sha256": "74ee02e1ae4c524ad5d1c23fa3a63ccc54963663231589d21078a59f069e6692"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/4-cnhubert/pending-006.wav.pt",
+      "bytes": 257747,
+      "sha256": "fabd9323f66448a526bf02cdfb6b3dc0cb5ac84860391a46a0c5bca64df7748e"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/5-wav32k/bubu-001.wav",
+      "bytes": 262444,
+      "sha256": "f492755b8f9f56fd56822ec886b2f8b316c7bb4016f9e10932dade4f950f6d1e"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/5-wav32k/bubu-002.wav",
+      "bytes": 313644,
+      "sha256": "9868253834cadfae4e50a4133b36b3e20a028bbeb12dcbeaea863c417499626e"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/5-wav32k/bubu-003.wav",
+      "bytes": 326444,
+      "sha256": "28861d99c522b76f3b1a7bb34f909b5c4f0baf23b2bb750c96a9d7d3c517eec3"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/5-wav32k/bubu-004.wav",
+      "bytes": 272044,
+      "sha256": "bbd3f7cce315a184e41c2ee65a82f7ff38ad8d67e8e674c8c2974a0d26a647a2"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/5-wav32k/bubu-005.wav",
+      "bytes": 289324,
+      "sha256": "3ba4fc93384e65b0c4b8536ef7a0c2939fa5245f4a38ad463f1fe8f146e66b02"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/5-wav32k/bubu-006.wav",
+      "bytes": 224044,
+      "sha256": "d4ad647c984892e562e7bdd381cd9958f670fb6e4bcba08580a936849a8a0445"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/5-wav32k/bubu-007.wav",
+      "bytes": 348204,
+      "sha256": "df6a73cf8a7e25f46a56739f28312dba19c3ec3ae40089549b11dd8c94957065"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/5-wav32k/bubu-008.wav",
+      "bytes": 263724,
+      "sha256": "97cd877a1b1170e24e65aff6611428d5e043540b44955aaed51c916781717cde"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/5-wav32k/bubu-009.wav",
+      "bytes": 285484,
+      "sha256": "106c42a6fc657a9cee17a40f35103571d68b6d14552ed998fe08f17e3b1f436f"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/5-wav32k/bubu-010.wav",
+      "bytes": 249004,
+      "sha256": "2514679dc06683d965953ea7e5c7c32a02bd705657e09c200ca5166c1789935e"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/5-wav32k/bubu-011.wav",
+      "bytes": 158764,
+      "sha256": "77736505800e9b96eb44c2da945b00e04f2f2d29cd87c9c1f3269118b001a65b"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/5-wav32k/pending-001.wav",
+      "bytes": 181804,
+      "sha256": "b8b0fe166f0c8155cd6f24bf44ed68fc5ea404b5e25a81b4713cdc4c13415ddd"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/5-wav32k/pending-006.wav",
+      "bytes": 214444,
+      "sha256": "10fa068e37f56a2070a98c972f3b72dc28d4e0ab77dc7407905350ebae71f099"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/6-name2semantic-0.tsv",
+      "bytes": 5325,
+      "sha256": "a31db33f41249689d206bb73d884b1b9ddbcb45d682aff35fd0349dae1cb5c87"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/6-name2semantic.tsv",
+      "bytes": 5353,
+      "sha256": "fd5fdeeb417ad765d63a6094d2f75700c737b761c3517e4882d23bda419f20c9"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/config.json",
+      "bytes": 2555,
+      "sha256": "7a6d68fefd5621164074acb51364f24a03f44e239370a7dc69aa654f3610fe6f"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/eval/events.out.tfevents.1791977100.sduwcdd.22924.1",
+      "bytes": 88,
+      "sha256": "65b753fcea6e420ac45366f635a7d932a80abcfeb0169f4afd938656962e98d3"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/events.out.tfevents.1791977100.sduwcdd.22924.0",
+      "bytes": 8522,
+      "sha256": "39f7b5e9f7454f2b045dbb4351afabad10d234409ba0e995baee9eaee561a980"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/logs_s1_v2/ckpt/epoch=9-step=110.ckpt",
+      "bytes": 931413104,
+      "sha256": "d1cc0aa02ca5e29574f4373dea396c21643507f6f8c54407fcdf1ff79202ad7e"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/logs_s1_v2/logs_s1_v2/version_0/events.out.tfevents.1791977666.sduwcdd.46968.0",
+      "bytes": 7245,
+      "sha256": "a2339feba97b0c35fb15325b45990e3d29c662c063697351dc3ea2bf50d7618c"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/logs_s1_v2/logs_s1_v2/version_0/hparams.yaml",
+      "bytes": 1556,
+      "sha256": "64daf9a71119bd5802ff07f8161dc407011c82b99be66d6434d02d397d94912d"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/logs_s2_v2/D_233333333333.pth",
+      "bytes": 561098234,
+      "sha256": "0a601b6b8b1e337f400548f843390657cb3bdb069ea6ba647ec9743f41ba1471"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/logs_s2_v2/G_233333333333.pth",
+      "bytes": 613504962,
+      "sha256": "d96c9b7d074fbfb824d79b6a052794c82ec8e325a9d6de83af664008c64caab1"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/train.log",
+      "bytes": 8173,
+      "sha256": "98755719860ec9a2e12bb8af3e627e9ab08f3c850966fe85dabb8fc992e30559"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/2-name2text-0.txt",
+      "bytes": 2539,
+      "sha256": "90f1009bf9f0a0a1c361f67b965e9233d08f84bc992e19793aee274fe733a562"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/2-name2text.txt",
+      "bytes": 2539,
+      "sha256": "90f1009bf9f0a0a1c361f67b965e9233d08f84bc992e19793aee274fe733a562"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/3-bert/pending-002.wav.pt",
+      "bytes": 62675,
+      "sha256": "efb5091e9821dcab428a41dea27a76a1508fb19db5965ab958ece51f782b17f5"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/3-bert/pending-003.wav.pt",
+      "bytes": 62680,
+      "sha256": "aec908b4555b5b8a3babb20230a78808318d3fb9c563ecffd518213f67946f6e"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/3-bert/pending-004.wav.pt",
+      "bytes": 62680,
+      "sha256": "a33893e01bb85882df292930d26d2247c6db4895ed711e2134a2c14de067dafc"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/3-bert/pending-005.wav.pt",
+      "bytes": 38094,
+      "sha256": "83fead9eb02bf356902f6e38fca5f52034e862fb3e168a2fbd9d1a72f38aafd8"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/3-bert/pending-007.wav.pt",
+      "bytes": 34003,
+      "sha256": "ab800bb338de0a97b31f5e9e74c8236c8548c28de312fc48fed6bc1c4fcefa2e"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/3-bert/yier-001.wav.pt",
+      "bytes": 79064,
+      "sha256": "6a0fc15bf343f8e1a339ba59b2a6187ada7add7bc24556134a11e15da3e4990a"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/3-bert/yier-002.wav.pt",
+      "bytes": 95448,
+      "sha256": "11944529587c57a66d9928748b9bb5a0b98144156604369c34193ae44f5c9e48"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/3-bert/yier-003.wav.pt",
+      "bytes": 91347,
+      "sha256": "6b20fc67c292ed2b2a28f8c3125c3c3e66f3ba5d9db65383136118fc00cfa876"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/3-bert/yier-004.wav.pt",
+      "bytes": 97496,
+      "sha256": "bc59168acc111b645da38667d1e88c9f9aaedb47a35b7398a1c96440ac1827cb"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/3-bert/yier-005.wav.pt",
+      "bytes": 101592,
+      "sha256": "c06ee66bfc4bdd5fc99395accada9a931d9eeba011f3aa5d9138a4473088d250"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/3-bert/yier-006.wav.pt",
+      "bytes": 93400,
+      "sha256": "a7f02f310a3ec7104ca2fe68e123187a57fecc0df0c44e39b588b88ff37a033d"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/4-cnhubert/pending-002.wav.pt",
+      "bytes": 257752,
+      "sha256": "cb6a96c7d142e25163f0eec1174efe3f0773a27b2f3533e76d4a748b8fbd0d9e"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/4-cnhubert/pending-003.wav.pt",
+      "bytes": 305368,
+      "sha256": "4c3be43f3e237e7657afa32d5fc8a070dcaf1ccceb5d72841fa9949580d0d760"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/4-cnhubert/pending-004.wav.pt",
+      "bytes": 306904,
+      "sha256": "697f49452fe9be26991cda929facad7ce2a38d7ab1fce89f886e3f5b72b336d6"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/4-cnhubert/pending-005.wav.pt",
+      "bytes": 205528,
+      "sha256": "8666e3245a3dd5b9504dd3633d08ab0fdac992ba0b844b49a8174dd7df0a566b"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/4-cnhubert/pending-007.wav.pt",
+      "bytes": 203987,
+      "sha256": "f16bf700278476eaef4a63308d0c2224734349801057ebdddb54d58d350bb936"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/4-cnhubert/yier-001.wav.pt",
+      "bytes": 345304,
+      "sha256": "918cc0b45ba20ddcde62d62bfebae5c56757dd3fbc7e69c636aee16e5a92c560"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/4-cnhubert/yier-002.wav.pt",
+      "bytes": 415960,
+      "sha256": "b2923d5aa8102254e112117b226514883d4bb464aec4eddd50c01adbbec2e1d0"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/4-cnhubert/yier-003.wav.pt",
+      "bytes": 405208,
+      "sha256": "95638ffd8989d1ea24ee2915651ba147f9fa43b6699d1ccf6492e449fd13aa8e"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/4-cnhubert/yier-004.wav.pt",
+      "bytes": 429779,
+      "sha256": "3e659b9708ee0e7b962362153c8f8c97e659445a8a5ab2db80ce948828041db2"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/4-cnhubert/yier-005.wav.pt",
+      "bytes": 455896,
+      "sha256": "08ac8db63be315c29430b4431d3eca7d95ca4c47a61bac0e0b8888b52a620fcb"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/4-cnhubert/yier-006.wav.pt",
+      "bytes": 500435,
+      "sha256": "da9adcb108a91fb1b41dc254cecd1efdcfd3f1f9d09da78f867bb83c6243aee5"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/5-wav32k/pending-002.wav",
+      "bytes": 214444,
+      "sha256": "d9c287651b71307cf6a97b6b32406af39f0a06f614d49843dd2185465b21e11b"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/5-wav32k/pending-003.wav",
+      "bytes": 254764,
+      "sha256": "f59fdc2f85f738dd4487f6b9633f99613157a73a7e92a658800a5c1a8a26e943"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/5-wav32k/pending-004.wav",
+      "bytes": 256044,
+      "sha256": "9e51a464c2f501ebdd253621317df718e9ee2f41f7c06bc2e67e638edc77ef22"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/5-wav32k/pending-005.wav",
+      "bytes": 171564,
+      "sha256": "512bc0012fd3450bfc119c81dbdc13fb0e746d0d5ae5bb7b2dbf89a730dd9af8"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/5-wav32k/pending-007.wav",
+      "bytes": 169644,
+      "sha256": "c81fcb3fa320b5cb12568422928e58b415432e42620d0219795c471713060745"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/5-wav32k/yier-001.wav",
+      "bytes": 288044,
+      "sha256": "c9eadf89aadbb9d5c7c7b853e64a21f3050731906219d8140116b04c4ba56bc9"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/5-wav32k/yier-002.wav",
+      "bytes": 346924,
+      "sha256": "b826b74d9987659821e259a34a4ef86d02b0edbaaa1032311fd4624e551d4d8f"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/5-wav32k/yier-003.wav",
+      "bytes": 337964,
+      "sha256": "a33f5f6243cbcfdc9ffd99958aaec6a8e1b9be89dfbc95009d7df01dd7256356"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/5-wav32k/yier-004.wav",
+      "bytes": 358444,
+      "sha256": "d578a06f2ceda7d67b6536169b53153516d41ff244b5f873818fa28e697aceac"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/5-wav32k/yier-005.wav",
+      "bytes": 380204,
+      "sha256": "b348781eec7f2f080bd54e25381283534c7741730e1b8f95ee479caa149aab9f"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/5-wav32k/yier-006.wav",
+      "bytes": 416684,
+      "sha256": "7dd744a420266c8dc98ddd596c64a417e20a61d2ac7507531e59ea69731cfbfd"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/6-name2semantic-0.tsv",
+      "bytes": 5002,
+      "sha256": "0c27174cfdcddc551c43b730f73b158c212da127d485d975d63b804117517e8f"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/6-name2semantic.tsv",
+      "bytes": 5030,
+      "sha256": "32a042e87fa39016a4f82cd579282c931d896ae2c5b68b8e46ec25d208423991"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/config.json",
+      "bytes": 2555,
+      "sha256": "604c34c1fa37ca523df37d44c86b162da8600fbd94194130e855f092225b0fcf"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/eval/events.out.tfevents.1791974786.sduwcdd.2116.1",
+      "bytes": 88,
+      "sha256": "0f1c5a969e564518af4b1928b62e80db3a69f0e108546fc56863f7eb67581774"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/eval/events.out.tfevents.1791974915.sduwcdd.36648.1",
+      "bytes": 88,
+      "sha256": "4b489161850e6ec01bc40f19125c8c6078697e6a35cb0b0dbc5ef117e507574d"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/eval/events.out.tfevents.1791975068.sduwcdd.43392.1",
+      "bytes": 88,
+      "sha256": "7e5535424e9ae97298ee68807ce47be0135cc41774dd0340b96bac8474ec4c01"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/eval/events.out.tfevents.1791975137.sduwcdd.36272.1",
+      "bytes": 88,
+      "sha256": "426b8c01214b8861e8c45bf879f00c47e8c20603d1c6e400bcd90803b7437498"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/eval/events.out.tfevents.1791975457.sduwcdd.39368.1",
+      "bytes": 88,
+      "sha256": "460425fbf113fce9c68ee8735ef6510cf87b60fb7082be9af2ec90047407a464"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/eval/events.out.tfevents.1791975534.sduwcdd.22380.1",
+      "bytes": 88,
+      "sha256": "deef25c7a1308fd9b341a73649754a9378312d9c86a6a113461b614622ec6f40"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/eval/events.out.tfevents.1791975712.sduwcdd.7408.1",
+      "bytes": 88,
+      "sha256": "afbaa30293d5a408d214bf2b47965127ea07dfc017d33fbf26a9100dad96277f"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/events.out.tfevents.1791975712.sduwcdd.7408.0",
+      "bytes": 8973,
+      "sha256": "beb721e72d7e8a868c2d20e41806e30dc8f8143410d5c707253138c996a36f13"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/logs_s1_v2/ckpt/epoch=9-step=120.ckpt",
+      "bytes": 931413104,
+      "sha256": "e958d89118236777685a7c93fbed5563af85c2d44c92df942af709eda6aa9625"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/logs_s1_v2/logs_s1_v2/version_0/events.out.tfevents.1791976378.sduwcdd.36736.0",
+      "bytes": 7442,
+      "sha256": "9dbb8b26c71f41e10563bb18ef9f7bd94e9a4686e8de070d35ccfb78384734d7"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/logs_s1_v2/logs_s1_v2/version_0/hparams.yaml",
+      "bytes": 1556,
+      "sha256": "43f2043fccaf8edb9ebd2f821c4613bef2991468bceb773f4e60120720a852b4"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/logs_s2_v2/D_233333333333.pth",
+      "bytes": 561098682,
+      "sha256": "07588da2e4f76683424d243ffc12d6615e5485bcaf7ea8c1cbb84cb8f78194f8"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/logs_s2_v2/G_233333333333.pth",
+      "bytes": 613504962,
+      "sha256": "2a29ff31038c5367cd28ccd769381d7c7c40fedb4ad5867cdfce29db2805bc8e"
+    },
+    {
+      "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/train.log",
+      "bytes": 8407,
+      "sha256": "1294ee0e50e20cb3323b84426977007358331b00043258ad1c12da4efa3c2c98"
+    }
+  ]
+}

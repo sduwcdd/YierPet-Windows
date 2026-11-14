@@ -1,0 +1,116 @@
+using System.IO;
+using System.Reflection;
+using System.Text.Json;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Threading;
+using YierPet.Windows;
+using YierPet.Windows.Core;
+
+class Program
+{
+ static int checks;
+ static void Check(bool ok,string name) { if(!ok) throw new Exception(name); checks++; }
+ static object? Get(object obj,string name)=> obj.GetType().GetField(name,BindingFlags.Instance|BindingFlags.NonPublic)!.GetValue(obj);
+ static object? Call(object obj,string name,params object[] args)=>obj.GetType().GetMethod(name,BindingFlags.Instance|BindingFlags.NonPublic)!.Invoke(obj,args);
+ static void Pump() { var frame=new DispatcherFrame();Dispatcher.CurrentDispatcher.BeginInvoke(DispatcherPriority.Background,new Action(()=>frame.Continue=false));Dispatcher.PushFrame(frame); }
+ static void Save(BitmapSource image,string path) { var e=new PngBitmapEncoder();e.Frames.Add(BitmapFrame.Create(image));using var f=File.Create(path);e.Save(f); }
+ static void Capture(Window window,string path) { window.UpdateLayout();var v=new DrawingVisual();using(var dc=v.RenderOpen()) { dc.DrawRectangle(window.Background,null,new Rect(0,0,window.ActualWidth,window.ActualHeight)); dc.DrawRectangle(new VisualBrush(window.Content as Visual){ViewboxUnits=BrushMappingMode.Absolute,Viewbox=new Rect(0,0,window.ActualWidth,window.ActualHeight)},null,new Rect(0,0,window.ActualWidth,window.ActualHeight)); }var bmp=new RenderTargetBitmap((int)window.ActualWidth,(int)window.ActualHeight,96,96,PixelFormats.Pbgra32);bmp.Render(v);Save(bmp,path); }
+ [STAThread] static void Main()
+ {
+  string root=Directory.GetCurrentDirectory(),temp=Path.Combine(root,".tmp-editor-smoke"),user=Path.Combine(temp,"UserLibrary-"+Guid.NewGuid().ToString("N")),content=Path.Combine(root,"content/wechat");
+  var app=new Application { ShutdownMode=ShutdownMode.OnExplicitShutdown };
+  SynchronizationContext.SetSynchronizationContext(new DispatcherSynchronizationContext());
+  var settings=new AppSettings { RandomBehaviourEnabled=false,AutomaticInteractionsEnabled=false };
+  foreach(var kind in Enum.GetValues<ReminderKind>())settings.SetEnabled(kind,false);
+  var lib=new StickerLibrary(settings,content,user);
+  Check(lib.Assets.Count==522,"base count");
+  foreach(string name in new[]{"restore","keep","alpha","many"})
+  {
+   var asset=StickerImporter.Import(Path.Combine(temp,name+(name=="alpha"?".png":".gif")),user);asset.Role="yier";
+   lib.SaveAsset(asset,new StickerEdit{Name=name,ShowInActions=true},true);
+   for(int i=0;i<asset.FrameCount;i++)Save(lib.Frame(asset,i),Path.Combine(temp,$"{name}-actual-{i}.png"));
+   Check(asset.FrameCount==(name=="alpha"?1:name=="many"?40:4),"frame count");
+   if(name is "restore" or "keep")Check(asset.DurationsMs.SequenceEqual(new[]{60,100,140,180}),"delays");
+  }
+  int dirs=Directory.GetDirectories(user).Length;bool rejected=false;try{StickerImporter.Import(Path.Combine(temp,"bad.gif"),user);}catch{rejected=true;}
+  Check(rejected&&Directory.GetDirectories(user).Length==dirs,"invalid import has no residue");
+  var imported=lib.Assets.First(a=>lib.IsUserAsset(a));
+  foreach(var (id,other,position) in new[]{("user-test-a","wx-0015","bubu-left"),("user-test-b","wx-0066","yier-left")})
+   lib.SaveRule(new StickerInteraction{Id=id,Name=id,Mode="simultaneous",AssetIds=[imported.Id,other],TriggerIds=[imported.Id],PositionRequirement=position,PositionNote=position},new RulePlacement{Source=true,Together=true});
+  var reloaded=new StickerLibrary(settings,content,user);
+  Check(reloaded.Assets.Count==526,"persist imports");Check(reloaded.LinkedCandidates(imported.Id).Count()==2,"persist multiple candidates");
+  Check(reloaded.MenuInteractions(true).Count()==8&&reloaded.MenuInteractions(false).Count()==8,"persist menus");
+  Check(reloaded.SemanticFor(imported.Id)!.Matches.Count==2,"semantic matches");
+  var disable=StickerLibrary.CloneRule(reloaded.Rules.Interactions.First(r=>r.Id=="user-test-a"));disable.Enabled=false;reloaded.SaveRule(disable,new RulePlacement{Source=true});
+  Check(reloaded.LinkedCandidates(imported.Id).Count()==1,"disabled link excluded");
+  Check(!reloaded.MenuInteractions(false).Any(r=>r.Id==disable.Id),"disabled link excluded menu");
+  var edit=reloaded.EditFor(imported);edit.Name="changed";edit.ShowInActions=false;reloaded.SaveAsset(reloaded.Find(imported.Id)!,edit);
+  Check(!new StickerLibrary(settings,content,user).InActions(imported),"persist action opt out");
+  using var duo=new DuoCoordinator(settings,content,Path.Combine(temp,"CleanUser-"+Guid.NewGuid().ToString("N")));
+  duo.Yier.Opacity=duo.Bubu.Opacity=duo.Pair.Opacity=0;duo.Recall();Pump();
+  Check(Enum.GetNames<ReminderKind>().Length==4,"health only");
+  Check(duo.Library.MenuInteractions(false).Count()==6&&duo.Library.MenuInteractions(true).Count()==6,"curated six each");
+  foreach(var pet in new[]{duo.Yier,duo.Bubu})
+  {
+   var menu=(ContextMenu)Call(pet,"CreateMenu",false)!;
+   Check(!menu.Items.OfType<MenuItem>().Any(x=>x.Header.ToString()!.Contains("哨兵")),"no sentry");
+   var actions=menu.Items.OfType<MenuItem>().First(x=>x.Header.ToString()=="切换动作");Check(actions.Items.Count==8,"8 working actions");
+   foreach(var item in actions.Items.OfType<MenuItem>())
+   {
+    pet.GetType().GetField("_menuOpen",BindingFlags.NonPublic|BindingFlags.Instance)!.SetValue(pet,true);
+    item.RaiseEvent(new RoutedEventArgs(MenuItem.ClickEvent));Check(!pet.IsUserBusy,"menu unblocks action");
+    string label=item.Header.ToString()!;
+    if(label.Contains("走"))Check(((DispatcherTimer)Get(pet,"_walkTimer")!).IsEnabled,"walk starts");
+    else if(label!="站立休息")Check(Get(pet,"_sticker") is StickerAsset,"clip assigned");
+    Pump();
+   }
+   Call(pet,"StopWalking");
+  }
+  // Every original and semantic rule still reaches playback after approaching in either order.
+  int scenarios=0;
+  foreach(var rule in duo.Library.AvailableInteractions.Where(r=>!Environment.CommandLine.Contains("--quick")||r.Id=="sem-wx-0079-wx-0015").ToArray())foreach(bool reversed in new[]{false,true})
+  {
+   duo.CancelInteraction();duo.Yier.Left=reversed?800:200;duo.Bubu.Left=reversed?200:800;duo.Yier.Top=duo.Bubu.Top=300;
+   duo.RequestInteraction(rule);
+   for(int i=0;i<260&&duo.Phase==InteractionPhase.Approaching;i++)duo.Advance(.1);
+   Check(duo.IsInteracting&&duo.Phase!=InteractionPhase.Approaching,"rule starts "+rule.Id);
+   if(rule.PositionRequirement=="yier-left")Check(duo.Yier.Left<duo.Bubu.Left,"yier left "+rule.Id);
+   if(rule.PositionRequirement=="bubu-left")Check(duo.Bubu.Left<duo.Yier.Left,"bubu left "+rule.Id);
+   scenarios++;duo.CancelInteraction();Pump();
+  }
+  var libraryWindow=new StickerLibraryWindow(duo);libraryWindow.Show();Pump();
+  var editor=new StickerEditorWindow(duo.Library,duo.Library.Find("wx-0079"),libraryWindow);editor.Show();Pump();
+  Check(((TextBox)Get(editor,"_name")!).Text.Length>0,"editor prefill");
+  Check(((ListBox)Get(editor,"_rules")!).Items.Count>0,"editor existing associations");
+  Capture(editor,Path.Combine(temp,"editor.png"));
+  ((TabItem)Get(editor,"_relationsTab")!).IsSelected=true;Pump();Capture(editor,Path.Combine(temp,"relations.png"));
+  Call(editor,"LoadRule",new object[]{null!});
+  ((TextBox)Get(editor,"_ruleName")!).Text="UI 保存关联";
+  ((ComboBox)Get(editor,"_other")!).SelectedValue="wx-0066";
+  ((ComboBox)Get(editor,"_rulePosition")!).SelectedValue="bubu-left";
+  ((CheckBox)Get(editor,"_ruleSource")!).IsChecked=true;
+  Call(editor,"SaveRelation",editor,new RoutedEventArgs());
+  Check(duo.Library.Rules.Interactions.Any(r=>r.Name=="UI 保存关联"&&r.PositionRequirement=="bubu-left"),"UI save relation");
+  var custom=duo.Library.Rules.Interactions.First(r=>r.Name=="UI 保存关联");
+  duo.Yier.PlaySticker(duo.Library.Find("wx-0079")!);duo.Bubu.PlaySticker(duo.Library.Find("wx-0066")!);
+  Check(duo.RequestManualInteraction(custom),"manual interaction interrupts gestures");duo.CancelInteraction();
+  var otherLink=StickerLibrary.CloneRule(custom);otherLink.Id="test-multiple-ui";otherLink.Name="other candidate";otherLink.AssetIds=["wx-0079","wx-0015"];otherLink.TriggerIds=["wx-0079"];duo.Library.SaveRule(otherLink,new());
+  settings.AutomaticInteractionsEnabled=true;
+  duo.Advance(13);Check(duo.TryPlaySemantic(duo.Library.Find("wx-0079")!),"automatic candidate triggers");duo.CancelInteraction();settings.AutomaticInteractionsEnabled=false;
+  editor.Close();
+  var upload=new StickerEditorWindow(duo.Library,null,libraryWindow);upload.Show();Pump();
+  Check(!((TabItem)Get(upload,"_relationsTab")!).IsEnabled,"unsaved upload cannot associate");
+  upload.GetType().GetField("_file",BindingFlags.Instance|BindingFlags.NonPublic)!.SetValue(upload,Path.Combine(temp,"restore.gif"));
+  ((TextBox)Get(upload,"_name")!).Text="UI 上传验证";
+  Call(upload,"SaveDetails",upload,new RoutedEventArgs());
+  var deadline=DateTime.UtcNow.AddSeconds(20);while((bool)Get(upload,"_busy")!&&DateTime.UtcNow<deadline){Pump();Thread.Sleep(10);}
+  Check(upload.EditedAsset is not null&&duo.Library.IsUserAsset(upload.EditedAsset),"UI upload persisted");
+  Check(((TabItem)Get(upload,"_relationsTab")!).IsEnabled,"uploaded asset can associate");upload.Close();
+  Capture(libraryWindow,Path.Combine(temp,"library.png"));libraryWindow.Close();
+  File.WriteAllText(Path.Combine(root,Environment.CommandLine.Contains("--quick")?"docs/art-direction/user-editor-ui-verification.json":"docs/art-direction/user-editor-verification.json"),JsonSerializer.Serialize(new{checks,baseAssets=522,spatialScenarios=scenarios,menus=new{actionsPerCharacter=8,source=6,together=6},gifComparison="pending",time=DateTimeOffset.Now},new JsonSerializerOptions{WriteIndented=true}));
+  Console.WriteLine($"PASS {checks} checks; {scenarios} spatial scenarios");app.Shutdown();
+ }
+}

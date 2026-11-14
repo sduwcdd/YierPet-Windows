@@ -1,0 +1,2 @@
+# Unified patches contain intentional single-space context lines.
+voice-training/runtime/local-memory-compatibility.patch text eol=lf whitespace=-blank-at-eol
