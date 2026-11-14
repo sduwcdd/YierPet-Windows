@@ -1,0 +1,80 @@
+name: Prepare pinned voice runtime archive
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  transfer:
+    runs-on: windows-2022
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          sparse-checkout: |
+            .github
+            voice-training/recovery
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13.9'
+      - run: python -m pip install requests==2.32.5 imageio-ffmpeg==0.6.0
+      - name: Rebuild identical archive from pinned public assets
+        shell: python
+        run: |
+          import concurrent.futures, hashlib, json, shutil, zipfile, zlib
+          from pathlib import Path
+          import requests, imageio_ffmpeg
+          root=Path.cwd(); repo=root/'voice-training/runtime/GPT-SoVITS'
+          recovery=root/'voice-training/recovery'
+          def read(name): return json.loads((recovery/name).read_text(encoding='utf-8'))
+          def sha(path):
+              h=hashlib.sha256()
+              with path.open('rb') as f:
+                  for b in iter(lambda:f.read(8*1024*1024),b''):h.update(b)
+              return h.hexdigest()
+          def fetch(job):
+              url,path,size,expected=job;path.parent.mkdir(parents=True,exist_ok=True)
+              with requests.get(url,stream=True,timeout=(30,180)) as r:
+                  r.raise_for_status()
+                  with path.open('wb') as f:
+                      for b in r.iter_content(8*1024*1024):f.write(b)
+              assert path.stat().st_size==size and sha(path)==expected,path.name
+              print('VERIFIED',path.name,flush=True)
+          jobs=[]
+          for a in read('pretrained-models.json'):
+              if not a.get('trainingOnly') and not a['path'].endswith('/s2G2333k.pth'):
+                  jobs.append(('https://huggingface.co/lj1995/GPT-SoVITS/resolve/main/'+a['path'],repo/'GPT_SoVITS/pretrained_models'/a['path'],a['size'],a['sha256']))
+          lock=read('upstream-lock.json');a=lock['fasttext']
+          jobs.append((a['url'],repo/'GPT_SoVITS/pretrained_models/fast_langdetect/lid.176.bin',a['bytes'],a['sha256']))
+          a=read('g2pw.json');source=repo/a['path'];jobs.append((a['url'],source,a['size'],a['sha256']))
+          with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+              for _ in pool.map(fetch,jobs):pass
+          folder=repo/'GPT_SoVITS/text';folder.mkdir(parents=True,exist_ok=True)
+          with zipfile.ZipFile(source) as z:
+              assert z.testzip() is None
+              assert all((folder/n).resolve().is_relative_to(folder.resolve()) for n in z.namelist())
+              z.extractall(folder)
+          (folder/'G2PWModel_1.1').rename(folder/'G2PWModel')
+          ffmpeg=repo/'runtime/ffmpeg.exe';ffmpeg.parent.mkdir(parents=True,exist_ok=True)
+          shutil.copyfile(imageio_ffmpeg.get_ffmpeg_exe(),ffmpeg);assert sha(ffmpeg)==lock['ffmpeg']['sha256']
+          for a in lock['frontendAssets']:assert sha(repo/a['path'])==a['sha256']
+          layout=json.loads((root/'.github/runtime-archive-layout.json').read_text(encoding='utf-8'))
+          archive=root/'inference-runtime-assets-runner.zip'
+          with zipfile.ZipFile(archive,'x',compression=zipfile.ZIP_DEFLATED,compresslevel=1) as z:
+              for a in layout['entries']:
+                  info=zipfile.ZipInfo(a['filename'],tuple(a['date_time']))
+                  for k in ('compress_type','external_attr','internal_attr','create_system','create_version','extract_version','file_size'):setattr(info,k,a[k])
+                  info.extra=bytes.fromhex(a['extra']);info.comment=bytes.fromhex(a['comment']);info._compresslevel=1
+                  if a['filename']=='archive-manifest.json':z.writestr(info,layout['manifest'].encode('utf-8'))
+                  else:
+                      with (root/a['filename']).open('rb') as src,z.open(info,'w') as dest:shutil.copyfileobj(src,dest)
+          assert sha(archive)==layout['sha256'],('ZIP differs',zlib.ZLIB_RUNTIME_VERSION,sha(archive))
+          print('IDENTICAL_ARCHIVE_VERIFIED',archive.stat().st_size,flush=True)
+      - name: Upload into existing draft only
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          $release = gh release view assets-voice-20261114 --json isDraft | ConvertFrom-Json
+          if (-not $release.isDraft) { throw 'Expected archive draft' }
+          gh release upload assets-voice-20261114 inference-runtime-assets-runner.zip
+          if ($LASTEXITCODE -ne 0) { throw 'Archive upload failed' }
