@@ -134,3 +134,18 @@ python tools/restore_voice.py audit --group training --runtime
 三个 ZIP 已验证 CRC、模型包列出的 55 项 SHA256、审核包 61 项与本地的一致性以及六个原视频的一致性。详见 `voice-training/recovery/local-preservation-inventory.json`，另有 `assets.json` 精确列出日常推理/从头训练所需的最小资产。
 
 **清理结论：暂不删除整个 YierPet 目录或整个 voice-training/runtime。** 后续若要释放空间，应先将上表独有内容备份到独立磁盘或可信远端，并重新校验 SHA256。AppData 中的个人上传表情、设置和新增语音同样应单独备份；它们不在本次源码同步范围，本次没有读取或改动。
+
+## 7. 本次实际验证范围
+
+本次从提交 `aaf3ed8` 干净检出，直接执行 `windows/build-windows.ps1`，.NET SDK 8.0.428 构建为零警告、零错误；在干净上游检出应用补丁后逐文件核对哈希。
+
+另新建 Python 3.10.18 虚拟环境，通过本机已有 uv 缓存及已保留 CPU wheel 按完整锁文件安装了 171 个包，兼容性检查通过，未复用原 site-packages。使用原模型 ZIP 和审核 ZIP 恢复 33 项资产，迁移全部标注路径，复制并校验固定基础模型、G2PW、fastText 与 FFmpeg。新环境的训练配置准备和两位角色的新台词合成都通过，生成 WAV 均为 32 kHz 单声道非静音。临时服务已确认退出，临时检出、试音和测试文件随后清理。
+
+本机离线缓存安装的可复现命令（仅当对应缓存和 wheel 已保存）：
+
+```powershell
+uv pip sync --offline --python $voicePy --find-links voice-training/runtime/wheels voice-training/runtime/environment-lock.txt
+uv pip check --python $voicePy
+```
+
+详细检查记录见 [verification-2026-11-14.json](recovery/verification-2026-11-14.json)。首次退出后的即时端口检查曾与子进程退出发生时序竞争，随后独立检查确认整个临时进程树与端口均已关闭。此次没有重训已完成实验，也没有重新联网下载全部依赖与模型；因此不把缓存安装通过等同于任何新电脑都能立即联网安装成功。

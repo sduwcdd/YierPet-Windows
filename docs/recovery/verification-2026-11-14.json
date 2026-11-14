@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-14",
+  "verifiedCodeCommit": "aaf3ed89bb4c33f7219d7d7a4910ba1ec8cd4a67",
+  "desktop": {
+    "entry": "windows/build-windows.ps1",
+    "cleanCheckout": true,
+    "sdk": "8.0.428",
+    "warnings": 0,
+    "errors": 0
+  },
+  "voice": {
+    "python": "3.10.18",
+    "newVirtualEnvironment": true,
+    "lockedPackagesInstalled": 171,
+    "dependencyCompatibilityCheck": "passed",
+    "installationSource": "uv offline cache plus preserved CPU wheels; no reuse of original site-packages",
+    "privateAssetsSource": "existing model ZIP and approved ZIP",
+    "verifiedRestoredTrainingAssets": 33,
+    "upstreamCommit": "1b47ca07ef43a284e0b8bd7f29d3e1e3ff76082a",
+    "patchedSourceHashChecks": 3,
+    "pretrainedAssetHashChecks": 9,
+    "frontendAssetHashChecks": 8,
+    "configurationSetupInNewEnvironment": "passed",
+    "newTextSynthesis": {
+      "success": true,
+      "records": [
+        {
+          "role": "Yier",
+          "bytes": 190764,
+          "seconds": 2.98
+        },
+        {
+          "role": "Bubu",
+          "bytes": 170284,
+          "seconds": 2.66
+        }
+      ],
+      "backendStopped": true,
+      "cleanupNote": "Immediate socket-close probe raced with child exit; subsequent independent process/port checks confirmed complete shutdown."
+    },
+    "negativeChecks": [
+      "fresh clone reports missing private assets",
+      "different existing configuration is preserved",
+      "parent traversal and outside-drive paths rejected",
+      "corrupt ZIP hash rejected and temporary file removed"
+    ],
+    "repeatPreparation": "passed",
+    "repeatG2PWDownloadWithExistingVerifiedFiles": "passed"
+  },
+  "notPerformed": [
+    "retraining existing experiments",
+    "fresh network download of every package/model",
+    "speech likeness or ASR evaluation",
+    "modifying installed app or AppData user data"
+  ],
+  "remainingRemoteGaps": [
+    "trained weights and reference WAVs",
+    "approved dataset and source videos",
+    "training resume checkpoints/logs",
+    "local voice archive ZIPs"
+  ]
+}
