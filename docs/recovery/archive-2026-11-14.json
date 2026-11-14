@@ -1,6 +1,6 @@
 {
   "date": "2026-11-14",
-  "status": "local_archives_verified_upload_pending",
+  "status": "published_verified_and_unused_weights_deleted",
   "releaseUrl": "https://github.com/sduwcdd/YierPet-Windows/releases/tag/assets-voice-20261114",
   "archives": [
     {
@@ -39,7 +39,173 @@
     "reviewDecisionsAndTextsUnchangedAfterPathRedaction": true
   },
   "cleanup": {
-    "executed": false,
-    "requires": "All public downloads SHA256 verified before exact-file deletion"
-  }
+    "executed": true,
+    "deletedFiles": [
+      {
+        "path": "voice-training/trained-20261014-v2/bubu/bubu-e5.ckpt",
+        "bytes": 155309245,
+        "sha256": "2514dba50f3cb04fa8d8fa5394b24777249043413f12656dc717d07d2aad0f1b"
+      },
+      {
+        "path": "voice-training/trained-20261014-v2/bubu/bubu_e1_s91.pth",
+        "bytes": 84998242,
+        "sha256": "833642d4b3b9cfac74128de84f61ff14534e5e0ff4dac502af8c6519417b81d8"
+      },
+      {
+        "path": "voice-training/trained-20261014-v2/yier/yier-e5.ckpt",
+        "bytes": 155309245,
+        "sha256": "2f7bfcb3f50c962110f1c9d6510a6761d65b2f3bc438612f98aecd71aae30e9a"
+      },
+      {
+        "path": "voice-training/trained-20261014-v2/yier/yier_e1_s99.pth",
+        "bytes": 84998919,
+        "sha256": "b5e9554c81f64501a93b75f39866853a3bfd5d4b86ef5f45aa62ba53105d80f7"
+      },
+      {
+        "path": "voice-training/trained-20261014-v2/yier/yier_e2_s198.pth",
+        "bytes": 84998919,
+        "sha256": "78673d086b2a1ae36ce4cfc0eb81a93f06adb4e483c17edfc4595023770840bc"
+      },
+      {
+        "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/logs_s1_v2/ckpt/epoch=9-step=110.ckpt",
+        "bytes": 931413104,
+        "sha256": "d1cc0aa02ca5e29574f4373dea396c21643507f6f8c54407fcdf1ff79202ad7e"
+      },
+      {
+        "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/logs_s2_v2/D_233333333333.pth",
+        "bytes": 561098234,
+        "sha256": "0a601b6b8b1e337f400548f843390657cb3bdb069ea6ba647ec9743f41ba1471"
+      },
+      {
+        "path": "voice-training/runtime/GPT-SoVITS/logs/bubu-approved-v2/logs_s2_v2/G_233333333333.pth",
+        "bytes": 613504962,
+        "sha256": "d96c9b7d074fbfb824d79b6a052794c82ec8e325a9d6de83af664008c64caab1"
+      },
+      {
+        "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/logs_s1_v2/ckpt/epoch=9-step=120.ckpt",
+        "bytes": 931413104,
+        "sha256": "e958d89118236777685a7c93fbed5563af85c2d44c92df942af709eda6aa9625"
+      },
+      {
+        "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/logs_s2_v2/D_233333333333.pth",
+        "bytes": 561098682,
+        "sha256": "07588da2e4f76683424d243ffc12d6615e5485bcaf7ea8c1cbb84cb8f78194f8"
+      },
+      {
+        "path": "voice-training/runtime/GPT-SoVITS/logs/yier-approved-v2/logs_s2_v2/G_233333333333.pth",
+        "bytes": 613504962,
+        "sha256": "2a29ff31038c5367cd28ccd769381d7c7c40fedb4ad5867cdfce29db2805bc8e"
+      },
+      {
+        "path": "voice-training/runtime/GPT-SoVITS/GPT_SoVITS/pretrained_models/gsv-v2final-pretrained/s1bert25hz-5kh-longer-epoch=12-step=369668.ckpt",
+        "bytes": 155315150,
+        "sha256": "732f94e63b148066e24c7f9d2637f3374083e637635f07fbdb695dee20ddbe1f"
+      },
+      {
+        "path": "voice-training/runtime/GPT-SoVITS/GPT_SoVITS/pretrained_models/gsv-v2final-pretrained/s2D2333k.pth",
+        "bytes": 93534164,
+        "sha256": "8ae7fe8dd8c8f2e718de359e00edac88b0c71ab2fd10b07ad4cc45070eb8a836"
+      },
+      {
+        "path": "voice-training/一二布布-声音模型-20261014-v2.zip",
+        "bytes": 597349689,
+        "sha256": "0efc46891a1aa70b3b11ade37d0b213ef401ddd605f7f15b3570bba4937760c0"
+      }
+    ],
+    "deletedBytes": 5623846621,
+    "retainedAssetsSha256Verified": 39,
+    "retainedRuntimeAuditPassed": true,
+    "appDataVoiceSettingsUnchanged": true,
+    "defaultDownloaderDidNotRestoreUnusedWeights": true,
+    "newLocalArchiveBytes": 2084904746,
+    "netFileBytesReduced": 3538941875
+  },
+  "runtimeArchiveTransfer": {
+    "method": "Rebuilt byte-identical ZIP on GitHub hosted Windows runner from hash-pinned public sources",
+    "workflowRun": "https://github.com/sduwcdd/YierPet-Windows/actions/runs/43575569878",
+    "conclusion": "success",
+    "archiveSha256": "b18e576ec36446fcc4fef426601924031816bdca78fd0daaf4c8e28d36688378",
+    "oneTimeWorkflowRemoved": true,
+    "localSlowUploadStoppedAfterRemoteHashVerified": true
+  },
+  "remoteVerification": {
+    "tag": "assets-voice-20261114",
+    "releaseId": 445132798,
+    "url": "https://github.com/sduwcdd/YierPet-Windows/releases/tag/assets-voice-20261114",
+    "assets": [
+      {
+        "name": "selected-models.zip",
+        "bytes": 466374141,
+        "sha256": "84406d0f226655c8f555007664633af8bbd58a2b537c2da3de3e0310aa113c22",
+        "files": 9,
+        "id": 746775275,
+        "url": "https://github.com/sduwcdd/YierPet-Windows/releases/download/assets-voice-20261114/selected-models.zip",
+        "apiDigest": "sha256:84406d0f226655c8f555007664633af8bbd58a2b537c2da3de3e0310aa113c22",
+        "publicDownloadSha256": "84406d0f226655c8f555007664633af8bbd58a2b537c2da3de3e0310aa113c22",
+        "publicDownloadBytes": 466374141
+      },
+      {
+        "name": "approved-recordings.zip",
+        "bytes": 18707749,
+        "sha256": "1d70f2735fa84af6c7e26d4180e70d77f2fe0f97e0adc82f976dd91b1997811e",
+        "files": 61,
+        "id": 746788419,
+        "url": "https://github.com/sduwcdd/YierPet-Windows/releases/download/assets-voice-20261114/approved-recordings.zip",
+        "apiDigest": "sha256:1d70f2735fa84af6c7e26d4180e70d77f2fe0f97e0adc82f976dd91b1997811e",
+        "publicDownloadSha256": "1d70f2735fa84af6c7e26d4180e70d77f2fe0f97e0adc82f976dd91b1997811e",
+        "publicDownloadBytes": 18707749
+      },
+      {
+        "name": "inference-runtime-assets.zip",
+        "bytes": 1526650535,
+        "sha256": "b18e576ec36446fcc4fef426601924031816bdca78fd0daaf4c8e28d36688378",
+        "files": 15,
+        "id": 746825400,
+        "url": "https://github.com/sduwcdd/YierPet-Windows/releases/download/assets-voice-20261114/inference-runtime-assets.zip",
+        "apiDigest": "sha256:b18e576ec36446fcc4fef426601924031816bdca78fd0daaf4c8e28d36688378",
+        "publicDownloadSha256": "b18e576ec36446fcc4fef426601924031816bdca78fd0daaf4c8e28d36688378",
+        "publicDownloadBytes": 1526650535
+      },
+      {
+        "name": "sources-and-records.zip",
+        "bytes": 73172321,
+        "sha256": "f815690649508376f9c407ef2f8c2a588dc67dbf16846b9de4eebc3ed731984c",
+        "files": 368,
+        "id": 746789785,
+        "url": "https://github.com/sduwcdd/YierPet-Windows/releases/download/assets-voice-20261114/sources-and-records.zip",
+        "apiDigest": "sha256:f815690649508376f9c407ef2f8c2a588dc67dbf16846b9de4eebc3ed731984c",
+        "publicDownloadSha256": "f815690649508376f9c407ef2f8c2a588dc67dbf16846b9de4eebc3ed731984c",
+        "publicDownloadBytes": 73172321
+      },
+      {
+        "name": "SHA256SUMS.txt",
+        "bytes": 365,
+        "sha256": "807b92d9485511f4da890def733d5142c9d0750688a995e60069e780301e51bf",
+        "id": 746829652,
+        "url": "https://github.com/sduwcdd/YierPet-Windows/releases/download/assets-voice-20261114/SHA256SUMS.txt",
+        "apiDigest": "sha256:807b92d9485511f4da890def733d5142c9d0750688a995e60069e780301e51bf",
+        "publicDownloadSha256": "807b92d9485511f4da890def733d5142c9d0750688a995e60069e780301e51bf",
+        "publicDownloadBytes": 365
+      },
+      {
+        "name": "archives.json",
+        "bytes": 709,
+        "sha256": "11b81e50cd08640e27e7688c98d7e3ba1bcd0abcc88a48ec5b91847da2d3f170",
+        "id": 746829693,
+        "url": "https://github.com/sduwcdd/YierPet-Windows/releases/download/assets-voice-20261114/archives.json",
+        "apiDigest": "sha256:11b81e50cd08640e27e7688c98d7e3ba1bcd0abcc88a48ec5b91847da2d3f170",
+        "publicDownloadSha256": "11b81e50cd08640e27e7688c98d7e3ba1bcd0abcc88a48ec5b91847da2d3f170",
+        "publicDownloadBytes": 709
+      }
+    ],
+    "latestApplicationRelease": "v0.0.3",
+    "allPublicDownloadsVerified": true
+  },
+  "temporaryTaskScriptsRemoved": true,
+  "remainingVoiceWeightFiles": [
+    "voice-training/trained-20261014-v2/bubu/bubu-e10.ckpt",
+    "voice-training/trained-20261014-v2/bubu/bubu_e2_s182.pth",
+    "voice-training/trained-20261014-v2/yier/yier-e10.ckpt",
+    "voice-training/runtime/GPT-SoVITS/GPT_SoVITS/pretrained_models/gsv-v2final-pretrained/s2G2333k.pth"
+  ]
 }

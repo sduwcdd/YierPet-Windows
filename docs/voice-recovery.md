@@ -1,6 +1,6 @@
 # 从 GitHub 恢复桌宠与本地语音工作流
 
-恢复方案更新于 2026-11-14。桌宠源码和内置提醒音频从仓库恢复，最终采用的声音模型、参考录音、推理基础、审核素材及历史记录通过独立 Release 归档。按下面步骤下载并校验四个 ZIP 后恢复所需内容。远端上传、完整校验和本地删除的实际执行状态以归档核验记录为准。见 [语音归档 Release](https://github.com/sduwcdd/YierPet-Windows/releases/tag/assets-voice-20261114) 和 [archive-2026-11-14.json](recovery/archive-2026-11-14.json)。
+恢复方案更新于 2026-11-14。桌宠源码和内置提醒音频从仓库恢复，最终采用的声音模型、参考录音、推理基础、审核素材及历史记录通过独立 Release 归档。按下面步骤下载并校验四个 ZIP 后恢复所需内容。四个归档与两份清单均已从公开下载链接完整回读，尺寸和 SHA256 全部匹配；随后完成未使用权重清理。见 [语音归档 Release](https://github.com/sduwcdd/YierPet-Windows/releases/tag/assets-voice-20261114) 和 [archive-2026-11-14.json](recovery/archive-2026-11-14.json)。
 
 ## 1. 哪些内容现在已纳入代码库
 
@@ -47,6 +47,8 @@ git -C voice-training/runtime/GPT-SoVITS apply $patch
 | `approved-recordings.zip` | 61个审核素材文件，包括24段确认录音、标注、参考音与审核原件 | 第4节恢复脚本 |
 | `inference-runtime-assets.zip` | BERT、HuBERT、G2PW、fastText和FFmpeg | 固定上游检出后，按项目根相对路径解压 |
 | `sources-and-records.zip` | 原视频、切片、训练与清晰化试听、日志和特征，排除模型权重 | 解压到单独目录查看 |
+
+仅生成新台词时，需要模型包和推理基础包；另两包用于素材追溯及重新训练。
 
 公开审核JSON采用脱敏副本，仅替换个人绝对路径前缀，保留原审核决定和文字。本地审核原件原样保存，原始SHA256继续记录在 `recovery/assets.json`。恢复脚本同时接受清单固定的原件与 `portableCopy` 副本尺寸和SHA256，并逐项核验。
 
@@ -150,9 +152,9 @@ python tools/restore_voice.py audit --group training --runtime
 
 表中路径相对于 `voice-training/`。所选模型哈希见 `selected-models.json` 和 `recovery/assets.json`。BERT、HuBERT、G2PW、fastText和FFmpeg保留供推理使用，素材及试听、日志、特征保存到另外三个归档中。
 
-清理流程在四个Release归档完成远端完整校验后，删除13个未采用权重及含额外弃用权重的旧中文模型ZIP。其中包括5个未采用的角色导出权重、6个含优化器状态的训练断点，以及训练专用的基础GPT和SoVITS判别器。各项路径、字节数、哈希、远端核验结果与实际删除状态以 [archive-2026-11-14.json](recovery/archive-2026-11-14.json) 为准。清理后可以恢复所选声音、查阅历史记录，并用审核素材从头训练。
+2026-11-14 在四个 Release 归档完成远端完整校验后，已删除 13 个未采用权重及含额外弃用权重的旧中文模型 ZIP，共 5,623,846,621 字节。其中包括5个未采用的角色导出权重、6个含优化器状态的训练断点，以及训练专用的基础GPT和SoVITS判别器。各项路径、字节数、哈希、远端核验结果与实际删除状态以 [archive-2026-11-14.json](recovery/archive-2026-11-14.json) 为准。清理后可以恢复所选声音、查阅历史记录，并用审核素材从头训练。
 
-`voice-training/recovery/local-preservation-inventory.json` 保存清理前的历史盘点，含旧ZIP及待删除权重的哈希。现行恢复按四个新归档及其 `archives.json`、`SHA256SUMS.txt` 执行。AppData中的个人上传表情、设置和新增语音另行备份。
+`voice-training/recovery/local-preservation-inventory.json` 保存清理前的历史盘点，含旧ZIP及待删除权重的哈希。现行恢复按四个新归档及其 `archives.json`、`SHA256SUMS.txt` 执行。AppData 中的个人上传表情、设置和新增语音另行备份。本轮检查确认语音配置文件未改变；所选资产、推理基础均再次通过哈希核验。
 
 ## 7. 归档调整前的干净恢复验证
 

@@ -1,6 +1,6 @@
 {
   "date": "2026-11-14",
-  "note": "Inventory only; listed binary files are NOT stored in this Git repository. Do not delete local originals based on this manifest.",
+  "note": "Historical inventory before the 2026-11-14 final-only retention cleanup. Current remote archives and exact deleted paths are recorded in docs/recovery/archive-2026-11-14.json. Do not infer that every historical file still exists.",
   "archives": [
     {
       "path": "voice-training/approved-20261014-04205443.zip",
