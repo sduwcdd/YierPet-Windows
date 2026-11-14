@@ -39,7 +39,7 @@ git -C voice-training/runtime/GPT-SoVITS apply $patch
 
 ### 下载并校验语音归档
 
-从 `assets-voice-20261114` Release 下载以下四个包及同页的 `SHA256SUMS.txt`、`archives.json`。在下载目录执行 `Get-FileHash .\*.zip -Algorithm SHA256`，逐项比对 `SHA256SUMS.txt` 中的文件名和哈希，文件数、大小与包内清单见 `archives.json`。校验通过后再解压。下载入口见 [语音归档 Release](https://github.com/sduwcdd/YierPet-Windows/releases/tag/assets-voice-20261114)。
+从 `assets-voice-20261114` Release 下载以下四个包及同页的 `SHA256SUMS.txt`、`archives.json`。在下载目录执行 `Get-FileHash .\*.zip -Algorithm SHA256`，逐项比对 `SHA256SUMS.txt` 中的文件名和哈希，包级文件数、大小与哈希见 `archives.json`，逐文件清单位于各 ZIP 的 `archive-manifest.json`。校验通过后再解压。下载入口见 [语音归档 Release](https://github.com/sduwcdd/YierPet-Windows/releases/tag/assets-voice-20261114)。
 
 | 归档 | 内容 | 恢复方式 |
 | --- | --- | --- |
