@@ -64,6 +64,7 @@
     },
     "xetHash": "3cdb5344ff63ba05528d94970838060e43b1f584fb35856b24beff33255a627a",
     "path": "gsv-v2final-pretrained/s1bert25hz-5kh-longer-epoch=12-step=369668.ckpt",
+    "trainingOnly": true,
     "sha256": "732f94e63b148066e24c7f9d2637f3374083e637635f07fbdb695dee20ddbe1f"
   },
   {
@@ -77,6 +78,7 @@
     },
     "xetHash": "0101070705da1b000caa9b5441b8877873e961f5faceb78d32661026c7c71af4",
     "path": "gsv-v2final-pretrained/s2D2333k.pth",
+    "trainingOnly": true,
     "sha256": "8ae7fe8dd8c8f2e718de359e00edac88b0c71ab2fd10b07ad4cc45070eb8a836"
   },
   {

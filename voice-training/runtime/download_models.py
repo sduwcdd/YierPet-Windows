@@ -1,5 +1,5 @@
 """Download only required official v2 assets; validate lengths and LFS SHA256."""
-import concurrent.futures, hashlib, json, os, time
+import argparse, concurrent.futures, hashlib, json, os, time
 from pathlib import Path
 import requests
 
@@ -51,5 +51,10 @@ def download(item):
     print('VERIFIED',item['path'],size,flush=True)
 
 if __name__ == '__main__':
-    for item in items:download(item)
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--training', action='store_true', help='Also download the base GPT and discriminator for new training')
+    args = parser.parse_args()
+    for item in items:
+        if args.training or not item.get('trainingOnly'):
+            download(item)
     print('ALL_MODELS_VERIFIED',flush=True)

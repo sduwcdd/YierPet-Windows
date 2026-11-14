@@ -263,7 +263,12 @@
       "bytes": 28151,
       "sha256": "0420544334f8e8e46ec244050e017b4ee1752974c99c2e729d4c4e72e4b0d15e",
       "archive": "approved",
-      "entry": "voice-review.original.json"
+      "entry": "voice-review.original.json",
+      "portableCopy": {
+        "bytes": 27431,
+        "sha256": "f6c9c384904fe9ac841b50beb75b50c445f3ac7d88039cc41eabede6dc739dbc",
+        "note": "Public archive replaces only personal absolute_path prefixes; all review decisions/texts unchanged. Original hash above remains valid for local backups."
+      }
     },
     {
       "path": "13436440147704881.mp4",

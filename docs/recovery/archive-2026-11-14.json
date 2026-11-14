@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-14",
+  "status": "local_archives_verified_upload_pending",
+  "releaseUrl": "https://github.com/sduwcdd/YierPet-Windows/releases/tag/assets-voice-20261114",
+  "archives": [
+    {
+      "name": "selected-models.zip",
+      "bytes": 466374141,
+      "sha256": "84406d0f226655c8f555007664633af8bbd58a2b537c2da3de3e0310aa113c22",
+      "files": 9
+    },
+    {
+      "name": "approved-recordings.zip",
+      "bytes": 18707749,
+      "sha256": "1d70f2735fa84af6c7e26d4180e70d77f2fe0f97e0adc82f976dd91b1997811e",
+      "files": 61
+    },
+    {
+      "name": "inference-runtime-assets.zip",
+      "bytes": 1526650535,
+      "sha256": "b18e576ec36446fcc4fef426601924031816bdca78fd0daaf4c8e28d36688378",
+      "files": 15
+    },
+    {
+      "name": "sources-and-records.zip",
+      "bytes": 73172321,
+      "sha256": "f815690649508376f9c407ef2f8c2a588dc67dbf16846b9de4eebc3ed731984c",
+      "files": 368
+    }
+  ],
+  "localVerification": {
+    "zipCrcAndEveryEntrySha256": true,
+    "cleanRestoreAssets": 33,
+    "cleanRestorePretrainedAssets": 7,
+    "cleanRestoreFrontendAssets": 8,
+    "idempotence": true,
+    "reviewTamperingRejected": true,
+    "temporaryRestoreFilesRemoved": true,
+    "reviewDecisionsAndTextsUnchangedAfterPathRedaction": true
+  },
+  "cleanup": {
+    "executed": false,
+    "requires": "All public downloads SHA256 verified before exact-file deletion"
+  }
+}

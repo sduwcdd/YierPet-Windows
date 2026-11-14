@@ -12,6 +12,7 @@ build/
 
 # Temporary validation, local data and deployment records
 /.tmp-*/
+/.tmp/
 **/__pycache__/
 *.py[cod]
 .venv/

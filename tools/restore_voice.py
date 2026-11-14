@@ -38,7 +38,11 @@ def digest(path):
 
 
 def matches(path, item):
-    return path.is_file() and path.stat().st_size == item["bytes"] and digest(path) == item["sha256"]
+    if not path.is_file():
+        return False
+    variants = [item] + ([item["portableCopy"]] if "portableCopy" in item else [])
+    expected = [v["sha256"] for v in variants if path.stat().st_size == v["bytes"]]
+    return bool(expected) and digest(path) in expected
 
 
 def selected(group):
@@ -93,7 +97,8 @@ def prepare(root, source, group, archives):
                 transfers.append((item, local, None))
             elif archive is not None:
                 names = archive.namelist()
-                if names.count(item["entry"]) != 1 or archive.getinfo(item["entry"]).file_size != item["bytes"]:
+                sizes = {item["bytes"], item.get("portableCopy", item)["bytes"]}
+                if names.count(item["entry"]) != 1 or archive.getinfo(item["entry"]).file_size not in sizes:
                     raise ValueError(f"Missing/ambiguous ZIP entry: {item['entry']}")
                 transfers.append((item, None, archive))
             else:
@@ -121,7 +126,7 @@ def prepare(root, source, group, archives):
     print(f"Prepared {len(items)} verified assets and {len(configs)} portable files; AppData unchanged.")
 
 
-def audit_runtime(root):
+def audit_runtime(root, training=False):
     lock = read("upstream-lock.json")
     repo = root / "voice-training/runtime/GPT-SoVITS"
     commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=repo, text=True).strip()
@@ -132,6 +137,8 @@ def audit_runtime(root):
         if actual != expected:
             raise ValueError(f"Missing/different upstream patch: {name}")
     for item in read("pretrained-models.json"):
+        if item.get("trainingOnly") and not training:
+            continue
         path = safe_path(repo / "GPT_SoVITS/pretrained_models", item["path"])
         if not matches(path, dict(bytes=item["size"], sha256=item["sha256"])):
             raise ValueError(f"Missing/different pretrained asset: {item['path']}")
@@ -166,7 +173,7 @@ def main():
         raise ValueError(f"{len(errors)} missing/different assets (first eight): " + ", ".join(errors[:8]))
     print(f"Verified {len(selected(args.group))} {args.group} assets by SHA256.")
     if args.runtime:
-        audit_runtime(source)
+        audit_runtime(source, training=args.group != "inference")
 
 
 if __name__ == "__main__":
